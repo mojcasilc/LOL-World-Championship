@@ -6,3 +6,8 @@ Namen najinega projekta je sledenje ekipam na svetovnem prvenstvu skozi čas. Im
 1. Pridobivanje podatkov
 2. Podatki urejeni v bazo
 3. Spletni vmesnik za prikazovanje podatkov
+## ER-diagram baze
+
+## Povezave do podatkov
+* https://oracleselixir.com/
+ 
