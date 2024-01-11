@@ -12,6 +12,6 @@ Namen najinega projekta je sledenje ekipam na svetovnem prvenstvu skozi čas. Im
 
 ## Povezave do podatkov
 * https://oracleselixir.com/
-* https://oracleselixir.com/stats/players/byTournament
+
 
  
