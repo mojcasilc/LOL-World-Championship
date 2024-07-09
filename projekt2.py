@@ -35,12 +35,12 @@ for leto in range(2014, 2024):
         seznam3.append(podatki_teams_msi)
 
 celota = pd.concat(seznam1, ignore_index=True)
-
 players = pd.concat(seznam2, ignore_index=True)
 teams = pd.concat(seznam3, ignore_index=True)
 
 ekipe = teams[['Team']].drop_duplicates() # naredi kategorijo in preimenuj v ime, unique
 igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
+pripada = players[['leto', 'Team', 'Player']].sort_values(by=['leto', 'Team'])
 
 # to spremeni v csv (glej primer spodaj)
 # igralci = players[['player', 'pos']]
@@ -50,3 +50,4 @@ igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
 
 ekipe.to_csv('podatki/ekipe.csv', index=False)
 igralci.to_csv('podatki/igralci.csv', index=False)
+pripada.to_csv('podatki/pripada.csv', index=False)
