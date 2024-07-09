@@ -176,37 +176,59 @@ class Igralci(Tabela):
 #             );
 #         """)
 
-# class Pripada(Tabela):
-#     """
-#     Tabela za relacijo pripadnosti tekmovalca ekipi.
-#     """
-#     ime = "pripada"
-#     podatki = "igralci.csv"
+class Pripada(Tabela):
+    """
+    Tabela za relacijo pripadnosti tekmovalca ekipi.
+    """
+    ime = "pripada"
+    podatki = "podatki/pripada.csv"
 
-#     def __init__(self, conn, ekipe, igralci):
-#         """
-#         Konstruktor tabele pripadnosti ekipi.
+    # def __init__(self, conn, ekipe, igralci):
+    #     """
+    #     Konstruktor tabele pripadnosti ekipi.
 
-#         Argumenti:
-#         - conn: povezava na bazo
-#         - ekipe: tabela za ekipe
-#         """
-#         super().__init__(conn)
-#         self.ekipe = ekipe
-#         self.igralci = igralci
+    #     Argumenti:
+    #     - conn: povezava na bazo
+    #     - ekipe: tabela za ekipe
+    #     """
+    #     super().__init__(conn)
+    #     self.ekipe = ekipe
+    #     self.igralci = igralci
 
-#     def ustvari(self):
-#         """
-#         Ustvari tabelo pripada.
-#         """
-#         self.conn.execute("""
-#             CREATE TABLE pripada (
-#                 igralec   INTEGER REFERENCES igralci (id),
-#                 ekipa     INTEGER REFERENCES ekipe (id),
-#                 leto      INTEGER,
-#                 PRIMARY KEY (igralec, ekipa)
-#             );
-#         """)
+    def ustvari(self):
+        """
+        Ustvari tabelo pripada.
+        """
+        self.conn.execute("""
+            CREATE TABLE pripada (
+                Player   INTEGER REFERENCES igralci (id),
+                Team     INTEGER REFERENCES ekipe (id),
+                leto      INTEGER,
+                PRIMARY KEY (Player, Team)
+            );
+        """)
+        
+    def dodaj_vrstico(self, **podatki):
+        """
+        Dodaj relacijo med igralcem in ekipo.
+
+        Če relacija že obstaja, vrne obstoječi ID.
+
+        Argumenti:
+        - poimenovani parametri: vrednosti v ustreznih stolpcih
+        """
+        Player = podatki['Player']
+        Team = podatki['Team']
+
+        r = self.conn.execute("""
+            SELECT * FROM pripada
+            WHERE Player = ? AND Team = ?
+        """, (Player, Team)).fetchone()
+        if r is None:
+            return super().dodaj_vrstico(**podatki)
+        else:
+            id = r
+            return id
         
         
 # class Nastopa(Tabela):
@@ -292,8 +314,8 @@ def pripravi_tabele(conn):
     igralci = Igralci(conn)
     # tekmovanje = Tekmovanje(conn)
     # nastopa = Nastopa(conn, ekipe, tekmovanje)
-    # pripada = Pripada(conn, ekipe, igralci)
-    return [ekipe, igralci]
+    pripada = Pripada(conn)
+    return [ekipe, igralci, pripada]
 
 
 def ustvari_bazo_ce_ne_obstaja(conn):
