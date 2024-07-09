@@ -48,6 +48,5 @@ igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
 # pripada = players[['leto', 'team', 'player']]
 # nastop = celota[['teamname', 'league', 'year', 'result']]
 
-ekipe.to_csv('ekipe.csv', index=False)
-igralci.to_csv('igralci.csv', index=False)
-
+ekipe.to_csv('podatki/ekipe.csv', index=False)
+igralci.to_csv('podatki/igralci.csv', index=False)

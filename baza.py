@@ -80,7 +80,7 @@ class Ekipe(Tabela):
     Tabela za ekipe.
     """
     ime = "ekipe"
-    podatki = "ekipe.csv"
+    podatki = "podatki/ekipe.csv"
 
     def ustvari(self):
         """
@@ -115,45 +115,45 @@ class Ekipe(Tabela):
             return id
 
 
-# class Igralci(Tabela):
-#     """
-#     Tabela za igralce.
-#     """
-#     ime = "igralci"
-#     podatki = "igralci.csv"
+class Igralci(Tabela):
+    """
+    Tabela za igralce.
+    """
+    ime = "igralci"
+    podatki = "podatki/igralci.csv"
 
-#     def ustvari(self):
-#         """
-#         Ustavari tabelo igralci.
-#         """
-#         self.conn.execute("""
-#             CREATE TABLE igralci (
-#                 id        INTEGER PRIMARY KEY,
-#                 Player       TEXT UNIQUE,
-#                 Pos     TEXT
-#             );
-#         """)
+    def ustvari(self):
+        """
+        Ustavari tabelo igralci.
+        """
+        self.conn.execute("""
+            CREATE TABLE igralci (
+                id        INTEGER PRIMARY KEY,
+                Player       TEXT UNIQUE,
+                Pos     TEXT
+            );
+        """)
     
-#     def dodaj_vrstico(self, **podatki):
-#         """
-#         Dodaj igralca.
+    def dodaj_vrstico(self, **podatki):
+        """
+        Dodaj igralca.
 
-#         Če igralec že obstaja, vrne obstoječi ID.
+        Če igralec že obstaja, vrne obstoječi ID.
 
-#         Argumenti:
-#         - poimenovani parametri: vrednosti v ustreznih stolpcih
-#         """
-#         assert "Player" in podatki
-#         cur = self.conn.execute("""
-#             SELECT id FROM igralci
-#             WHERE Player = :Player;
-#         """, podatki)
-#         r = cur.fetchone()
-#         if r is None:
-#             return super().dodaj_vrstico(**podatki)
-#         else:
-#             id, = r
-#             return id
+        Argumenti:
+        - poimenovani parametri: vrednosti v ustreznih stolpcih
+        """
+        assert "Player" in podatki
+        cur = self.conn.execute("""
+            SELECT id FROM igralci
+            WHERE Player = :Player;
+        """, podatki)
+        r = cur.fetchone()
+        if r is None:
+            return super().dodaj_vrstico(**podatki)
+        else:
+            id, = r
+            return id
 
 
 # class Tekmovanje(Tabela):
@@ -289,11 +289,11 @@ def pripravi_tabele(conn):
     Pripravi objekte za tabele.
     """
     ekipe = Ekipe(conn)
-    # igralci = Igralci(conn)
+    igralci = Igralci(conn)
     # tekmovanje = Tekmovanje(conn)
     # nastopa = Nastopa(conn, ekipe, tekmovanje)
     # pripada = Pripada(conn, ekipe, igralci)
-    return [ekipe]
+    return [ekipe, igralci]
 
 
 def ustvari_bazo_ce_ne_obstaja(conn):
