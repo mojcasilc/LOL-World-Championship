@@ -129,16 +129,16 @@ class Ekipe(Tabela):
 #         self.conn.execute("""
 #             CREATE TABLE igralci (
 #                 id        INTEGER PRIMARY KEY,
-#                 ime       TEXT UNIQUE,
-#                 vloga     TEXT
+#                 Player       TEXT UNIQUE,
+#                 Pos     TEXT
 #             );
 #         """)
     
 #     def dodaj_vrstico(self, **podatki):
 #         """
-#         Dodaj ekipo.
+#         Dodaj igralca.
 
-#         Če ekipe že obstaja, vrne obstoječi ID.
+#         Če igralec že obstaja, vrne obstoječi ID.
 
 #         Argumenti:
 #         - poimenovani parametri: vrednosti v ustreznih stolpcih
@@ -146,7 +146,7 @@ class Ekipe(Tabela):
 #         assert "Player" in podatki
 #         cur = self.conn.execute("""
 #             SELECT id FROM igralci
-#             WHERE ime = :ime;
+#             WHERE Player = :Player;
 #         """, podatki)
 #         r = cur.fetchone()
 #         if r is None:

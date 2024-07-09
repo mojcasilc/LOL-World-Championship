@@ -40,7 +40,7 @@ players = pd.concat(seznam2, ignore_index=True)
 teams = pd.concat(seznam3, ignore_index=True)
 
 ekipe = teams[['Team']].drop_duplicates() # naredi kategorijo in preimenuj v ime, unique
-igralci = players[['Player']].drop_duplicates()
+igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
 
 # to spremeni v csv (glej primer spodaj)
 # igralci = players[['player', 'pos']]
