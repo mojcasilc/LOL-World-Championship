@@ -42,6 +42,9 @@ ekipe = teams[['Team']].drop_duplicates() # naredi kategorijo in preimenuj v ime
 igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
 pripada = players[['leto', 'Team', 'Player']].sort_values(by=['leto', 'Team'])
 
+ekipe.insert(0,'id_ekipa', range(1, len(ekipe)+1))
+igralci.insert(0,'id_igralec', range(1, len(igralci)+1))
+
 # to spremeni v csv (glej primer spodaj)
 # igralci = players[['player', 'pos']]
 # tekmovanje = celota[['league', 'year', 'teamname']]
@@ -51,3 +54,4 @@ pripada = players[['leto', 'Team', 'Player']].sort_values(by=['leto', 'Team'])
 ekipe.to_csv('podatki/ekipe.csv', index=False)
 igralci.to_csv('podatki/igralci.csv', index=False)
 pripada.to_csv('podatki/pripada.csv', index=False)
+
