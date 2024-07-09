@@ -7,12 +7,9 @@ class Tabela:
     """
     Razred, ki predstavlja tabelo v bazi.
 
-    Polja razreda:
-    - ime: ime tabele
-    - podatki: ime datoteke s podatki ali None
     """
-    ime = None
-    podatki = None
+    ime = None #ime tabele
+    podatki = None #ime datoteke s podatki
 
     def __init__(self, conn):
         """
@@ -36,9 +33,6 @@ class Tabela:
     def uvozi(self, encoding="UTF-8"):
         """
         Metoda za uvoz podatkov.
-
-        Argumenti:
-        - encoding: kodiranje znakov
         """
         if self.podatki is None:
             return
