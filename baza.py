@@ -88,7 +88,7 @@ class Ekipe(Tabela):
         """
         self.conn.execute("""
             CREATE TABLE ekipe (
-                id_ekipa    INTEGER PRIMARY KEY AUTOINCREMENT REFERENCES pripada(id_ekipa),
+                id_ekipa    INTEGER PRIMARY KEY AUTOINCREMENT,
                 Team TEXT UNIQUE
             );
         """)
@@ -128,7 +128,7 @@ class Igralci(Tabela):
         """
         self.conn.execute("""
             CREATE TABLE igralci (
-                id_igralec        INTEGER PRIMARY KEY AUTOINCREMENT REFERENCES pripada(id_igralec),
+                id_igralec        INTEGER PRIMARY KEY AUTOINCREMENT,
                 Player       TEXT,
                 Pos     TEXT
             );
@@ -156,62 +156,45 @@ class Igralci(Tabela):
             return id
 
 
-# class Tekmovanje(Tabela):
-#     """
-#     Tabela za tekmovanja.
-#     """
-#     ime = "tekmovanje"
-#     podatki = "igre.csv"
+class Tekmovanje(Tabela):
+    """
+    Tabela za tekmovanja.
+    """
+    ime = "tekmovanje"
+    podatki = "podatki/tekmovanje.csv"
 
-#     def ustvari(self):
-#         """
-#         Ustvari tabelo tekmovanje.
-#         """
-#         self.conn.execute("""
-#             CREATE TABLE tekmovanje (
-#                 id         INTEGER PRIMARY KEY,
-#                 liga       TEXT,
-#                 leto       INTEGER
-#             );
-#         """)
+    def ustvari(self):
+        """
+        Ustvari tabelo tekmovanje.
+        """
+        self.conn.execute("""
+            CREATE TABLE tekmovanje (
+                id_tekmovanja         INTEGER PRIMARY KEY,
+                league       TEXT,
+                year       INTEGER
+            );
+        """)
+    def dodaj_vrstico(self, **podatki):
+        """
+        Dodaj tekmovanje.
 
-# class Zmagovalci(Tabela):
-#     """
-#     Tabela za zmagovalce vseh tekmovanj.
-#     """
-#     ime = "zmagovalci"
-#     podatki = ...
+        Če tekmovanje že obstaja, vrne obstoječi ID.
 
-#     def ustvari(self):
-#         """ustvari tabelo zmagovalci"""
-#         self.conn.execute(""" 
-#             CREATE TABLE zmagovalci (
-#                 ekipa   INTEGER REFERENCES ekipe (id)
-#                 tekmovanje INTEGER REFERENCES tekmovanje (id)
-#                 PRIMARY KEY (ekipa, tekmovanje))
-#         """)
+        Argumenti:
+        - poimenovani parametri: vrednosti v ustreznih stolpcih
+        """
+        assert "id_tekmovanja" in podatki
+        cur = self.conn.execute("""
+            SELECT id_tekmovanja FROM tekmovanje
+            WHERE id_tekmovanja = :id_tekmovanja;
+        """, podatki)
+        r = cur.fetchone()
+        if r is None:
+            return super().dodaj_vrstico(**podatki)
+        else:
+            id, = r
+            return id
 
-#     def dodaj_vrstico(self, **podatki):
-#         """
-#         Dodaj relacijo med igralcem in ekipo.
-
-#         Če relacija že obstaja, vrne obstoječi ID.
-
-#         Argumenti:
-#         - poimenovani parametri: vrednosti v ustreznih stolpcih
-#         """
-#         Player = podatki['Player']
-#         Team = podatki['Team']
-
-#         r = self.conn.execute("""
-#             SELECT * FROM pripada
-#             WHERE Player = ? AND Team = ?
-#         """, (Player, Team)).fetchone()
-#         if r is None:
-#             return super().dodaj_vrstico(**podatki)
-#         else:
-#             id = r
-#             return id
 
 class Pripada(Tabela):
     """
@@ -226,10 +209,10 @@ class Pripada(Tabela):
         """
         self.conn.execute("""
             CREATE TABLE pripada (
-                id      INTEGER PRIMARY KEY AUTOINCREMENT,
-                id_igralec   INTEGER,
-                id_ekipa     INTEGER,
-                leto      INTEGER
+                id_igralec   INTEGER REFERENCES igralci(id_igralec),
+                id_ekipa     INTEGER REFERENCES ekipe(id_ekipa),
+                leto         INTEGER,
+                PRIMARY KEY(id_igralec, id_ekipa, leto)
             );
         """)
         
@@ -275,55 +258,67 @@ class Pripada(Tabela):
 
         
         
-# class Nastopa(Tabela):
+# class Nastop(Tabela):
 #     """
 #     Tabela za relacijo pripadnosti ekipe tekmovanju.
 #     """
-#     ime = "nastopa"
-#     podatki = "podatki/ekipe.csv"
-
-#     def __init__(self, conn, ekipe, tekmovanje):
-#         """
-#         Konstruktor tabele pripadnosti tekmovanju.
-
-#         Argumenti:
-#         - conn: povezava na bazo
-#         - ekipe: tabela za tekmovanja
-#         """
-#         super().__init__(conn)
-#         self.ekipe = ekipe
-#         self.tekmovanje = tekmovanje
+#     ime = "nastop"
+#     podatki = "podatki/nastop.csv"
 
 #     def ustvari(self):
 #         """
-#         Ustvari tabelo tekmovanja.
+#         Ustvari tabelo nastopov.
 #         """
 #         self.conn.execute("""
-#             CREATE TABLE nastopa (
-#                 tekmovanje   INTEGER REFERENCES tekmovanje (id),
-#                 ekipa        INTEGER REFERENCES ekipe (id),
-#                 PRIMARY KEY (tekmovanje, ekipa)
+#             CREATE TABLE nastop (
+#                 id              INTEGER PRIMARY KEY AUTOINCREMENT,
+#                 id_tekmovanja   INTEGER,
+#                 id_ekipa        INTEGER,
+#                 datum           DATE,
+#                 st_tekme        INTEGER,
+#                 rezultat        INTEGER     
 #             );
 #         """)
     
 #     def dodaj_vrstico(self, **podatki):
 #         """
 #         Dodaj relacijo med igralcem in ekipo.
+
 #         Če relacija že obstaja, vrne obstoječi ID.
+
 #         Argumenti:
 #         - poimenovani parametri: vrednosti v ustreznih stolpcih
 #         """
-#         Player = podatki['Player']
-#         Team = podatki['Team']
+        
+#         tekmovanje = podatki['league']
+#         leto = podatki['date'].split(' ')[0].split('-')[0]
+#         ekipa = podatki['teamname']
+        
+#         id_tekmovanja = self.conn.execute("""
+#             SELECT id_tekmovanja FROM tekmovanje
+#             WHERE id_tekmovanja = ? AND leto = ?
+#         """, (tekmovanje, leto)).fetchone()
+
+#         id_ekipa = self.conn.execute("""
+#             SELECT id_ekipa FROM ekipe
+#             WHERE teamname = ? 
+#         """, (ekipa,)).fetchone()
+
+#         if id_tekmovanja is None or id_ekipa is None:
+#             return None
+        
+#         id_tekmovanja = id_tekmovanja[0]
+#         id_ekipa = id_ekipa[0]
+
 #         r = self.conn.execute("""
 #             SELECT * FROM pripada
-#             WHERE Player = ? AND Team = ?
-#         """, (Player, Team)).fetchone()
+#             WHERE id_tekmovanja = ? AND id_ekipa = ? AND leto = ?
+#         """, (id_tekmovanja, id_ekipa, leto)).fetchone()
+
 #         if r is None:
-#             return super().dodaj_vrstico(**podatki)
+#             return super().dodaj_vrstico(id_tekmovanja=id_tekmovanja, id_ekipa=id_ekipa, leto=leto)
 #         else:
-#             id = r
-#             return id
+#             return r[0]
         
 
 
@@ -375,10 +370,10 @@ def pripravi_tabele(conn):
     """
     ekipe = Ekipe(conn)
     igralci = Igralci(conn)
-    # tekmovanje = Tekmovanje(conn)
-    # nastopa = Nastopa(conn, ekipe, tekmovanje)
+    tekmovanje = Tekmovanje(conn)
+    #nastopa = Nastop(conn)
     pripada = Pripada(conn)
-    return [ekipe, igralci, pripada]
+    return [ekipe, igralci, pripada, tekmovanje]
 
 
 def ustvari_bazo_ce_ne_obstaja(conn):

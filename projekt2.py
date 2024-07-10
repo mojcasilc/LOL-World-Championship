@@ -41,7 +41,7 @@ teams = pd.concat(seznam3, ignore_index=True)
 ekipe = teams[['Team']].drop_duplicates() # naredi kategorijo in preimenuj v ime, unique
 igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
 pripada = players[['leto', 'Team', 'Player']].sort_values(by=['leto', 'Team'])
-nastop = celota[['league', 'year', 'date', 'game', 'teamname', 'result']].drop_duplicates()
+nastop = celota[['league', 'date', 'game', 'teamname', 'result']].drop_duplicates()
 tekmovanje = celota[['league', 'year']].drop_duplicates()
 
 # #spremenimo datum
