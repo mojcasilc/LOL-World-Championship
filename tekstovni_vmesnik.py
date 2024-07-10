@@ -25,11 +25,9 @@ def izpisi_igralce(ekipa):
     Izpiše igralce podane ekipe po letih.
     """
     leto = input('Vnesi leto (prazno pomeni vsa leta): ') or None
-    if ekipa.poisci_igralce(conn, leto=leto):
-        for team, leto, player, pos in ekipa.poisci_igralce(conn, leto=leto):
-            print(f'- {player}, {pos}, {leto}')
-    else:
-        print('Tega leta ni bilo te ekipe na tekmovanju.')
+    for team, leto, player, pos in ekipa.poisci_igralce(conn, leto=leto):
+        print(f'- {player}, {pos}, {leto}')
+
 
 def izpisi_ekipo(igralec):
     """
