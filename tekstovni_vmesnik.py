@@ -24,8 +24,12 @@ def izpisi_igralce(ekipa):
     """
     Izpiše igralce podane ekipe po letih.
     """
-    for team, leto, player, pos in ekipa.poisci_igralce(conn):
-        print(f'- {player}, {pos}, {leto}')
+    leto = input('Vnesi leto (prazno pomeni vsa leta): ') or None
+    if ekipa.poisci_igralce(conn, leto=leto):
+        for team, leto, player, pos in ekipa.poisci_igralce(conn, leto=leto):
+            print(f'- {player}, {pos}, {leto}')
+    else:
+        print('Tega leta ni bilo te ekipe na tekmovanju.')
 
 def izpisi_ekipo(igralec):
     """
@@ -82,24 +86,22 @@ def igralec_meni():
     Prikazuje igralčev meni, dokler uporabnik ne izbere izhoda.
     """
     igralec = poisci_igralca()
-    while True:
-        print('Kaj bi rad delal?')
-        izbira = vnesi_izbiro(IgralecMeni)
-        if izbira == IgralecMeni.SEL_NAZAJ:
-            return
-        izbira.funkcija(igralec)
+    print('Kaj bi rad delal?')
+    izbira = vnesi_izbiro(IgralecMeni)
+    if izbira == IgralecMeni.SEL_NAZAJ:
+        return
+    izbira.funkcija(igralec)
 
 def ekipa_meni():
     """
     Prikazuje meni ekipe, dokler uporabnik ne izbere izhoda.
     """
     ekipa = poisci_ekipo()
-    while True:
-        print('Kaj bi rad delal?')
-        izbira = vnesi_izbiro(EkipaMeni)
-        if izbira == EkipaMeni.SEL_NAZAJ:
-            return
-        izbira.funkcija(ekipa)
+    print('Kaj bi rad delal?')
+    izbira = vnesi_izbiro(EkipaMeni)
+    if izbira == EkipaMeni.SEL_NAZAJ:
+        return
+    izbira.funkcija(ekipa)
 
 def glavni_meni():
     """
