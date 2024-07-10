@@ -41,17 +41,20 @@ teams = pd.concat(seznam3, ignore_index=True)
 ekipe = teams[['Team']].drop_duplicates() # naredi kategorijo in preimenuj v ime, unique
 igralci = players[['Player', 'Pos']].drop_duplicates().sort_values(by='Player')
 pripada = players[['leto', 'Team', 'Player']].sort_values(by=['leto', 'Team'])
+nastop = celota[['league', 'year', 'date', 'game', 'teamname', 'result']].drop_duplicates()
+tekmovanje = celota[['league', 'year']].drop_duplicates()
 
+#dodamo id v datoteke
 ekipe.insert(0,'id_ekipa', range(1, len(ekipe)+1))
 igralci.insert(0,'id_igralec', range(1, len(igralci)+1))
+nastop.insert(0,'id_igre', range(1, len(nastop)+1))
+tekmovanje.insert(0, 'id_tekmovanja', range(1, len(tekmovanje)+1))
 
-# to spremeni v csv (glej primer spodaj)
-# igralci = players[['player', 'pos']]
-# tekmovanje = celota[['league', 'year', 'teamname']]
-# pripada = players[['leto', 'team', 'player']]
-# nastop = celota[['teamname', 'league', 'year', 'result']]
-
+# to spremeni v csv 
 ekipe.to_csv('podatki/ekipe.csv', index=False)
 igralci.to_csv('podatki/igralci.csv', index=False)
 pripada.to_csv('podatki/pripada.csv', index=False)
+nastop.to_csv('podatki/nastop.csv', index=False)
+tekmovanje.to_csv('podatki/tekmovanje.csv', index=False)
+
 
