@@ -124,7 +124,7 @@ class Igralci(Tabela):
 
     def ustvari(self):
         """
-        Ustavari tabelo igralci.
+        Ustvari tabelo igralci.
         """
         self.conn.execute("""
             CREATE TABLE igralci (
@@ -137,7 +137,6 @@ class Igralci(Tabela):
     def dodaj_vrstico(self, **podatki):
         """
         Dodaj igralca.
-
         Če igralec že obstaja, vrne obstoječi ID.
 
         Argumenti:
