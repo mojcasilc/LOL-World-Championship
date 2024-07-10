@@ -1,130 +1,91 @@
 import bottle
-from model import Voznik, Ekipa, Proga, Dirka, dodaj_rezultate_dirke
+from model import Igralec, Ekipa, Tekmovanje
 
-@bottle.get('/')
-def naslovna_stran():
-    return bottle.template('naslovna_stran.html', napaka=None)
+# Nastavitev Bottle aplikacije
+app = bottle.Bottle()
 
-@bottle.get ('/static/<pot:path>')
+# Nastavitev statične datoteke
+@app.get('/static/<pot:path>')
 def vrni_staticno(pot):
     return bottle.static_file(pot, root="static")
 
-@bottle.get('/voznik/')
-def isci_voznika():
+# Naslovna stran
+@app.get('/')
+def naslovna_stran():
+    return bottle.template('naslovna_stran.html', napaka=None)
+
+# Iskanje igralca
+@app.get('/igralec/')
+def isci_igralca():
     iskalni_niz = bottle.request.query.getunicode('iskalni_niz')
-    vozniki = list(Voznik.poisci(""))
+    igralci = list(Igralec.poisci(""))
     if iskalni_niz:
-        vozniki = [voznik for voznik in vozniki if iskalni_niz.lower() in voznik.ime.lower()]
+        igralci = [igralec for igralec in igralci if iskalni_niz.lower() in igralec.igralec.lower()]
     return bottle.template(
-        'voznik.html',
+        'igralec.html',
         iskalni_niz=iskalni_niz,
-        vozniki=vozniki
+        igralci=igralci
     )
 
-@bottle.get('/voznik/<priimek>/')
-def tocke_in_zmage_voznika(priimek):
-    vozniki = Voznik.poisci(priimek)
-    tocke = []
-    zmage = []
-    profil = []
-    ekipe = []
-    for voznik in vozniki:
-        tocke.extend(voznik.poisci_tocke())
-        zmage.extend(voznik.poisci_zmage())
-        profil.append((voznik.poisci_skupno_st_nastopov(), 
-                       voznik.poisci_skupno_st_zmag(), 
-                       voznik.poisci_skupno_st_stopnick(), 
-                       voznik.poisci_skupno_st_tock()))
-        ekipe.extend(voznik.poisci_ekipe())
+# Podrobnosti o igralcu
+@app.get('/igralec/<id_igralec:int>/')
+def podrobnosti_igralca(id_igralec):
+    igralec = Igralec(id_igralec=id_igralec)
+    ekipe = list(igralec.poisci_ekipe())
     return bottle.template(
-        'voznik_vse.html',
-        tocke=tocke,
-        voznik=voznik,
-        zmage=zmage,
-        profil=profil,
+        'igralec_podrobnosti.html',
+        igralec=igralec,
         ekipe=ekipe
     )
 
-@bottle.get('/ekipa/')
+# Iskanje ekipe
+@app.get('/ekipa/')
 def isci_ekipo():
     iskalni_niz = bottle.request.query.getunicode('iskalni_niz')
     ekipe = list(Ekipa.poisci(""))
     if iskalni_niz:
         ekipe = [ekipa for ekipa in ekipe if iskalni_niz.lower() in ekipa.ime.lower()]
-    
     return bottle.template(
         'ekipa.html',
         iskalni_niz=iskalni_niz,
         ekipe=ekipe
     )
 
-@bottle.get('/ekipa/<ime>/')
-def voznik_in_leto_ekipe(ime):
-    ekipe = Ekipa.poisci(ime)
-    vozniki = []
-    for ekipa in ekipe:
-        vozniki.extend(ekipa.poisci_voznike())
+# Podrobnosti o ekipi
+@app.get('/ekipa/<id_ekipa:int>/')
+def podrobnosti_ekipe(id_ekipa):
+    ekipa = Ekipa(id_ekipa=id_ekipa)
+    vozniki = list(ekipa.poisci_igralce())
     return bottle.template(
-        'ekipa_vse.html',
-        vozniki=vozniki,
-        ekipa=ekipa
+        'ekipa_podrobnosti.html',
+        ekipa=ekipa,
+        vozniki=vozniki
     )
 
-@bottle.get('/proga/')
-def isci_progo():
+# Iskanje tekmovanja
+@app.get('/tekmovanje/')
+def isci_tekmovanje():
     iskalni_niz = bottle.request.query.getunicode('iskalni_niz')
-    proge = list(Proga.poisci(""))
+    tekmovanja = list(Tekmovanje.poisci(""))
     if iskalni_niz:
-        proge = [proga for proga in proge if iskalni_niz.lower() in proga.ime.lower()]
-    
+        tekmovanja = [tekmovanje for tekmovanje in tekmovanja if iskalni_niz.lower() in tekmovanje.tip.lower()]
     return bottle.template(
-        'proga.html',
+        'tekmovanje.html',
         iskalni_niz=iskalni_niz,
-        proge=proge
+        tekmovanja=tekmovanja
     )
 
-@bottle.get('/proga/<ime>/')
-def zmagovalci_proge(ime):
-    proge = Proga.poisci(ime)
-    zmagovalci = []
-    for proga in proge:
-        zmagovalci.extend(proga.poisci_zmagovalce())
+# Podrobnosti o tekmovanju
+@app.get('/tekmovanje/<id_tekmovanja:int>/')
+def podrobnosti_tekmovanja(id_tekmovanja):
+    tekmovanje = Tekmovanje(id_tekmovanja=id_tekmovanja)
+    zmagovalci = list(tekmovanje.poisci_zmagovalce())
     return bottle.template(
-        'proga_vse.html',
-        zmagovalci=zmagovalci,
-        proga=proga
+        'tekmovanje_podrobnosti.html',
+        tekmovanje=tekmovanje,
+        zmagovalci=zmagovalci
     )
 
-@bottle.get('/dirka/')
-def isci_leta_dirka():
-    leta = Dirka.poisci_leto()
-    return bottle.template(
-        'dirka.html',
-        leta=leta
-    )
-
-@bottle.get('/dirka/<leto>/')
-def dirka_leto(leto):
-    dirke = Dirka.poisci_dirke_v_letu(leto)
-    return bottle.template(
-        'dirka_leto.html',
-        dirke=dirke,
-        leto=leto
-    )
-
-@bottle.get('/dirka/<leto>/<datum>/')
-def dirka_leto(leto, datum):
-    rezultati = []
-    dirke = Dirka.poisci_dirke_v_letu(leto)
-    for dirka in dirke:
-        if dirka.datum == datum:
-            rezultati.extend(dirka.poisci_rezultate_dirke())
-
-    return bottle.template(
-        'dirka_leto_rezultati.html',
-        rezultati=rezultati,
-        leto=leto,
-        dirka=dirka
-    )
-
-bottle.run(debug=True, reloader=True)
+# Zagon Bottle aplikacije
+if __name__ == '__main__':
+    bottle.run(app, debug=True, reloader=True)
