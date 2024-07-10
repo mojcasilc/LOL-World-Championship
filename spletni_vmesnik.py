@@ -62,7 +62,7 @@ def podrobnosti_ekipe(id_ekipa):
         vozniki=vozniki
     )
 
-# Iskanje tekmovanja
+# Iskanje tekmovanja 
 @app.get('/tekmovanje/')
 def isci_tekmovanje():
     iskalni_niz = bottle.request.query.getunicode('iskalni_niz')
