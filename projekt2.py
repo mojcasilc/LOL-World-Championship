@@ -35,6 +35,8 @@ for leto in range(2014, 2024):
         seznam3.append(podatki_teams_msi)
 
 celota = pd.concat(seznam1, ignore_index=True)
+celota.loc[celota['teamname'] == 'KaBuM! e-Sports', 'teamname'] = 'KaBuM! Esports'
+
 players = pd.concat(seznam2, ignore_index=True)
 teams = pd.concat(seznam3, ignore_index=True)
 
