@@ -207,7 +207,6 @@ class Tekmovanje:
         
 
 # tekmovanje = Tekmovanje('WLDs', 2020, 1)
-
 # print("Iskanje zmagovalcev po ligi 'Worlds' in letu 2020:")
 # results = tekmovanje.poisci_zmagovalce(conn, league='WLDs', year=2020)
 # for result in results:
