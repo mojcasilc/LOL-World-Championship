@@ -9,4 +9,4 @@ baza.ustvari_bazo_ce_ne_obstaja(conn)
 conn.execute('PRAGMA foreign_keys = ON')
 
 # uporabnik, zanr, oznaka, film, oseba, vloga, pripada = baza.pripravi_tabele(conn)
-ekipa, igralci, pripada = baza.pripravi_tabele(conn)
+ekipa, igralci, pripada, tekmovanje = baza.pripravi_tabele(conn)

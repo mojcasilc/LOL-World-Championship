@@ -44,6 +44,9 @@ pripada = players[['leto', 'Team', 'Player']].sort_values(by=['leto', 'Team'])
 nastop = celota[['league', 'year', 'date', 'game', 'teamname', 'result']].drop_duplicates()
 tekmovanje = celota[['league', 'year']].drop_duplicates()
 
+# #spremenimo datum
+# nastop['datum'] = nastop['date'].str.split(' ').str[0]
+
 #dodamo id v datoteke
 ekipe.insert(0,'id_ekipa', range(1, len(ekipe)+1))
 igralci.insert(0,'id_igralec', range(1, len(igralci)+1))
