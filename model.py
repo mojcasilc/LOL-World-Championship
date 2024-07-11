@@ -203,6 +203,22 @@ class Tekmovanje:
             """
             cursor = conn.execute(sql, (year, year)) 
 
+        else:
+            sql = """
+                SELECT e.Team, t.league, t.year, n.datum
+                FROM tekmovanje t
+                JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
+                JOIN ekipe e ON n.id_ekipa = e.id_ekipa
+                WHERE n.rezultat = 1 AND (t.league, t.year, n.datum) IN (
+                    SELECT t.league, t.year, MAX(n.datum)
+                    FROM tekmovanje t
+                    JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
+                    WHERE n.rezultat = 1
+                    GROUP BY t.league, t.year)
+                ORDER BY n.datum DESC, t.league
+            """
+            cursor = conn.execute(sql)
+
         return cursor.fetchall()  
         
 

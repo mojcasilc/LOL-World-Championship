@@ -25,8 +25,12 @@ def izpisi_igralce(ekipa):
     Izpiše igralce podane ekipe po letih.
     """
     leto = input('Vnesi leto (prazno pomeni vsa leta): ') or None
+    st = 0
     for team, leto, player, pos in ekipa.poisci_igralce(conn, leto=leto):
+        st += 1
         print(f'- {player}, {pos}, {leto}')
+    if st == 0:
+        print(f'Leta {leto} ekipa {ekipa} ni tekmovala.')
 
 
 def izpisi_ekipo(igralec):
@@ -77,7 +81,7 @@ def izpisi_zmagovalce_tekmovanja():
     tekmovanje = Tekmovanje('', '', '')  # Dummy instance
     results = tekmovanje.poisci_zmagovalce(conn, league=league, year=year)
     for result in results:
-        print(f'- Ekipa: {result[0]}, Liga: {result[1]}, Datum: {result[2]}')
+        print(f'- Datum: {result[2]}, Liga: {result[1]}, Ekipa: {result[0]}')
 
 def igralec_meni():
     """
