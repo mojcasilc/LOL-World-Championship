@@ -1,0 +1,13 @@
+% rebase('osnova.html')
+
+<h1 class="title is-1">Tekmovanja {{oseba.ime}}</h1>
+
+<div>
+    % if tekmovanja:
+        <ul>
+        % for tekmovanje in tekmovanja:
+            <li>{{tekmovanje.tip}} ({{tekmovanje.leto}})</li>    
+        % end
+        </ul>
+    % end
+</div>

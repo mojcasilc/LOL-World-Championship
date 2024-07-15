@@ -1,9 +1,10 @@
-from model import Igralec, Ekipa, Tekmovanje
-from enum import Enum
-import sqlite3
+from model import Igralec, Ekipa
 
-# Povezava z bazo
-conn = sqlite3.connect('lol.db')
+
+ISKAL_IGRALCE = 'Iskal igralce'
+ISKAL_EKIPO = 'Iskal ekipo'
+SEL_DOMOV = 'Šel domov'
+MOZNOSTI = [ISKAL_IGRALCE, ISKAL_EKIPO, SEL_DOMOV]
 
 def vnesi_izbiro(moznosti):
     """
@@ -20,148 +21,86 @@ def vnesi_izbiro(moznosti):
         except (ValueError, IndexError):
             print("Napačna izbira!")
 
-def izpisi_igralce(ekipa):
-    """
-    Izpiše igralce podane ekipe po letih.
-    """
-    leto = input('Vnesi leto (prazno pomeni vsa leta): ') or None
-    st = 0
-    for team, leto, player, pos in ekipa.poisci_igralce(conn, leto=leto):
-        st += 1
-        print(f'- {player}, {pos}, {leto}')
-    if st == 0:
-        print(f'Leta {leto} ekipa {ekipa} ni tekmovala.')
-
-
-def izpisi_ekipo(igralec):
-    """
-    Izpiše ekipe podanega igralca po letih.
-    """
-    for player, leto, team, pos in igralec.poisci_ekipe():
-        print(f'- {leto}: {team}')
-
 def poisci_igralca():
     """
-    Poišče igralca, ki ga vnese uporabnik.
+    Zahteva vnos (dela) imena
+    in vrne ustreznega igralca.
     """
     while True:
-        vnos = input('Kateri igralec te zanima? ')
-        igralci = list(Igralec.poisci(vnos, conn))
+        vnos = input('Kdo te zanima? ')
+        igralci = list(Igralec.poisci(vnos))
         if len(igralci) == 1:
-            print(igralci[0].igralec)
             return igralci[0]
         elif len(igralci) == 0:
             print('Tega igralca ne najdem. Poskusi znova.')
+            return poisci_igralca()
         else:
             print('Našel sem več igralcev, kateri od teh te zanima?')
             return vnesi_izbiro(igralci)
 
+     
+def izpisi_tekmovanja(igralec):
+    """
+    Izpiši ime igralca ter vse tekme,
+    v katerih je igral
+    """
+    print(igralec.ime)
+    for tekmovanje in igralec.poisci_tekmovanja():
+        print(f'- {tekmovanje.tip} {tekmovanje.leto}')
+
+
 def poisci_ekipo():
     """
-    Poišče ekipo, ki jo vnese uporabnik.
+    Zahtevaj vnos (dela) imena
+    in vrni ustrezno osebo.
     """
     while True:
         vnos = input('Katera ekipa te zanima? ')
-        ekipe = list(Ekipa.poisci(vnos, conn))
+        ekipe = list(Ekipa.poisci(vnos))
         if len(ekipe) == 1:
-            print(ekipe[0].ime)
             return ekipe[0]
         elif len(ekipe) == 0:
             print('Te ekipe ne najdem. Poskusi znova.')
+            return poisci_ekipo()
         else:
             print('Našel sem več ekip, katera od teh te zanima?')
             return vnesi_izbiro(ekipe)
 
-def izpisi_zmagovalce_tekmovanja():
+def izpisi_tekmovanja_ekipe(ekipa):
     """
-    Izpiše zmagovalce tekmovanja po ligi in/ali letu.
+    Izpiše ime ekipe ter vse tekme,
+    v katerih je sodelovala
     """
-    league = input('Vnesi ligo tekmovanja (prazno za vse lige): ')
-    year = input('Vnesi leto tekmovanja (prazno za vsa leta): ')
-    tekmovanje = Tekmovanje('', '', '')  # Dummy instance
-    results = tekmovanje.poisci_zmagovalce(conn, league=league, year=year)
-    for result in results:
-        print(f'- Datum: {result[2]}, Liga: {result[1]}, Ekipa: {result[0]}')
+    print(ekipa.ime)
+    for _, tip, leto in ekipa.poisci_tekmovanja():
+        print(f'- {tip} {leto}')
 
-def igralec_meni():
-    """
-    Prikazuje igralčev meni, dokler uporabnik ne izbere izhoda.
-    """
-    igralec = poisci_igralca()
-    print('Kaj bi rad delal?')
-    izbira = vnesi_izbiro(IgralecMeni)
-    if izbira == IgralecMeni.SEL_NAZAJ:
-        return
-    izbira.funkcija(igralec)
 
-def ekipa_meni():
-    """
-    Prikazuje meni ekipe, dokler uporabnik ne izbere izhoda.
-    """
-    ekipa = poisci_ekipo()
-    print('Kaj bi rad delal?')
-    izbira = vnesi_izbiro(EkipaMeni)
-    if izbira == EkipaMeni.SEL_NAZAJ:
-        return
-    izbira.funkcija(ekipa)
 
 def glavni_meni():
-    """
-    Prikazuje glavni meni, dokler uporabnik ne izbere izhoda.
-    """
-    print('Pozdravljen v bazi LoL!')
+    print('Pozdravljen v bazi prvenstev Leage if legends!')
     while True:
         print('Kaj bi rad delal?')
-        izbira = vnesi_izbiro(GlavniMeni)
-        izbira.funkcija()
-        if izbira == GlavniMeni.SEL_DOMOV:
+        try:
+            izbira = vnesi_izbiro(MOZNOSTI)
+        except KeyboardInterrupt:
+            izbira = SEL_DOMOV
+        if izbira == ISKAL_IGRALCE:
+            try:
+                igralec = poisci_igralca() # vrne en objekt igralca
+                izpisi_tekmovanja(igralec)
+            except KeyboardInterrupt:
+                continue
+        elif izbira == ISKAL_EKIPO:
+            try:
+                ekipa = poisci_ekipo() # vrne en objekt igralca
+                izpisi_tekmovanja_ekipe(ekipa)
+            except KeyboardInterrupt:
+                continue
+        elif izbira == SEL_DOMOV:
+            print('Adijo!')
             return
 
-def domov():
-    """
-    Pozdravi pred izhodom.
-    """
-    print('Adijo!')
 
-class Meni(Enum):
-    """
-    Razred za izbire v menijih.
-    """
-    def __init__(self, ime, funkcija):
-        """
-        Konstruktor izbire.
-        """
-        self.ime = ime
-        self.funkcija = funkcija
-
-    def __str__(self):
-        """
-        Znakovna predstavitev izbire.
-        """
-        return self.ime
-
-class IgralecMeni(Meni):
-    """
-    Izbire v meniju igralca.
-    """
-    IZPISAL_EKIPE = ('Izpisal ekipe', izpisi_ekipo)
-    SEL_NAZAJ = ('Šel nazaj', glavni_meni)
-
-class EkipaMeni(Meni):
-    """
-    Izbire v meniju ekipe.
-    """
-    IZPISAL_IGRALCE = ('Izpisal igralce', izpisi_igralce)
-    SEL_NAZAJ = ('Šel nazaj', glavni_meni)
-
-class GlavniMeni(Meni):
-    """
-    Izbire v glavnem meniju.
-    """
-    ISKAL_IGRALCA = ('Iskal igralca', igralec_meni)
-    ISKAL_EKIPO = ('Iskal ekipo', ekipa_meni)
-    ISKAL_TEKMOVANJE = ('Iskal zmagovalce tekmovanja', izpisi_zmagovalce_tekmovanja)
-    SEL_DOMOV = ('Šel domov', domov)
-
-
-glavni_meni()
+if __name__ == '__main__':
+    glavni_meni()
