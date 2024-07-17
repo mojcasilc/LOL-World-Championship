@@ -89,7 +89,11 @@ class Igralec:
         """
         Vrne vse igralce, ki v imenu vsebujejo dani niz.
         """
-        sql = "SELECT id, ime FROM igralec WHERE ime LIKE ?"
+        sql = """
+            SELECT id, ime FROM igralec
+            WHERE ime LIKE ?
+            ORDER BY ime
+            """
         cur = conn.cursor()
         try:
             cur.execute(sql, ['%' + niz + '%'])
@@ -157,30 +161,78 @@ class Ekipa:
         Vrne tekmovanja ekipe po letih ko je igrala.
         """
         sql = """
-            SELECT e.ime, t.tip, t.leto
+            SELECT DISTINCT t.id, t.tip, t.leto
             FROM ekipa e
             JOIN pripada p ON e.id = p.ekipa
             JOIN tekmovanje t ON p.tekmovanje = t.id
-            WHERE e.id = 4
+            WHERE e.id = ?
             ORDER BY t.leto DESC, t.tip
         """
         cur = conn.cursor()
         try:
             cur.execute(sql, [self.id])
-            return [(ime, tip, leto) for ime, tip, leto in cur]
+            return [Tekmovanje(*podatki) for podatki in cur]
         finally:
             cur.close()
 
     @staticmethod
     def poisci(niz):
         """
-        Vrne vse igralce, ki v imenu vsebujejo dani niz.
+        Vrne vse ekipe, ki v imenu vsebujejo dani niz.
         """
         sql = "SELECT id, ime FROM ekipa WHERE ime LIKE ?"
         cur = conn.cursor()
         try:
             cur.execute(sql, ['%' + niz + '%'])
             return [Igralec(*vrstica) for vrstica in cur]
+        finally:
+            cur.close()
+    
+    def igralci(self, tekmovanje):
+        """
+        Vrne igralce, ki so bili na tekmovanje 'tekmovanje' v ekipi
+        """
+        sql = """
+            SELECT i.id, i.ime FROM ekipa e
+            JOIN pripada p ON e.id = p.ekipa
+            JOIN igralec i ON p.igralec = i.id
+            JOIN tekmovanje t ON p.tekmovanje = t.id
+            WHERE e.id = ? AND t.id = ?
+            ORDER BY i.ime
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id, tekmovanje])
+            return [Igralec(*podatki) for podatki in cur]
+        finally:
+            cur.close()
+    
+    def zmage(self):
+        """
+        Vrne tekmovanja na akterih je ekipa zmagala
+        """
+        sql = """
+            WITH zmagovalci AS (
+            SELECT t.id AS id, t.tip AS tip, t.leto AS leto, MAX(a.st_igre), n.zmaga, e.id AS id_ekipe
+            FROM ekipa e
+            JOIN nastopa n ON e.id = n.ekipa
+            JOIN tekma a ON n.tekma = a.id
+            JOIN tekmovanje t ON t.id = a.tekmovanje
+            WHERE n.zmaga = 1 AND a.datum IN (
+                SELECT MAX(a.datum) FROM tekma a
+                JOIN tekmovanje t ON t.id = a.tekmovanje
+                GROUP BY t.id
+                )
+            GROUP BY t.id
+            ORDER BY t.id)
+
+            SELECT id, tip, leto FROM zmagovalci
+            WHERE id_ekipe = ?
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id])
+            return [Tekmovanje(*podatki) for podatki in cur]
         finally:
             cur.close()
 
@@ -201,94 +253,131 @@ class Tekmovanje:
         Znakovna predstavitev ekipe.
         Vrne ime ekipe.
         """
-        return self.tip + " " + self.leto  
-
-
-
-
-# class Tekmovanje:
-#     """
-#     Razred za tekmovanje.
-#     """
-
-#     def __init__(self, tip, leto, id_tekmovanja):
-#         """
-#         Konstruktor tekmovanja.
-#         """
-#         self.id_tekmovanja = id_tekmovanja
-#         self.tip = tip
-#         self.leto = leto
-
-#     def __str__(self):
-#         """
-#         Znakovna predstavitev tekmovanja.
-#         Vrne tip in leto.
-#         """
-#         return self.tip + ", " + self.leto  
+        return self.tip + " " + self.leto
     
-#     def poisci_zmagovalce(self, conn, league=None, year=None):
-#         """
-#         Vrne zmagovalce tekmovanja po ligi in/ali letu.
-#         """
-#         if league and year:
-#             sql = """
-#                 SELECT e.Team, t.league, n.datum 
-#                 FROM tekmovanje t
-#                 JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                 JOIN ekipe e ON n.id_ekipa = e.id_ekipa
-#                 WHERE t.league = ? AND t.year = ? AND n.rezultat = 1
-#                 ORDER BY n.datum DESC
-#                 LIMIT 1
-#             """
-            
-#             cursor = conn.execute(sql, (league, year))
+    @staticmethod
+    def z_id(id):
+        """
+        Vrne tekmovanje z navedenim ID-jem.
+        """
+        sql = """
+          SELECT id, tip, leto FROM tekmovanje WHERE id = ?
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [id])
+            vrstica = cur.fetchone()
+            if vrstica is None:
+                raise ValueError(f"Ekipa z ID-jem {id} ne obstaja!")
+            return Tekmovanje(*vrstica)
+        finally:
+            cur.close()
+        
+    def tekme(self):
+        """
+        Vrne tekme,ki so se odvijale na tekmovanju
+        """
+        sql = """
+            SELECT a.id, a.tekmovanje, a.datum, a.cas, a.st_igre, e.id, e.ime FROM tekmovanje t
+            JOIN tekma a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.tekma
+            JOIN ekipa e ON n.ekipa = e.id
+            WHERE t.id = ? AND n.zmaga = 1
+            ORDER BY a.datum, a.cas
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id])
+            return [(Tekma(*podatki), Ekipa(id=id, ime=ime)) for *podatki, id, ime in cur]
+        finally:
+            cur.close()
+    
+    def prva_ekipa(self):
+        """
+        Vrne zmagovalno ekipo
+        """
+        sql = """
+            SELECT e.id, e.ime
+            FROM tekmovanje t
+            JOIN tekma a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.tekma
+            JOIN ekipa e ON n.ekipa = e.id
+            WHERE t.id = ? AND n.zmaga = 1
+            ORDER BY a.datum DESC, a.cas DESC
+            LIMIT 1
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id])
+            return [Ekipa(*podatki) for podatki in cur]
+        finally:
+            cur.close()
+    
+    def druga_ekipa(self):
+        """
+        Vrne zmagovalno ekipo
+        """
+        sql = """
+            SELECT e.id, e.ime
+            FROM tekmovanje t
+            JOIN tekma a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.tekma
+            JOIN ekipa e ON n.ekipa = e.id
+            WHERE t.id = ? AND n.zmaga = 0
+            ORDER BY a.datum DESC, a.cas DESC
+            LIMIT 1
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id])
+            return [Ekipa(*podatki) for podatki in cur]
+        finally:
+            cur.close()
 
-#         elif league:
-#             sql = """
-#                 SELECT e.Team, t.league, n.datum
-#                 FROM tekmovanje t
-#                 JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                 JOIN ekipe e ON n.id_ekipa = e.id_ekipa
-#                 WHERE t.league = ? AND n.rezultat = 1 AND (t.year, n.datum) IN (
-#                     SELECT t.year, MAX(n.datum)
-#                     FROM tekmovanje t
-#                     JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                     WHERE t.league = ? AND n.rezultat = 1
-#                     GROUP BY t.year)
-#                 ORDER BY t.year DESC;
-#             """
-#             cursor = conn.execute(sql, (league, league)) 
+    def tretja_ekipa(self):
+        """
+        Vrne zmagovalno ekipo
+        """
+        sql = """
+            SELECT e.id, e.ime, MAX(a.st_igre)
+            FROM ekipa e
+            JOIN nastopa n ON e.id = n.ekipa
+            JOIN tekma a ON n.tekma = a.id
+            JOIN tekmovanje t ON t.id = a.tekmovanje
+            WHERE t.id = ? AND n.zmaga=0 AND a.datum IN (
+                SELECT DISTINCT a.datum FROM tekma a
+                JOIN tekmovanje t ON t.id = a.tekmovanje
+                WHERE t.id = ?
+                ORDER BY a.datum DESC
+                LIMIT 2 OFFSET 1)
+            GROUP BY a.datum
+            ORDER BY e.ime
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id, self.id])
+            return [Ekipa(*podatki) for *podatki, _ in cur]
+        finally:
+            cur.close()
+    
 
-#         elif year:
-#             sql = """
-#                 SELECT e.Team, t.league, n.datum
-#                 FROM tekmovanje t
-#                 JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                 JOIN ekipe e ON n.id_ekipa = e.id_ekipa
-#                 WHERE t.year = ? AND n.rezultat = 1 AND (t.league, n.datum) IN (
-#                     SELECT t.league, MAX(n.datum)
-#                     FROM tekmovanje t
-#                     JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                     WHERE t.year = ? AND n.rezultat = 1
-#                     GROUP BY t.league)
-#                 ORDER BY t.league, n.datum DESC;
-#             """
-#             cursor = conn.execute(sql, (year, year)) 
+class Tekma:
+    """
+    Razred za ekipo.
+    """
+    def __init__(self, id=None, tekmovanje=None, datum=None, cas=None, st_igre=None):
+        """
+        Konstruktor ekipe.
+        """
+        self.id = id
+        self.tekmovanje = tekmovanje
+        self.datum = datum
+        self.cas = cas
+        self.st_igre = st_igre
 
-#         else:
-#             sql = """
-#                 SELECT e.Team, t.league, t.year, n.datum
-#                 FROM tekmovanje t
-#                 JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                 JOIN ekipe e ON n.id_ekipa = e.id_ekipa
-#                 WHERE n.rezultat = 1 AND (t.league, t.year, n.datum) IN (
-#                     SELECT t.league, t.year, MAX(n.datum)
-#                     FROM tekmovanje t
-#                     JOIN nastop n ON t.id_tekmovanja = n.id_tekmovanja
-#                     WHERE n.rezultat = 1
-#                     GROUP BY t.league, t.year)
-#                 ORDER BY n.datum DESC, t.league
-#             """
-#             cursor = conn.execute(sql)
-
-#         return cursor.fetchall()  
+    def __str__(self):
+        """
+        Znakovna predstavitev ekipe.
+        Vrne ime ekipe.
+        """
+        return self.st_igre + " " + self.datum + " " + self.cas
