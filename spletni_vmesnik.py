@@ -23,7 +23,7 @@ def isci():
     return dict(ime=ime, igralec=igralci)
 
 @bottle.get('/igralci/<id:int>/')
-@bottle.view('igralci_tekmovanja.html')
+@bottle.view('igralec_podatki.html')
 def igralci_tekmovanja(id):
     try:
         oseba = Igralec.z_id(id)
@@ -40,11 +40,11 @@ def podatki_tekmovanja(id):
         tekmovanje = Tekmovanje.z_id(id)
     except ValueError:
         bottle.abort(404, f'Film z ID-jem {id} ne obstaja!')
-    tekme = tekmovanje.tekme()
+    tekme = tekmovanje.tekme() # slovar
     prvi, = tekmovanje.prva_ekipa()
     drugi, = tekmovanje.druga_ekipa()
     tretji1, tretji2 = tekmovanje.tretja_ekipa()
-    return dict(tekmovanje=tekmovanje, tekma=tekme, prvi=prvi, drugi=drugi, tretji1=tretji1, tretji2=tretji2)
+    return dict(tekmovanje=tekmovanje, tekme=tekme, prvi=prvi, drugi=drugi, tretji1=tretji1, tretji2=tretji2)
 
 @bottle.get("/ekipa/<id:int>/")
 @bottle.view('ekipa_podatki.html')
@@ -67,6 +67,12 @@ def isci():
         ekipa, = ekipe
         bottle.redirect(f'/ekipa/{ekipa.id}/') 
     return dict(ime=ime, ekipe=ekipe)
+
+@bottle.get('/tekmovanje/isci/')
+@bottle.view('isci_tekmovanja.html')
+def isci():
+    tekmovanja = Tekmovanje().vsa_tekmovanja()
+    return dict(tekmovanja=tekmovanja)
 
 
 # # Iskanje igralca

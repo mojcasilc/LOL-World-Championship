@@ -278,17 +278,28 @@ class Tekmovanje:
         Vrne tekme,ki so se odvijale na tekmovanju
         """
         sql = """
-            SELECT a.id, a.tekmovanje, a.datum, a.cas, a.st_igre, e.id, e.ime FROM tekmovanje t
+            WITH ekipa1 AS (
+            SELECT a.id, a.tekmovanje, a.datum, a.cas, a.st_igre, e.* FROM tekmovanje t
             JOIN tekma a ON t.id = a.tekmovanje
             JOIN nastopa n ON a.id = n.tekma
-            JOIN ekipa e ON n.ekipa = e.id
-            WHERE t.id = ? AND n.zmaga = 1
-            ORDER BY a.datum, a.cas
+            JOIN ekipa e ON e.id = n.ekipa
+            WHERE t.id = ? AND st_igre = 1 AND zmaga = 1),
+
+                ekipa2 AS (
+            SELECT a.id, a.tekmovanje, a.datum, a.cas, a.st_igre, e.*  FROM tekmovanje t
+            JOIN tekma a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.tekma
+            JOIN ekipa e ON e.id = n.ekipa
+            WHERE t.id = ? AND st_igre = 1 AND zmaga = 0)
+
+            SELECT * FROM ekipa1 e1
+            JOIN ekipa2 e2 USING (id, tekmovanje, datum, cas, st_igre)
+            ORDER BY datum, cas
         """
         cur = conn.cursor()
         try:
-            cur.execute(sql, [self.id])
-            return [(Tekma(*podatki), Ekipa(id=id, ime=ime)) for *podatki, id, ime in cur]
+            cur.execute(sql, [self.id,self.id])
+            return {Tekma(*podatki): [Ekipa(id=id1, ime=ime1),Ekipa(id=id2, ime=ime2)] for *podatki, id1, ime1, id2, ime2 in cur}
         finally:
             cur.close()
     
@@ -359,6 +370,21 @@ class Tekmovanje:
             return [Ekipa(*podatki) for *podatki, _ in cur]
         finally:
             cur.close()
+    
+    @staticmethod
+    def vsa_tekmovanja():
+        '''vrne vsa tekmovanja od leta 2014'''
+        sql = """
+            SELECT * FROM tekmovanje
+            ORDER BY leto DESC
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql)
+            return [Tekmovanje(*podatki) for podatki in cur]
+        finally:
+            cur.close()
+
     
 
 class Tekma:

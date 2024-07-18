@@ -1,0 +1,76 @@
+% setdefault('naslov', 'League of Legends')
+
+<!DOCTYPE html>
+<html class="theme-dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{naslov}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+  </head>
+  <body>
+
+    <section class="hero is-primary">
+      <div class="hero-body">
+          <div class="container">
+              <h1 class="title">
+                  League of legends
+              </h1>
+              <h2 class="subtitle">
+                  Svetovno prvenstvo
+              </h2>
+          </div>
+
+          <br>
+
+          <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div id="navbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="/" class="navbar-item">
+                        Domov
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Igralci
+                        </a>
+                
+                        <div class="navbar-dropdown">
+                            <a href="/igralci/isci/" class="navbar-item">
+                                Poišči igralce
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Ekipe
+                        </a>
+                
+                        <div class="navbar-dropdown">
+                            <a href="/ekipa/isci/" class="navbar-item">
+                                Poišči ekipe
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Tekmovanja
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a href="/tekmovanje/isci/" class="navbar-item">
+                                Poišči tekmovanja
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+      </div>
+  </section>
+    {{!base}}
+  </body>
+</html>

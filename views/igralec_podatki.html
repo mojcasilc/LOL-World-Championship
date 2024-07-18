@@ -1,0 +1,18 @@
+% rebase('osnova.html', naslov=oseba.ime)
+
+<h1 class="title is-1">Igralec: {{oseba.ime}}</h1>
+<h2 class="title is-2">Tekmovanja, ki se jih je udeležil</h2>
+
+<div>
+    % if tekmovanja:
+        <ul>
+        % for tekmovanje in tekmovanja:
+            <li>
+                <a href="/tekmovanje/{{tekmovanje.id}}/">
+                    {{tekmovanje.tip}} ({{tekmovanje.leto}})
+                </a>
+            </li>    
+        % end
+        </ul>
+    % end
+</div>

@@ -1,0 +1,50 @@
+% rebase('osnova.html', naslov=tekmovanje.tip)
+
+<div class="level">
+    <div class="level-left">
+        <div class="level-item">
+            <h1 class="title">Tekmovanje: {{tekmovanje.tip}} ({{tekmovanje.leto}})</h1>
+        </div>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column">
+        % if tekme:
+        <div class="content">
+            <ol>
+            % for tekma, ekipe in tekme.items():
+            <li>
+                <div style="font-size: 1.5em;">
+                    {{tekma.datum}} ({{tekma.cas}})
+                </div>
+                <ul>
+                    % for ekipa in ekipe:
+                    <li>
+                        <div class="content is-normal">
+                            <a href="/ekipa/{{ekipa.id}}/">
+                                {{ekipa.ime}}
+                            </a>
+                        </div>
+                    </li>
+                    % end
+                </ul>
+            </li>    
+            % end
+            </ol>
+        </div>
+        % end
+    </div>
+    <div class="column">
+        <div class="container">
+            <div class="notification is-primary">
+                <h2 class="subtitle">TOP 3</h2>
+                <ol>
+                    <li><a href="/ekipa/{{prvi.id}}/">{{prvi.ime}}</a></li>
+                    <li><a href="/ekipa/{{drugi.id}}/">{{drugi.ime}}</a></li>
+                    <li><a href="/ekipa/{{tretji1.id}}/">{{tretji1.ime}}</a>, <a href="/ekipa/{{tretji2.id}}/">{{tretji2.ime}}</a></li>
+                </ol>
+            </div>
+          </div>
+    </div>
+</div>

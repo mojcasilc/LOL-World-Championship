@@ -1,0 +1,35 @@
+% rebase('osnova.html', naslov='Poišči ekipo')
+
+<h1 class="title">Poišči ekipo</h1>
+
+<section>
+<form action="/ekipa/isci/" method="GET">
+    <label class="label">Iskalni niz</label>
+    <div class="field has-addons">
+        <div class="control">
+            <input class="input" type="text" name="ime" placeholder="Vpiši ime" value="{{ime}}"  />
+        </div>
+        <div class="control">
+            <button class="button is-primary">
+                Poišči
+            </button>
+        </div>
+      </div>
+</form>
+</section>
+
+% if ime:
+    <div class="content">
+        <p>
+        % if ekipe:
+            <ol>
+            % for ekipa in ekipe:
+                <li><a href="/ekipa/{{ekipa.id}}/">{{ekipa.ime}}</a></li>
+            % end
+            </ol>
+        % else:
+            Te ekipe ne najdem. Poskusi znova.
+        % end
+        </p>
+    </div>
+% end
