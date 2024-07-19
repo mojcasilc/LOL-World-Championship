@@ -91,7 +91,7 @@ class Ekipa(Tabela):
         self.conn.execute("""
             CREATE TABLE ekipa (
                 id      INTEGER PRIMARY KEY AUTOINCREMENT,
-                ime     TEXT
+                ime     TEXT UNIQUE
             );
         """)
 
@@ -170,7 +170,7 @@ class Igralec(Tabela):
         self.conn.execute("""
             CREATE TABLE igralec (
                 id        INTEGER PRIMARY KEY AUTOINCREMENT,
-                ime       TEXT
+                ime       TEXT UNIQUE
             );
         """)
 
