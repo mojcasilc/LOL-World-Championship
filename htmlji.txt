@@ -1,8 +1,0 @@
-nastovna_stran.html
-igralec.html
-igralec_podrobnosti.html
-ekipa.html
-ekipa_podrobnosti.html
-tekmovanje.html
-tekmovanje_podrobnosti.html
-osnova.html
