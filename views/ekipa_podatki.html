@@ -1,5 +1,6 @@
 % rebase('osnova.html', naslov=ekipa.ime)
 
+<br>
 <h1 class="title is-1">Ekipa: {{ekipa.ime}}</h1>
 
 
@@ -7,15 +8,15 @@
     <div class="column">
         % if tek_igralci:
         <div class="content">
-            <ul>
+            <ul style="list-style-type: none;">
                 % for tekmovanje, igralci in tek_igralci.items():
                 <li>
                     <div style="font-size: 1.5em;">
-                        <a href="/tekmovanje/{{tekmovanje.id}}/">
+                        <b><a href="/tekmovanje/{{tekmovanje.id}}/">
                         {{tekmovanje.tip}} ({{tekmovanje.leto}})
-                        </a>
+                        </a></b>
                     </div>
-                    <ul>
+                    <ul style="list-style-type: none;">
                         % for igralec in igralci:
                         <li>
                             <div class="content is-normal">
@@ -35,13 +36,19 @@
     <div class="column">
         % if zmage:
         <div class="container">
-            <div class="notification is-primary">
-                <h2 class="subtitle">ZMAGE</h2>
+            <div class="notification is-info">
+                <h2 class="subtitle is-3"><b>ZMAGE</b></h2>
                 % for tekmovanje in zmage:
-                <ul>
+                <ul><b>
                     <li><a href="/tekmovanje/{{tekmovanje.id}}/">{{tekmovanje.tip}} ({{tekmovanje.leto}})</a></li>
-                </ul>
+                </b></ul>
                 % end
+            </div>
+        </div>
+        % else:
+        <div class="container">
+            <div class="notification is-info">
+                <p><b>Ta ekipa še ni zmagala na nobenem tekmovanju.</b></p>
             </div>
         </div>
         % end
