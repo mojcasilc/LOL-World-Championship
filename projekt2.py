@@ -6,7 +6,7 @@ seznam2 = []
 seznam3 = []
 
 # podatki za tekmovanje tipa WLDs in MSI
-for leto in range(2014, 2024):
+for leto in range(2014, 2025):
     podatki = pd.read_csv(f"match_data/{leto}_LoL_esports_match_data_from_OraclesElixir.csv", low_memory=False)
     podatki = podatki[['gameid', 'league', 'year', 'date', 'game', 'side', 'position', 'playername', 'playerid', 'teamname', 'teamid', 'champion', 'result']]
     podatki[['date', 'time']] = podatki['date'].str.split(' ', expand=True)
@@ -20,7 +20,7 @@ for leto in range(2014, 2024):
 
 # Preimenujemo stolpce
 new_column_names = {
-    'gameid': 'id_tekme',
+    'gameid': 'id_igre',
     'league': 'tip',
     'year': 'leto',
     'date': 'datum',
