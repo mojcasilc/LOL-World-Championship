@@ -15,6 +15,7 @@ cilji:
 2. Podatki urejeni v bazo
 3. Spletni vmesnik za prikazovanje podatkov
 ## ER-diagram baze
+![image](https://github.com/user-attachments/assets/8fefeb43-6984-4063-a6cc-d73a4856d084)
 
 ## Povezave do podatkov
 * https://oracleselixir.com/
