@@ -1,16 +1,15 @@
 % rebase('osnova.html', naslov='Poišči tekmovanje')
-
-<h1 class="title">Poišči tekmovanje</h1>
-
+<br>
+<h1 class="title is-1">Poišči tekmovanje</h1>
 
     <div class="content">
         <p>
         % if tekmovanja:
-            <ol>
+            <ul style="list-style-type: none;">
             % for tekmovanje in tekmovanja:
                 <li><a href="/tekmovanje/{{tekmovanje.id}}/">{{tekmovanje.tip}} ({{tekmovanje.leto}})</a></li>
             % end
-            </ol>
+            </ul>
         % else:
             Te ekipe ne najdem. Poskusi znova.
         % end

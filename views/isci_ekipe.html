@@ -1,8 +1,9 @@
 % rebase('osnova.html', naslov='Poišči ekipo')
 
-<h1 class="title">Poišči ekipo</h1>
+<br>
+<h1 class="title is-1">Poišči ekipo</h1>
 
-<section>
+<section class="centered-form">
 <form action="/ekipa/isci/" method="GET">
     <label class="label">Iskalni niz</label>
     <div class="field has-addons">
@@ -22,11 +23,11 @@
     <div class="content">
         <p>
         % if ekipe:
-            <ol>
+            <ul style="list-style-type: none;">
             % for ekipa in ekipe:
                 <li><a href="/ekipa/{{ekipa.id}}/">{{ekipa.ime}}</a></li>
             % end
-            </ol>
+            </ul>
         % else:
             Te ekipe ne najdem. Poskusi znova.
         % end

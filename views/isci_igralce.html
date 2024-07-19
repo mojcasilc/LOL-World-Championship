@@ -1,11 +1,12 @@
 % rebase('osnova.html', naslov='Poišči igralca')
 
-<h1 class="title">Poišči igralca</h1>
+<br>
+<h1 class="title is-1">Poišči igralca</h1>
 
-<section>
+<section class="centered-form">
 <form action="/igralci/isci/" method="GET">
     <label class="label">Iskalni niz</label>
-    <div class="field has-addons">
+    <div class="field is-centered has-addons">
         <div class="control">
             <input class="input" type="text" name="ime" placeholder="Vpiši ime" value="{{ime}}" required />
         </div>
@@ -22,11 +23,11 @@
     <div class="content">
         <p>
         % if igralec:
-            <ol>
+            <ul style="list-style-type: none;">
             % for oseba in igralec:
                 <li><a href="/igralci/{{oseba.id}}/">{{oseba.ime}}</a></li>
             % end
-            </ol>
+            </ul>
         % else:
             Te osebe ne najdem. Poskusi znova.
         % end
