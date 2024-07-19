@@ -11,10 +11,10 @@
         % if tekme:
         <div class="content">
             <ul style="list-style-type: none;">
-            % for tekma, ekipe in tekme.items():
+            % for i, (tekma, ekipe) in enumerate(tekme.items(),1):
             <li>
                 <div style="font-size: 1.5em;">
-                    {{tekma.datum}} ({{tekma.cas}})
+                        {{i}}. {{tekma.datum}} ({{tekma.cas}})
                 </div>
                 <ul style="list-style-type: none;">
                     % for ekipa in ekipe:
