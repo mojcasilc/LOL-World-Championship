@@ -14,8 +14,12 @@ cilji:
 1. Pridobivanje podatkov
 2. Podatki urejeni v bazo
 3. Spletni vmesnik za prikazovanje podatkov
+
 ## ER-diagram baze
 ![image](https://github.com/user-attachments/assets/8fefeb43-6984-4063-a6cc-d73a4856d084)
+
+Vsaka ekipa ima pet igralcev, ki se lahko med tekmovanji zamenjajo, prav tako lahko igralci menjajo ekipe. Tekmovanje je sestavljeno iz več tekem, kjer se na vsaki tekmi pomerita dve ekipi. Vsaka tekma je igrana na točno enem tekmovanju. Prisotnost vseh ekip na tekmovanjih ni zagotovljena, saj je število mest omejeno. Vsaka ekipa ima edinstveno ime, vsak igralec pa svoje univerzalno uporabniško ime. Tabela "pripada" povezuje igralce z ekipami za vsako leto. Tabela "nastopa" povezuje ekipe s tekmami, na katerih so igrale, ter nam pove tudi zmagovalca in poraženca. Tekma vsebuje podatke o datumu, času, številu igre ter o tekmovanju, na katerem je bila igrana. Tabela o tekmovanju vsebuje podatke o tipu in letu.
+
 
 ## Povezave do podatkov
 * https://oracleselixir.com/
