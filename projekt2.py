@@ -24,7 +24,7 @@ new_column_names = {
     'league': 'tip',
     'year': 'leto',
     'date': 'datum',
-    'game': 'st_tekme',
+    'game': 'st_igre',
     'side': 'stran',
     'position': 'pozicija',
     'playername': 'ime_igralca',
@@ -71,7 +71,7 @@ seznam1 = seznam1.rename(columns=new_column_names)
 # ekipe = seznam1[['ime_ekipe']].drop_duplicates()
 # tekmovanje = seznam1[['tip', 'leto']].drop_duplicates()
 pripada = seznam1[['ime_ekipe', 'ime_igralca', 'tip', 'leto']].drop_duplicates()
-tekma = seznam1[['tip', 'leto', 'datum', 'cas', 'st_tekme', 'ime_ekipe', 'zmaga']].drop_duplicates()
+tekma = seznam1[['tip', 'leto', 'datum', 'cas', 'st_igre', 'ime_ekipe', 'zmaga']].drop_duplicates()
 # tekma = tekma[(tekma['zmaga']==1)]
 # tekma = tekma[['id_tekme', 'tip', 'leto', 'datum', 'cas', 'st_tekme', 'id_ekipe']].drop_duplicates()
 # nastopa = seznam1[['id_ekipe', 'id_tekme']].drop_duplicates()

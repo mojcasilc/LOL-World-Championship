@@ -2,9 +2,9 @@ import bottle
 from model import Igralec, Ekipa, Tekmovanje
 
 # Nastavitev statične datoteke
-@bottle.get('/<pot:path>')
+@bottle.get('/static/<pot:path>')
 def vrni_staticno(pot):
-    return bottle.static_file(pot, root="")
+    return bottle.static_file(pot, root="static")
 
 # Naslovna stran
 @bottle.get('/')
