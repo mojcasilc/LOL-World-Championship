@@ -1,1177 +1,1595 @@
-leto,Team,Player
-2014,Alliance,Froggen
-2014,Alliance,Nyph
-2014,Alliance,Shook
-2014,Alliance,Tabzz
-2014,Alliance,Wickd
-2014,Cloud9,BalIs
-2014,Cloud9,Hai
-2014,Cloud9,LemonNation
-2014,Cloud9,Meteos
-2014,Cloud9,Sneaky
-2014,Dark Passage,Crystal
-2014,Dark Passage,fabFabulous
-2014,Dark Passage,HolyPhoenix
-2014,Dark Passage,Naru
-2014,Dark Passage,Touch
-2014,EDward Gaming,Clearlove
-2014,EDward Gaming,FZZF
-2014,EDward Gaming,Korol
-2014,EDward Gaming,NaMei
-2014,EDward Gaming,U
-2014,Fnatic,Cyanide
-2014,Fnatic,Rekkles
-2014,Fnatic,sOAZ
-2014,Fnatic,xPeke
-2014,Fnatic,YellOwStaR
-2014,KaBuM! Esports,Danagorn
-2014,KaBuM! Esports,dans
-2014,KaBuM! Esports,Lep
-2014,KaBuM! Esports,Minerva
-2014,KaBuM! Esports,tinowns
-2014,LMQ,GodLike
-2014,LMQ,Mor
-2014,LMQ,NONAME
-2014,LMQ,Vasilii
-2014,LMQ,XiaoWeiXiao
-2014,NaJin White Shield,Ggoong
-2014,NaJin White Shield,GorillA
-2014,NaJin White Shield,Save
-2014,NaJin White Shield,Watch
-2014,NaJin White Shield,Zefa
-2014,Oh My God,CL0UD
-2014,Oh My God,Cool
-2014,Oh My God,Da7
-2014,Oh My God,Gogoing
-2014,Oh My God,LoveLing
-2014,Oh My God,san
-2014,Royal Club,Cola
-2014,Royal Club,Corn
-2014,Royal Club,inSec
-2014,Royal Club,Uzi
-2014,Royal Club,Zero
-2014,SK Gaming,CandyPanda
-2014,SK Gaming,fredy122
-2014,SK Gaming,Gilius
-2014,SK Gaming,Jesiz
-2014,SK Gaming,nRated
-2014,SK Gaming,Svenskeren
-2014,Samsung Blue,Acorn
-2014,Samsung Blue,dade
-2014,Samsung Blue,Deft
-2014,Samsung Blue,Heart
-2014,Samsung Blue,Spirit
-2014,Samsung White,DanDy
-2014,Samsung White,imp
-2014,Samsung White,Looper
-2014,Samsung White,Mata
-2014,Samsung White,PawN
-2014,TSM,Amazing
-2014,TSM,Bjergsen
-2014,TSM,Dyrus
-2014,TSM,Lustboy
-2014,TSM,WildTurtle
-2014,Taipei Assassins,Achie
-2014,Taipei Assassins,BeBe
-2014,Taipei Assassins,Chieh
-2014,Taipei Assassins,Morning
-2014,Taipei Assassins,Winds
-2014,ahq eSports Club,GarnetDevil
-2014,ahq eSports Club,GreenTea
-2014,ahq eSports Club,Naz
-2014,ahq eSports Club,Prydz
-2014,ahq eSports Club,Westdoor
-2015,Bangkok Titans,007x
-2015,Bangkok Titans,G4
-2015,Bangkok Titans,Lloyd
-2015,Bangkok Titans,Moss
-2015,Bangkok Titans,WarL0cK
-2015,Beşiktaş Esports,Dumbledoge
-2015,Beşiktaş Esports,Energy
-2015,Beşiktaş Esports,Nardeus
-2015,Beşiktaş Esports,Thaldrin
-2015,Beşiktaş Esports,Theokoles
-2015,Cloud9,BalIs
-2015,Cloud9,Hai
-2015,Cloud9,Jensen
-2015,Cloud9,LemonNation
-2015,Cloud9,Sneaky
-2015,Counter Logic Gaming,aphromoo
-2015,Counter Logic Gaming,Darshan
-2015,Counter Logic Gaming,Doublelift
-2015,Counter Logic Gaming,Pobelter
-2015,Counter Logic Gaming,Xmithie
-2015,EDward Gaming,Clearlove
-2015,EDward Gaming,Deft
-2015,EDward Gaming,Korol
-2015,EDward Gaming,Meiko
-2015,EDward Gaming,PawN
-2015,EDward Gaming,AmazingJ
-2015,EDward Gaming,Clearlove
-2015,EDward Gaming,Deft
-2015,EDward Gaming,Korol
-2015,EDward Gaming,Meiko
-2015,EDward Gaming,PawN
-2015,Flash Wolves,Karsa
-2015,Flash Wolves,Kramer
-2015,Flash Wolves,Maple
-2015,Flash Wolves,NL
-2015,Flash Wolves,Steak
-2015,Flash Wolves,SwordArt
-2015,Fnatic,FEBIVEN
-2015,Fnatic,Huni
-2015,Fnatic,Reignover
-2015,Fnatic,Steeelback
-2015,Fnatic,YellOwStaR
-2015,Fnatic,FEBIVEN
-2015,Fnatic,Huni
-2015,Fnatic,Reignover
-2015,Fnatic,Rekkles
-2015,Fnatic,YellOwStaR
-2015,H2k-Gaming,Hjarnan
-2015,H2k-Gaming,Kasing
-2015,H2k-Gaming,Loulex
-2015,H2k-Gaming,Odoamne
-2015,H2k-Gaming,Ryu
-2015,Invictus Gaming,KaKAO
-2015,Invictus Gaming,Kid
-2015,Invictus Gaming,Kitties
-2015,Invictus Gaming,Rookie
-2015,Invictus Gaming,Time
-2015,Invictus Gaming,Zz1tai
-2015,KT Rolster,Arrow
-2015,KT Rolster,Nagne
-2015,KT Rolster,Piccaboo
-2015,KT Rolster,Score
-2015,KT Rolster,Ssumday
-2015,LGD Gaming,Acorn
-2015,LGD Gaming,Flame
-2015,LGD Gaming,GodV
-2015,LGD Gaming,imp
-2015,LGD Gaming,Pyl
-2015,LGD Gaming,tbq
-2015,Origen,Amazing
-2015,Origen,Mithy
-2015,Origen,sOAZ
-2015,Origen,xPeke
-2015,Origen,Zven
-2015,ROX Tigers,GorillA
-2015,ROX Tigers,Hojin
-2015,ROX Tigers,Kuro
-2015,ROX Tigers,PraY
-2015,ROX Tigers,Smeb
-2015,SK Telecom T1,Bang
-2015,SK Telecom T1,Bengi
-2015,SK Telecom T1,Easyhoon
-2015,SK Telecom T1,Faker
-2015,SK Telecom T1,MaRin
-2015,SK Telecom T1,Wolf
-2015,SK Telecom T1,Bang
-2015,SK Telecom T1,Bengi
-2015,SK Telecom T1,Easyhoon
-2015,SK Telecom T1,Faker
-2015,SK Telecom T1,MaRin
-2015,SK Telecom T1,Wolf
-2015,TSM,Bjergsen
-2015,TSM,Dyrus
-2015,TSM,Lustboy
-2015,TSM,Santorin
-2015,TSM,WildTurtle
-2015,TSM,Bjergsen
-2015,TSM,Dyrus
-2015,TSM,Lustboy
-2015,TSM,Santorin
-2015,TSM,WildTurtle
-2015,ahq eSports Club,Albis
-2015,ahq eSports Club,An
-2015,ahq eSports Club,Mountain
-2015,ahq eSports Club,Westdoor
-2015,ahq eSports Club,Ziv
-2015,ahq eSports Club,Albis
-2015,ahq eSports Club,An
-2015,ahq eSports Club,Mountain
-2015,ahq eSports Club,Westdoor
-2015,ahq eSports Club,Ziv
-2015,paiN Gaming,brTT
-2015,paiN Gaming,Dioud
-2015,paiN Gaming,Kami
-2015,paiN Gaming,Mylon
-2015,paiN Gaming,Sirt
-2016,Albus NoX Luna,Kira
-2016,Albus NoX Luna,Likkrit
-2016,Albus NoX Luna,Onesh0tiq
-2016,Albus NoX Luna,PvPStejos
-2016,Albus NoX Luna,Smurf
-2016,Cloud9,Impact
-2016,Cloud9,Jensen
-2016,Cloud9,Meteos
-2016,Cloud9,Smoothie
-2016,Cloud9,Sneaky
-2016,Counter Logic Gaming,aphromoo
-2016,Counter Logic Gaming,Darshan
-2016,Counter Logic Gaming,huhi
-2016,Counter Logic Gaming,Stixxay
-2016,Counter Logic Gaming,Xmithie
-2016,Counter Logic Gaming,aphromoo
-2016,Counter Logic Gaming,Darshan
-2016,Counter Logic Gaming,huhi
-2016,Counter Logic Gaming,Stixxay
-2016,Counter Logic Gaming,Xmithie
-2016,EDward Gaming,Clearlove
-2016,EDward Gaming,Deft
-2016,EDward Gaming,Korol
-2016,EDward Gaming,Meiko
-2016,EDward Gaming,Mouse
-2016,EDward Gaming,PawN
-2016,EDward Gaming,Scout
-2016,Flash Wolves,Karsa
-2016,Flash Wolves,Maple
-2016,Flash Wolves,MMD
-2016,Flash Wolves,NL
-2016,Flash Wolves,SwordArt
-2016,Flash Wolves,Karsa
-2016,Flash Wolves,Maple
-2016,Flash Wolves,MMD
-2016,Flash Wolves,NL
-2016,Flash Wolves,SwordArt
-2016,G2 Esports,Emperor
-2016,G2 Esports,Hybrid
-2016,G2 Esports,Kikis
-2016,G2 Esports,Perkz
-2016,G2 Esports,Trick
-2016,G2 Esports,Expect
-2016,G2 Esports,Mithy
-2016,G2 Esports,Perkz
-2016,G2 Esports,Trick
-2016,G2 Esports,Zven
-2016,H2k-Gaming,FORG1VEN
-2016,H2k-Gaming,Jankos
-2016,H2k-Gaming,Odoamne
-2016,H2k-Gaming,Ryu
-2016,H2k-Gaming,Vander
-2016,I May,AmazingJ
-2016,I May,Athena
-2016,I May,Athena
-2016,I May,Avoidless
-2016,I May,BaeMe
-2016,I May,Jinjiao
-2016,I May,Road
-2016,INTZ,Jockster
-2016,INTZ,micaO
-2016,INTZ,Revolta
-2016,INTZ,tockers
-2016,INTZ,Yang
-2016,Papara SuperMassive,Achuu
-2016,Papara SuperMassive,Dumbledoge
-2016,Papara SuperMassive,fabFabulous
-2016,Papara SuperMassive,Naru
-2016,Papara SuperMassive,Stomaged
-2016,Papara SuperMassive,Thaldrin
-2016,ROX Tigers,GorillA
-2016,ROX Tigers,Kuro
-2016,ROX Tigers,Peanut
-2016,ROX Tigers,PraY
-2016,ROX Tigers,Smeb
-2016,Royal Never Give Up,Looper
-2016,Royal Never Give Up,Mata
-2016,Royal Never Give Up,Mlxg
-2016,Royal Never Give Up,Wuxx
-2016,Royal Never Give Up,Xiaohu
-2016,Royal Never Give Up,Looper
-2016,Royal Never Give Up,Mata
-2016,Royal Never Give Up,Mlxg
-2016,Royal Never Give Up,Uzi
-2016,Royal Never Give Up,Xiaohu
-2016,SK Telecom T1,Bang
-2016,SK Telecom T1,Blank
-2016,SK Telecom T1,Duke
-2016,SK Telecom T1,Faker
-2016,SK Telecom T1,Wolf
-2016,SK Telecom T1,Bang
-2016,SK Telecom T1,Bengi
-2016,SK Telecom T1,Blank
-2016,SK Telecom T1,Duke
-2016,SK Telecom T1,Faker
-2016,SK Telecom T1,Wolf
-2016,Samsung Galaxy,Ambition
-2016,Samsung Galaxy,CoreJJ
-2016,Samsung Galaxy,Crown
-2016,Samsung Galaxy,CuVee
-2016,Samsung Galaxy,Ruler
-2016,Samsung Galaxy,Wraith
-2016,Splyce,Kobbe
-2016,Splyce,Kold
-2016,Splyce,Mikyx
-2016,Splyce,Sencux
-2016,Splyce,Wunder
-2016,TSM,Biofrost
-2016,TSM,Bjergsen
-2016,TSM,Doublelift
-2016,TSM,Hauntzer
-2016,TSM,Svenskeren
-2016,ahq eSports Club,Albis
-2016,ahq eSports Club,An
-2016,ahq eSports Club,Chawy
-2016,ahq eSports Club,Mountain
-2016,ahq eSports Club,Westdoor
-2016,ahq eSports Club,Ziv
-2017,Cloud9,Contractz
-2017,Cloud9,Impact
-2017,Cloud9,Jensen
-2017,Cloud9,Smoothie
-2017,Cloud9,Sneaky
-2017,EDward Gaming,Clearlove
-2017,EDward Gaming,iBoy
-2017,EDward Gaming,Meiko
-2017,EDward Gaming,Mouse
-2017,EDward Gaming,Scout
-2017,Fenerbahçe Esports,Crash
-2017,Fenerbahçe Esports,Frozen
-2017,Fenerbahçe Esports,Japone
-2017,Fenerbahçe Esports,Padden
-2017,Fenerbahçe Esports,Thaldrin
-2017,Flash Wolves,Betty
-2017,Flash Wolves,Karsa
-2017,Flash Wolves,Maple
-2017,Flash Wolves,MMD
-2017,Flash Wolves,SwordArt
-2017,Flash Wolves,Betty
-2017,Flash Wolves,Karsa
-2017,Flash Wolves,Maple
-2017,Flash Wolves,MMD
-2017,Flash Wolves,SwordArt
-2017,Fnatic,Broxah
-2017,Fnatic,Caps
-2017,Fnatic,Jesiz
-2017,Fnatic,Rekkles
-2017,Fnatic,sOAZ
-2017,G2 Esports,Expect
-2017,G2 Esports,Mithy
-2017,G2 Esports,Perkz
-2017,G2 Esports,Trick
-2017,G2 Esports,Zven
-2017,G2 Esports,Expect
-2017,G2 Esports,Mithy
-2017,G2 Esports,Perkz
-2017,G2 Esports,Trick
-2017,G2 Esports,Zven
-2017,GAM Esports,Archie
-2017,GAM Esports,Levi
-2017,GAM Esports,Optimus
-2017,GAM Esports,Slay
-2017,GAM Esports,Stark
-2017,GAM Esports,Archie
-2017,GAM Esports,Levi
-2017,GAM Esports,Nevan
-2017,GAM Esports,Noway
-2017,GAM Esports,Optimus
-2017,GAM Esports,Sya
-2017,Immortals,Cody Sun
-2017,Immortals,Flame
-2017,Immortals,Olleh
-2017,Immortals,Pobelter
-2017,Immortals,Xmithie
-2017,Longzhu Gaming,Bdd
-2017,Longzhu Gaming,Cuzz
-2017,Longzhu Gaming,GorillA
-2017,Longzhu Gaming,Khan
-2017,Longzhu Gaming,PraY
-2017,Longzhu Gaming,Rascal
-2017,Misfits Gaming,Alphari
-2017,Misfits Gaming,Hans Sama
-2017,Misfits Gaming,IgNar
-2017,Misfits Gaming,Maxlore
-2017,Misfits Gaming,PowerOfEvil
-2017,Royal Never Give Up,Letme
-2017,Royal Never Give Up,Ming
-2017,Royal Never Give Up,Mlxg
-2017,Royal Never Give Up,Uzi
-2017,Royal Never Give Up,Xiaohu
-2017,SK Telecom T1,Bang
-2017,SK Telecom T1,Faker
-2017,SK Telecom T1,Huni
-2017,SK Telecom T1,Peanut
-2017,SK Telecom T1,Wolf
-2017,SK Telecom T1,Bang
-2017,SK Telecom T1,Blank
-2017,SK Telecom T1,Faker
-2017,SK Telecom T1,Huni
-2017,SK Telecom T1,Peanut
-2017,SK Telecom T1,Wolf
-2017,Samsung Galaxy,Ambition
-2017,Samsung Galaxy,CoreJJ
-2017,Samsung Galaxy,Crown
-2017,Samsung Galaxy,CuVee
-2017,Samsung Galaxy,Haru
-2017,Samsung Galaxy,Ruler
-2017,TSM,Biofrost
-2017,TSM,Bjergsen
-2017,TSM,Hauntzer
-2017,TSM,Svenskeren
-2017,TSM,WildTurtle
-2017,TSM,Biofrost
-2017,TSM,Bjergsen
-2017,TSM,Doublelift
-2017,TSM,Hauntzer
-2017,TSM,Svenskeren
-2017,Team WE,957
-2017,Team WE,Ben
-2017,Team WE,Condi
-2017,Team WE,Mystic
-2017,Team WE,xiye
-2017,Team WE,Zero
-2017,Team WE,957
-2017,Team WE,Ben
-2017,Team WE,Condi
-2017,Team WE,Mystic
-2017,Team WE,xiye
-2017,ahq eSports Club,Albis
-2017,ahq eSports Club,An
-2017,ahq eSports Club,Chawy
-2017,ahq eSports Club,Mountain
-2017,ahq eSports Club,Westdoor
-2017,ahq eSports Club,Ziv
-2018,100 Thieves,AnDa
-2018,100 Thieves,aphromoo
-2018,100 Thieves,Rikara
-2018,100 Thieves,Ryu
-2018,100 Thieves,Ssumday
-2018,Cloud9,Blaber
-2018,Cloud9,Jensen
-2018,Cloud9,Licorice
-2018,Cloud9,Sneaky
-2018,Cloud9,Svenskeren
-2018,Cloud9,Zeyzal
-2018,EDward Gaming,Clearlove
-2018,EDward Gaming,Haro
-2018,EDward Gaming,iBoy
-2018,EDward Gaming,Meiko
-2018,EDward Gaming,Ray
-2018,EDward Gaming,Scout
-2018,EVOS Esports,RonOP
-2018,EVOS Esports,Slay
-2018,EVOS Esports,Stark
-2018,EVOS Esports,Warzone
-2018,EVOS Esports,Yijin
-2018,Flash Wolves,Betty
-2018,Flash Wolves,Hanabi
-2018,Flash Wolves,Maple
-2018,Flash Wolves,MooJin
-2018,Flash Wolves,SwordArt
-2018,Flash Wolves,Betty
-2018,Flash Wolves,Hanabi
-2018,Flash Wolves,Maple
-2018,Flash Wolves,MooJin
-2018,Flash Wolves,SwordArt
-2018,Fnatic,Broxah
-2018,Fnatic,Bwipo
-2018,Fnatic,Caps
-2018,Fnatic,Hylissang
-2018,Fnatic,Rekkles
-2018,Fnatic,sOAZ
-2018,Fnatic,Broxah
-2018,Fnatic,Bwipo
-2018,Fnatic,Caps
-2018,Fnatic,Hylissang
-2018,Fnatic,Rekkles
-2018,Fnatic,sOAZ
-2018,G-Rex,baybay
-2018,G-Rex,Candy
-2018,G-Rex,Empt2y
-2018,G-Rex,Koala
-2018,G-Rex,PK
-2018,G-Rex,Stitch
-2018,G2 Esports,Hjarnan
-2018,G2 Esports,Jankos
-2018,G2 Esports,Perkz
-2018,G2 Esports,Wadid
-2018,G2 Esports,Wunder
-2018,Gen.G,Ambition
-2018,Gen.G,CoreJJ
-2018,Gen.G,Crown
-2018,Gen.G,CuVee
-2018,Gen.G,Haru
-2018,Gen.G,Ruler
-2018,Invictus Gaming,Baolan
-2018,Invictus Gaming,Duke
-2018,Invictus Gaming,JackeyLove
-2018,Invictus Gaming,Ning
-2018,Invictus Gaming,Rookie
-2018,Invictus Gaming,TheShy
-2018,KT Rolster,Deft
-2018,KT Rolster,Mata
-2018,KT Rolster,Score
-2018,KT Rolster,Smeb
-2018,KT Rolster,ucal
-2018,Kingzone DragonX,Bdd
-2018,Kingzone DragonX,Cuzz
-2018,Kingzone DragonX,GorillA
-2018,Kingzone DragonX,Khan
-2018,Kingzone DragonX,Peanut
-2018,Kingzone DragonX,PraY
-2018,Kwangdong Freecs,Kiin
-2018,Kwangdong Freecs,Kramer
-2018,Kwangdong Freecs,Kuro
-2018,Kwangdong Freecs,Mowgli
-2018,Kwangdong Freecs,Spirit
-2018,Kwangdong Freecs,TusiN
-2018,MAD Team,Benny
-2018,MAD Team,Breeze
-2018,MAD Team,K
-2018,MAD Team,Kongyue
-2018,MAD Team,Liang
-2018,MAD Team,Uniboy
-2018,Phong Vũ Buffalo,Bigkoro
-2018,Phong Vũ Buffalo,Meliodas
-2018,Phong Vũ Buffalo,Naul
-2018,Phong Vũ Buffalo,Palette
-2018,Phong Vũ Buffalo,XuHao
-2018,Phong Vũ Buffalo,Zeros
-2018,Royal Never Give Up,Karsa
-2018,Royal Never Give Up,Letme
-2018,Royal Never Give Up,Ming
-2018,Royal Never Give Up,Mlxg
-2018,Royal Never Give Up,Uzi
-2018,Royal Never Give Up,Xiaohu
-2018,Royal Never Give Up,Karsa
-2018,Royal Never Give Up,Letme
-2018,Royal Never Give Up,Ming
-2018,Royal Never Give Up,Mlxg
-2018,Royal Never Give Up,Uzi
-2018,Royal Never Give Up,Xiaohu
-2018,Team Liquid,Doublelift
-2018,Team Liquid,Impact
-2018,Team Liquid,Joey
-2018,Team Liquid,Olleh
-2018,Team Liquid,Pobelter
-2018,Team Liquid,Xmithie
-2018,Team Liquid,Doublelift
-2018,Team Liquid,Impact
-2018,Team Liquid,Olleh
-2018,Team Liquid,Pobelter
-2018,Team Liquid,Xmithie
-2018,Team Vitality,Attila
-2018,Team Vitality,Cabochard
-2018,Team Vitality,Jactroll
-2018,Team Vitality,Jiizuke
-2018,Team Vitality,Kikis
-2019,Cloud9,Blaber
-2019,Cloud9,Deftly
-2019,Cloud9,Licorice
-2019,Cloud9,Nisqy
-2019,Cloud9,Sneaky
-2019,Cloud9,Svenskeren
-2019,Cloud9,Zeyzal
-2019,Clutch Gaming,Cody Sun
-2019,Clutch Gaming,Damonte
-2019,Clutch Gaming,Huni
-2019,Clutch Gaming,Lira
-2019,Clutch Gaming,VULCAN
-2019,Dplus KIA,BeryL
-2019,Dplus KIA,Canyon
-2019,Dplus KIA,Nuclear
-2019,Dplus KIA,Nuguri
-2019,Dplus KIA,ShowMaker
-2019,Flash Wolves,Betty
-2019,Flash Wolves,Bugi
-2019,Flash Wolves,Hanabi
-2019,Flash Wolves,Rather
-2019,Flash Wolves,ShiauC
-2019,Fnatic,Broxah
-2019,Fnatic,Bwipo
-2019,Fnatic,Hylissang
-2019,Fnatic,Nemesis
-2019,Fnatic,Rekkles
-2019,FunPlus Phoenix,Crisp
-2019,FunPlus Phoenix,Doinb
-2019,FunPlus Phoenix,GimGoon
-2019,FunPlus Phoenix,Lwx
-2019,FunPlus Phoenix,Tian
-2019,G2 Esports,Caps
-2019,G2 Esports,Jankos
-2019,G2 Esports,Mikyx
-2019,G2 Esports,Perkz
-2019,G2 Esports,Wunder
-2019,G2 Esports,Caps
-2019,G2 Esports,Jankos
-2019,G2 Esports,Mikyx
-2019,G2 Esports,Perkz
-2019,G2 Esports,Wunder
-2019,GAM Esports,Hieu3
-2019,GAM Esports,Kiaya
-2019,GAM Esports,Levi
-2019,GAM Esports,Slay
-2019,GAM Esports,Zeros
-2019,GAM Esports,Zin
-2019,Griffin,Chovy
-2019,Griffin,Lehends
-2019,Griffin,Sw0rd
-2019,Griffin,Tarzan
-2019,Griffin,Viper
-2019,Hong Kong Attitude,3z
-2019,Hong Kong Attitude,Crash
-2019,Hong Kong Attitude,Kaiwing
-2019,Hong Kong Attitude,Mission
-2019,Hong Kong Attitude,Unified
-2019,Invictus Gaming,Baolan
-2019,Invictus Gaming,JackeyLove
-2019,Invictus Gaming,Ning
-2019,Invictus Gaming,Rookie
-2019,Invictus Gaming,TheShy
-2019,Invictus Gaming,Baolan
-2019,Invictus Gaming,JackeyLove
-2019,Invictus Gaming,Leyan
-2019,Invictus Gaming,Ning
-2019,Invictus Gaming,Rookie
-2019,Invictus Gaming,TheShy
-2019,J Team,FOFO
-2019,J Team,Hana
-2019,J Team,Koala
-2019,J Team,Lilv
-2019,J Team,Rest
-2019,Phong Vũ Buffalo,Bigkoro
-2019,Phong Vũ Buffalo,Meliodas
-2019,Phong Vũ Buffalo,Naul
-2019,Phong Vũ Buffalo,Palette
-2019,Phong Vũ Buffalo,XuHao
-2019,Phong Vũ Buffalo,Zeros
-2019,Royal Never Give Up,Karsa
-2019,Royal Never Give Up,Langx
-2019,Royal Never Give Up,Ming
-2019,Royal Never Give Up,Uzi
-2019,Royal Never Give Up,Xiaohu
-2019,SK Telecom T1,Clid
-2019,SK Telecom T1,Faker
-2019,SK Telecom T1,Khan
-2019,SK Telecom T1,Mata
-2019,SK Telecom T1,Teddy
-2019,SK Telecom T1,Clid
-2019,SK Telecom T1,Effort
-2019,SK Telecom T1,Faker
-2019,SK Telecom T1,Khan
-2019,SK Telecom T1,Mata
-2019,SK Telecom T1,Teddy
-2019,Splyce,Humanoid
-2019,Splyce,Kobbe
-2019,Splyce,Tore
-2019,Splyce,Vizicsacsi
-2019,Splyce,Xerxe
-2019,Team Liquid,CoreJJ
-2019,Team Liquid,Doublelift
-2019,Team Liquid,Impact
-2019,Team Liquid,Jensen
-2019,Team Liquid,Xmithie
-2019,Team Liquid,CoreJJ
-2019,Team Liquid,Doublelift
-2019,Team Liquid,Impact
-2019,Team Liquid,Jensen
-2019,Team Liquid,Xmithie
-2019,ahq eSports Club,Alex
-2019,ahq eSports Club,Apex
-2019,ahq eSports Club,Rainbow
-2019,ahq eSports Club,Wako
-2019,ahq eSports Club,Ysera
-2019,ahq eSports Club,Ziv
-2020,DRX,Chovy
-2020,DRX,Deft
-2020,DRX,Doran
-2020,DRX,Keria
-2020,DRX,Pyosik
-2020,Dplus KIA,BeryL
-2020,Dplus KIA,Canyon
-2020,Dplus KIA,Ghost
-2020,Dplus KIA,Nuguri
-2020,Dplus KIA,ShowMaker
-2020,FlyQuest,IgNar
-2020,FlyQuest,PowerOfEvil
-2020,FlyQuest,Santorin
-2020,FlyQuest,Solo
-2020,FlyQuest,WildTurtle
-2020,Fnatic,Bwipo
-2020,Fnatic,Hylissang
-2020,Fnatic,Nemesis
-2020,Fnatic,Rekkles
-2020,Fnatic,Selfmade
-2020,G2 Esports,Caps
-2020,G2 Esports,Jankos
-2020,G2 Esports,Mikyx
-2020,G2 Esports,Perkz
-2020,G2 Esports,Wunder
-2020,Gen.G,Bdd
-2020,Gen.G,Clid
-2020,Gen.G,Life
-2020,Gen.G,Rascal
-2020,Gen.G,Ruler
-2020,JD Gaming,Kanavi
-2020,JD Gaming,LokeN
-2020,JD Gaming,LvMao
-2020,JD Gaming,Yagao
-2020,JD Gaming,Zoom
-2020,LGD Gaming,Kramer
-2020,LGD Gaming,Langx
-2020,LGD Gaming,Mark
-2020,LGD Gaming,Peanut
-2020,LGD Gaming,xiye
-2020,Machi Esports,Bruce
-2020,Machi Esports,Gemini
-2020,Machi Esports,Koala
-2020,Machi Esports,Mission
-2020,Machi Esports,PK
-2020,PSG Talon,Hanabi
-2020,PSG Talon,Kaiwing
-2020,PSG Talon,River
-2020,PSG Talon,Tank
-2020,PSG Talon,Unified
-2020,Rogue,Finn
-2020,Rogue,Hans Sama
-2020,Rogue,Inspired
-2020,Rogue,Larssen
-2020,Rogue,Vander
-2020,Suning,Angel
-2020,Suning,Bin
-2020,Suning,huanfeng
-2020,Suning,SofM
-2020,Suning,SwordArt
-2020,TSM,Biofrost
-2020,TSM,Bjergsen
-2020,TSM,BrokenBlade
-2020,TSM,Doublelift
-2020,TSM,Spica
-2020,Team Liquid,Broxah
-2020,Team Liquid,CoreJJ
-2020,Team Liquid,Impact
-2020,Team Liquid,Jensen
-2020,Team Liquid,Tactical
-2020,Top Esports,369
-2020,Top Esports,JackeyLove
-2020,Top Esports,Karsa
-2020,Top Esports,knight
-2020,Top Esports,yuyanjia
-2020,Unicorns of Love.CIS,AHaHaCiK
-2020,Unicorns of Love.CIS,BOSS
-2020,Unicorns of Love.CIS,Gadget
-2020,Unicorns of Love.CIS,Nomanz
-2020,Unicorns of Love.CIS,SaNTaS
-2021,100 Thieves,Abbedagge
-2021,100 Thieves,Closer
-2021,100 Thieves,FBI
-2021,100 Thieves,huhi
-2021,100 Thieves,Ssumday
-2021,Cloud9,Blaber
-2021,Cloud9,Fudge
-2021,Cloud9,Perkz
-2021,Cloud9,VULCAN
-2021,Cloud9,Zven
-2021,Cloud9,Blaber
-2021,Cloud9,Fudge
-2021,Cloud9,Perkz
-2021,Cloud9,VULCAN
-2021,Cloud9,Zven
-2021,DetonatioN FocusMe,Aria
-2021,DetonatioN FocusMe,Evi
-2021,DetonatioN FocusMe,Kazu
-2021,DetonatioN FocusMe,Steal
-2021,DetonatioN FocusMe,Yutapon
-2021,DetonatioN FocusMe,Aria
-2021,DetonatioN FocusMe,Evi
-2021,DetonatioN FocusMe,Gaeng
-2021,DetonatioN FocusMe,Steal
-2021,DetonatioN FocusMe,Yutapon
-2021,Dplus KIA,BeryL
-2021,Dplus KIA,Canyon
-2021,Dplus KIA,Ghost
-2021,Dplus KIA,Khan
-2021,Dplus KIA,ShowMaker
-2021,Dplus KIA,BeryL
-2021,Dplus KIA,Canyon
-2021,Dplus KIA,Ghost
-2021,Dplus KIA,Khan
-2021,Dplus KIA,ShowMaker
-2021,EDward Gaming,Flandre
-2021,EDward Gaming,JieJie
-2021,EDward Gaming,Meiko
-2021,EDward Gaming,Scout
-2021,EDward Gaming,Viper
-2021,Fnatic,Adam
-2021,Fnatic,BEAN
-2021,Fnatic,Bwipo
-2021,Fnatic,Hylissang
-2021,Fnatic,Nisqy
-2021,FunPlus Phoenix,Crisp
-2021,FunPlus Phoenix,Doinb
-2021,FunPlus Phoenix,Lwx
-2021,FunPlus Phoenix,Nuguri
-2021,FunPlus Phoenix,Tian
-2021,Gen.G,Bdd
-2021,Gen.G,Burdol
-2021,Gen.G,Clid
-2021,Gen.G,Life
-2021,Gen.G,Rascal
-2021,Gen.G,Ruler
-2021,Hanwha Life Esports,Chovy
-2021,Hanwha Life Esports,Deft
-2021,Hanwha Life Esports,Morgan
-2021,Hanwha Life Esports,Vsta
-2021,Hanwha Life Esports,Willer
-2021,INFINITY,ACKERMAN
-2021,INFINITY,Buggax
-2021,INFINITY,cody
-2021,INFINITY,Solid
-2021,INFINITY,WhiteLotus
-2021,LNG Esports,Ale
-2021,LNG Esports,icon
-2021,LNG Esports,Iwandy
-2021,LNG Esports,Light
-2021,LNG Esports,Tarzan
-2021,MAD Lions KOI,Armut
-2021,MAD Lions KOI,Carzzy
-2021,MAD Lions KOI,Elyoya
-2021,MAD Lions KOI,Humanoid
-2021,MAD Lions KOI,Kaiser
-2021,MAD Lions KOI,Armut
-2021,MAD Lions KOI,Carzzy
-2021,MAD Lions KOI,Elyoya
-2021,MAD Lions KOI,Humanoid
-2021,MAD Lions KOI,Kaiser
-2021,PSG Talon,Doggo
-2021,PSG Talon,Hanabi
-2021,PSG Talon,Kaiwing
-2021,PSG Talon,Maple
-2021,PSG Talon,River
-2021,PSG Talon,Hanabi
-2021,PSG Talon,Kaiwing
-2021,PSG Talon,Maple
-2021,PSG Talon,River
-2021,PSG Talon,Unified
-2021,Pentanet.GG,BioPanther
-2021,Pentanet.GG,Chazz
-2021,Pentanet.GG,Decoy
-2021,Pentanet.GG,Pabu
-2021,Pentanet.GG,Praedyth
-2021,Rogue,Hans Sama
-2021,Rogue,Inspired
-2021,Rogue,Larssen
-2021,Rogue,Odoamne
-2021,Rogue,Trymbi
-2021,Royal Never Give Up,Cryin
-2021,Royal Never Give Up,GALA
-2021,Royal Never Give Up,Ming
-2021,Royal Never Give Up,Wei
-2021,Royal Never Give Up,Xiaobai
-2021,Royal Never Give Up,Xiaohu
-2021,Royal Never Give Up,Xiaohu
-2021,Royal Never Give Up,Cryin
-2021,Royal Never Give Up,GALA
-2021,Royal Never Give Up,Ming
-2021,Royal Never Give Up,Wei
-2021,Royal Never Give Up,Xiaohu
-2021,T1,Canna
-2021,T1,Faker
-2021,T1,Gumayusi
-2021,T1,Keria
-2021,T1,Oner
-2021,Team Liquid,Alphari
-2021,Team Liquid,CoreJJ
-2021,Team Liquid,Jensen
-2021,Team Liquid,Santorin
-2021,Team Liquid,Tactical
-2021,Unicorns of Love.CIS,AHaHaCiK
-2021,Unicorns of Love.CIS,BOSS
-2021,Unicorns of Love.CIS,Lodik
-2021,Unicorns of Love.CIS,Nomanz
-2021,Unicorns of Love.CIS,SaNTaS
-2021,paiN Gaming,brTT
-2021,paiN Gaming,CarioK
-2021,paiN Gaming,Luci
-2021,paiN Gaming,Robo
-2021,paiN Gaming,tinowns
-2021,İstanbul Wildcats,Farfetch
-2021,İstanbul Wildcats,Ferret
-2021,İstanbul Wildcats,HolyPhoenix
-2021,İstanbul Wildcats,Serin
-2021,İstanbul Wildcats,StarScreen
-2022,100 Thieves,Abbedagge
-2022,100 Thieves,Closer
-2022,100 Thieves,FBI
-2022,100 Thieves,huhi
-2022,100 Thieves,Ssumday
-2022,CTBC Flying Oyster,Atlen
-2022,CTBC Flying Oyster,Gemini
-2022,CTBC Flying Oyster,Koala
-2022,CTBC Flying Oyster,Mission
-2022,CTBC Flying Oyster,Rest
-2022,CTBC Flying Oyster,Shunn
-2022,Cloud9,Berserker
-2022,Cloud9,Blaber
-2022,Cloud9,Fudge
-2022,Cloud9,Jensen
-2022,Cloud9,Zven
-2022,DRX,BeryL
-2022,DRX,Deft
-2022,DRX,Juhan
-2022,DRX,Kingen
-2022,DRX,Pyosik
-2022,DRX,Zeka
-2022,DetonatioN FocusMe,Evi
-2022,DetonatioN FocusMe,Harp
-2022,DetonatioN FocusMe,Steal
-2022,DetonatioN FocusMe,Yaharong
-2022,DetonatioN FocusMe,Yutapon
-2022,Dplus KIA,Canyon
-2022,Dplus KIA,Deokdam
-2022,Dplus KIA,Kellin
-2022,Dplus KIA,Nuguri
-2022,Dplus KIA,ShowMaker
-2022,EDward Gaming,Flandre
-2022,EDward Gaming,JieJie
-2022,EDward Gaming,Meiko
-2022,EDward Gaming,Scout
-2022,EDward Gaming,Viper
-2022,Evil Geniuses,Danny
-2022,Evil Geniuses,Impact
-2022,Evil Geniuses,Inspired
-2022,Evil Geniuses,jojopyun
-2022,Evil Geniuses,VULCAN
-2022,Evil Geniuses,Impact
-2022,Evil Geniuses,Inspired
-2022,Evil Geniuses,jojopyun
-2022,Evil Geniuses,Kaori
-2022,Evil Geniuses,VULCAN
-2022,Fnatic,Humanoid
-2022,Fnatic,Hylissang
-2022,Fnatic,Razork
-2022,Fnatic,Upset
-2022,Fnatic,Wunder
-2022,G2 Esports,BrokenBlade
-2022,G2 Esports,Caps
-2022,G2 Esports,Flakked
-2022,G2 Esports,Jankos
-2022,G2 Esports,Targamas
-2022,G2 Esports,BrokenBlade
-2022,G2 Esports,Caps
-2022,G2 Esports,Flakked
-2022,G2 Esports,Jankos
-2022,G2 Esports,Targamas
-2022,GAM Esports,Bie
-2022,GAM Esports,Kati
-2022,GAM Esports,Kiaya
-2022,GAM Esports,Levi
-2022,GAM Esports,Sty1e
-2022,Gen.G,Chovy
-2022,Gen.G,Doran
-2022,Gen.G,Lehends
-2022,Gen.G,Peanut
-2022,Gen.G,Ruler
-2022,JD Gaming,369
-2022,JD Gaming,Hope
-2022,JD Gaming,Kanavi
-2022,JD Gaming,MISSING
-2022,JD Gaming,Yagao
-2022,ORDER,BioPanther
-2022,ORDER,Corporal
-2022,ORDER,Kevy
-2022,ORDER,Kisee
-2022,ORDER,Puma
-2022,PSG Talon,Azhi
-2022,PSG Talon,Bay
-2022,PSG Talon,Hanabi
-2022,PSG Talon,Juhan
-2022,PSG Talon,Kaiwing
-2022,PSG Talon,Unified
-2022,RED Canids,Aegis
-2022,RED Canids,Grevthar
-2022,RED Canids,GUIGO
-2022,RED Canids,Jojo
-2022,RED Canids,TitaN
-2022,Rogue,Comp
-2022,Rogue,Larssen
-2022,Rogue,Malrang
-2022,Rogue,Odoamne
-2022,Rogue,Trymbi
-2022,Royal Never Give Up,Bin
-2022,Royal Never Give Up,GALA
-2022,Royal Never Give Up,Ming
-2022,Royal Never Give Up,Wei
-2022,Royal Never Give Up,Xiaohu
-2022,Royal Never Give Up,Breathe
-2022,Royal Never Give Up,GALA
-2022,Royal Never Give Up,Ming
-2022,Royal Never Give Up,Wei
-2022,Royal Never Give Up,Xiaohu
-2022,Saigon Buffalo,BeanJ
-2022,Saigon Buffalo,Froggy
-2022,Saigon Buffalo,Hasmed
-2022,Saigon Buffalo,Shogun
-2022,Saigon Buffalo,Taki
-2022,T1,Faker
-2022,T1,Gumayusi
-2022,T1,Keria
-2022,T1,Oner
-2022,T1,Zeus
-2022,T1,Faker
-2022,T1,Gumayusi
-2022,T1,Keria
-2022,T1,Oner
-2022,T1,Zeus
-2022,Team Aze,5kid
-2022,Team Aze,Aloned
-2022,Team Aze,Dimitry
-2022,Team Aze,Lonely
-2022,Team Aze,Straight
-2022,Top Esports,JackeyLove
-2022,Top Esports,knight
-2022,Top Esports,Mark
-2022,Top Esports,Tian
-2022,Top Esports,Wayward
-2022,İstanbul Wildcats,Farfetch
-2022,İstanbul Wildcats,Ferret
-2022,İstanbul Wildcats,HolyPhoenix
-2022,İstanbul Wildcats,Serin
-2022,İstanbul Wildcats,StarScreen
-2023,Bilibili Gaming,Bin
-2023,Bilibili Gaming,Bin
-2023,Bilibili Gaming,Elk
-2023,Bilibili Gaming,ON
-2023,Bilibili Gaming,XUN
-2023,Bilibili Gaming,Yagao
-2023,Bilibili Gaming,Yagao
-2023,Bilibili Gaming,Bin
-2023,Bilibili Gaming,Elk
-2023,Bilibili Gaming,ON
-2023,Bilibili Gaming,XUN
-2023,Bilibili Gaming,Yagao
-2023,Cloud9,Berserker
-2023,Cloud9,Blaber
-2023,Cloud9,EMENES
-2023,Cloud9,Fudge
-2023,Cloud9,Zven
-2023,Cloud9,Berserker
-2023,Cloud9,Blaber
-2023,Cloud9,EMENES
-2023,Cloud9,Fudge
-2023,Cloud9,Zven
-2023,DetonatioN FocusMe,Aria
-2023,DetonatioN FocusMe,Harp
-2023,DetonatioN FocusMe,Steal
-2023,DetonatioN FocusMe,tol2
-2023,DetonatioN FocusMe,Yutapon
-2023,Dplus KIA,Canna
-2023,Dplus KIA,Canyon
-2023,Dplus KIA,Deft
-2023,Dplus KIA,Kellin
-2023,Dplus KIA,ShowMaker
-2023,Fnatic,Humanoid
-2023,Fnatic,Noah
-2023,Fnatic,Oscarinin
-2023,Fnatic,Razork
-2023,Fnatic,Trymbi
-2023,G2 Esports,BrokenBlade
-2023,G2 Esports,Caps
-2023,G2 Esports,Hans Sama
-2023,G2 Esports,Mikyx
-2023,G2 Esports,Yike
-2023,G2 Esports,BrokenBlade
-2023,G2 Esports,Caps
-2023,G2 Esports,Hans Sama
-2023,G2 Esports,Mikyx
-2023,G2 Esports,Yike
-2023,GAM Esports,Kati
-2023,GAM Esports,Kiaya
-2023,GAM Esports,Levi
-2023,GAM Esports,Sty1e
-2023,GAM Esports,Zin
-2023,GAM Esports,Kati
-2023,GAM Esports,Kiaya
-2023,GAM Esports,Levi
-2023,GAM Esports,Palette
-2023,GAM Esports,Slayder
-2023,Gen.G,Chovy
-2023,Gen.G,Delight
-2023,Gen.G,Doran
-2023,Gen.G,Peanut
-2023,Gen.G,Peyz
-2023,Gen.G,Chovy
-2023,Gen.G,Delight
-2023,Gen.G,Doran
-2023,Gen.G,Peanut
-2023,Gen.G,Peyz
-2023,Golden Guardians,Gori
-2023,Golden Guardians,huhi
-2023,Golden Guardians,Licorice
-2023,Golden Guardians,River
-2023,Golden Guardians,Stixxay
-2023,JD Gaming,369
-2023,JD Gaming,Kanavi
-2023,JD Gaming,knight
-2023,JD Gaming,MISSING
-2023,JD Gaming,Ruler
-2023,JD Gaming,369
-2023,JD Gaming,Kanavi
-2023,JD Gaming,knight
-2023,JD Gaming,MISSING
-2023,JD Gaming,Ruler
-2023,KT Rolster,Aiming
-2023,KT Rolster,Bdd
-2023,KT Rolster,Cuzz
-2023,KT Rolster,Kiin
-2023,KT Rolster,Lehends
-2023,LNG Esports,GALA
-2023,LNG Esports,Hang
-2023,LNG Esports,Scout
-2023,LNG Esports,Tarzan
-2023,LNG Esports,Zika
-2023,LOUD,Ceos
-2023,LOUD,Croc
-2023,LOUD,Robo
-2023,LOUD,Route
-2023,LOUD,tinowns
-2023,MAD Lions KOI,Carzzy
-2023,MAD Lions KOI,Chasy
-2023,MAD Lions KOI,Elyoya
-2023,MAD Lions KOI,Hylissang
-2023,MAD Lions KOI,Nisqy
-2023,MAD Lions KOI,Carzzy
-2023,MAD Lions KOI,Chasy
-2023,MAD Lions KOI,Elyoya
-2023,MAD Lions KOI,Hylissang
-2023,MAD Lions KOI,Nisqy
-2023,Movistar R7,Bong
-2023,Movistar R7,Ceo
-2023,Movistar R7,Lyonz
-2023,Movistar R7,Mireu
-2023,Movistar R7,Oddie
-2023,NRG,Contractz
-2023,NRG,Dhokla
-2023,NRG,FBI
-2023,NRG,IgNar
-2023,NRG,Palafox
-2023,PSG Talon,Azhi
-2023,PSG Talon,JunJia
-2023,PSG Talon,Uniboy
-2023,PSG Talon,Wako
-2023,PSG Talon,Woody
-2023,T1,Faker
-2023,T1,Gumayusi
-2023,T1,Keria
-2023,T1,Oner
-2023,T1,Zeus
-2023,T1,Faker
-2023,T1,Gumayusi
-2023,T1,Keria
-2023,T1,Oner
-2023,T1,Zeus
-2023,Team BDS,Adam
-2023,Team BDS,Crownie
-2023,Team BDS,Labrov
-2023,Team BDS,nuc
-2023,Team BDS,Sheo
-2023,Team Liquid,APA
-2023,Team Liquid,CoreJJ
-2023,Team Liquid,Pyosik
-2023,Team Liquid,Summit
-2023,Team Liquid,Yeon
-2023,Weibo Gaming,Crisp
-2023,Weibo Gaming,Light
-2023,Weibo Gaming,TheShy
-2023,Weibo Gaming,Weiwei
-2023,Weibo Gaming,Xiaohu
+ime_ekipe,ime_igralca,tip,leto
+EDward Gaming,Korol,WLDs,2014
+EDward Gaming,Clearlove,WLDs,2014
+EDward Gaming,U,WLDs,2014
+EDward Gaming,NaMei,WLDs,2014
+EDward Gaming,FZZF,WLDs,2014
+Samsung White,Looper,WLDs,2014
+Samsung White,DanDy,WLDs,2014
+Samsung White,PawN,WLDs,2014
+Samsung White,imp,WLDs,2014
+Samsung White,Mata,WLDs,2014
+TSM,Dyrus,WLDs,2014
+TSM,Amazing,WLDs,2014
+TSM,Bjergsen,WLDs,2014
+TSM,WildTurtle,WLDs,2014
+TSM,Lustboy,WLDs,2014
+SK Gaming,fredy122,WLDs,2014
+SK Gaming,Gilius,WLDs,2014
+SK Gaming,Jesiz,WLDs,2014
+SK Gaming,CandyPanda,WLDs,2014
+SK Gaming,nRated,WLDs,2014
+Dark Passage,fabFabulous,WLDs,2014
+Dark Passage,Crystal,WLDs,2014
+Dark Passage,Naru,WLDs,2014
+Dark Passage,HolyPhoenix,WLDs,2014
+Dark Passage,Touch,WLDs,2014
+ahq eSports Club,Prydz,WLDs,2014
+ahq eSports Club,Naz,WLDs,2014
+ahq eSports Club,Westdoor,WLDs,2014
+ahq eSports Club,GarnetDevil,WLDs,2014
+ahq eSports Club,GreenTea,WLDs,2014
+Taipei Assassins,Achie,WLDs,2014
+Taipei Assassins,Winds,WLDs,2014
+Taipei Assassins,Morning,WLDs,2014
+Taipei Assassins,BeBe,WLDs,2014
+Taipei Assassins,Chieh,WLDs,2014
+Royal Club,Cola,WLDs,2014
+Royal Club,inSec,WLDs,2014
+Royal Club,Corn,WLDs,2014
+Royal Club,Uzi,WLDs,2014
+Royal Club,Zero,WLDs,2014
+SK Gaming,Svenskeren,WLDs,2014
+LMQ,GodLike,WLDs,2014
+LMQ,NONAME,WLDs,2014
+LMQ,XiaoWeiXiao,WLDs,2014
+LMQ,Vasilii,WLDs,2014
+LMQ,Mor,WLDs,2014
+Oh My God,Gogoing,WLDs,2014
+Oh My God,LoveLing,WLDs,2014
+Oh My God,Cool,WLDs,2014
+Oh My God,san,WLDs,2014
+Oh My God,Da7,WLDs,2014
+NaJin White Shield,Save,WLDs,2014
+NaJin White Shield,Watch,WLDs,2014
+NaJin White Shield,Ggoong,WLDs,2014
+NaJin White Shield,Zefa,WLDs,2014
+NaJin White Shield,GorillA,WLDs,2014
+KaBuM! e-Sports,Lep,WLDs,2014
+KaBuM! e-Sports,Danagorn,WLDs,2014
+KaBuM! e-Sports,tinowns,WLDs,2014
+KaBuM! e-Sports,Minerva,WLDs,2014
+KaBuM! e-Sports,dans,WLDs,2014
+Samsung Blue,Acorn,WLDs,2014
+Samsung Blue,Spirit,WLDs,2014
+Samsung Blue,dade,WLDs,2014
+Samsung Blue,Deft,WLDs,2014
+Samsung Blue,Heart,WLDs,2014
+Cloud9,BalIs,WLDs,2014
+Cloud9,Meteos,WLDs,2014
+Cloud9,Hai,WLDs,2014
+Cloud9,Sneaky,WLDs,2014
+Cloud9,LemonNation,WLDs,2014
+Alliance,Wickd,WLDs,2014
+Alliance,Shook,WLDs,2014
+Alliance,Froggen,WLDs,2014
+Alliance,Tabzz,WLDs,2014
+Alliance,Nyph,WLDs,2014
+Fnatic,sOAZ,WLDs,2014
+Fnatic,Cyanide,WLDs,2014
+Fnatic,xPeke,WLDs,2014
+Fnatic,Rekkles,WLDs,2014
+Fnatic,YellOwStaR,WLDs,2014
+Oh My God,CL0UD,WLDs,2014
+Fnatic,Huni,MSI,2015
+Fnatic,Reignover,MSI,2015
+Fnatic,FEBIVEN,MSI,2015
+Fnatic,Steeelback,MSI,2015
+Fnatic,YellOwStaR,MSI,2015
+TSM,Dyrus,MSI,2015
+TSM,Santorin,MSI,2015
+TSM,Bjergsen,MSI,2015
+TSM,WildTurtle,MSI,2015
+TSM,Lustboy,MSI,2015
+Beşiktaş Esports,Thaldrin,MSI,2015
+Beşiktaş Esports,Theokoles,MSI,2015
+Beşiktaş Esports,Energy,MSI,2015
+Beşiktaş Esports,Nardeus,MSI,2015
+Beşiktaş Esports,Dumbledoge,MSI,2015
+SK Telecom T1,MaRin,MSI,2015
+SK Telecom T1,Bengi,MSI,2015
+SK Telecom T1,Faker,MSI,2015
+SK Telecom T1,Bang,MSI,2015
+SK Telecom T1,Wolf,MSI,2015
+EDward Gaming,Korol,MSI,2015
+EDward Gaming,Clearlove,MSI,2015
+EDward Gaming,PawN,MSI,2015
+EDward Gaming,Deft,MSI,2015
+EDward Gaming,Meiko,MSI,2015
+ahq eSports Club,Ziv,MSI,2015
+ahq eSports Club,Mountain,MSI,2015
+ahq eSports Club,Westdoor,MSI,2015
+ahq eSports Club,An,MSI,2015
+ahq eSports Club,Albis,MSI,2015
+SK Telecom T1,Easyhoon,MSI,2015
+Fnatic,Huni,WLDs,2015
+Fnatic,Reignover,WLDs,2015
+Fnatic,FEBIVEN,WLDs,2015
+Fnatic,Rekkles,WLDs,2015
+Fnatic,YellOwStaR,WLDs,2015
+Invictus Gaming,Zz1tai,WLDs,2015
+Invictus Gaming,KaKAO,WLDs,2015
+Invictus Gaming,Rookie,WLDs,2015
+Invictus Gaming,Kid,WLDs,2015
+Invictus Gaming,Kitties,WLDs,2015
+Cloud9,BalIs,WLDs,2015
+Cloud9,Hai,WLDs,2015
+Cloud9,Jensen,WLDs,2015
+Cloud9,Sneaky,WLDs,2015
+Cloud9,LemonNation,WLDs,2015
+ahq eSports Club,Ziv,WLDs,2015
+ahq eSports Club,Mountain,WLDs,2015
+ahq eSports Club,Westdoor,WLDs,2015
+ahq eSports Club,An,WLDs,2015
+ahq eSports Club,Albis,WLDs,2015
+SK Telecom T1,MaRin,WLDs,2015
+SK Telecom T1,Bengi,WLDs,2015
+SK Telecom T1,Faker,WLDs,2015
+SK Telecom T1,Bang,WLDs,2015
+SK Telecom T1,Wolf,WLDs,2015
+H2k-Gaming,Odoamne,WLDs,2015
+H2k-Gaming,Loulex,WLDs,2015
+H2k-Gaming,Ryu,WLDs,2015
+H2k-Gaming,Hjarnan,WLDs,2015
+H2k-Gaming,Kasing,WLDs,2015
+EDward Gaming,AmazingJ,WLDs,2015
+EDward Gaming,Clearlove,WLDs,2015
+EDward Gaming,PawN,WLDs,2015
+EDward Gaming,Deft,WLDs,2015
+EDward Gaming,Meiko,WLDs,2015
+Bangkok Titans,WarL0cK,WLDs,2015
+Bangkok Titans,007x,WLDs,2015
+Bangkok Titans,G4,WLDs,2015
+Bangkok Titans,Lloyd,WLDs,2015
+Bangkok Titans,Moss,WLDs,2015
+Counter Logic Gaming,Darshan,WLDs,2015
+Counter Logic Gaming,Xmithie,WLDs,2015
+Counter Logic Gaming,Pobelter,WLDs,2015
+Counter Logic Gaming,Doublelift,WLDs,2015
+Counter Logic Gaming,aphromoo,WLDs,2015
+Flash Wolves,Steak,WLDs,2015
+Flash Wolves,Karsa,WLDs,2015
+Flash Wolves,Maple,WLDs,2015
+Flash Wolves,Kramer,WLDs,2015
+Flash Wolves,SwordArt,WLDs,2015
+paiN Gaming,Mylon,WLDs,2015
+paiN Gaming,Sirt,WLDs,2015
+paiN Gaming,Kami,WLDs,2015
+paiN Gaming,brTT,WLDs,2015
+paiN Gaming,Dioud,WLDs,2015
+ROX Tigers,Smeb,WLDs,2015
+ROX Tigers,Hojin,WLDs,2015
+ROX Tigers,Kuro,WLDs,2015
+ROX Tigers,PraY,WLDs,2015
+ROX Tigers,GorillA,WLDs,2015
+KT Rolster,Ssumday,WLDs,2015
+KT Rolster,Score,WLDs,2015
+KT Rolster,Nagne,WLDs,2015
+KT Rolster,Arrow,WLDs,2015
+KT Rolster,Piccaboo,WLDs,2015
+TSM,Dyrus,WLDs,2015
+TSM,Santorin,WLDs,2015
+TSM,Bjergsen,WLDs,2015
+TSM,WildTurtle,WLDs,2015
+TSM,Lustboy,WLDs,2015
+LGD Gaming,Acorn,WLDs,2015
+LGD Gaming,tbq,WLDs,2015
+LGD Gaming,GodV,WLDs,2015
+LGD Gaming,imp,WLDs,2015
+LGD Gaming,Pyl,WLDs,2015
+Origen,sOAZ,WLDs,2015
+Origen,Amazing,WLDs,2015
+Origen,xPeke,WLDs,2015
+Origen,Zven,WLDs,2015
+Origen,Mithy,WLDs,2015
+Flash Wolves,NL,WLDs,2015
+SK Telecom T1,Easyhoon,WLDs,2015
+LGD Gaming,Flame,WLDs,2015
+Invictus Gaming,Time,WLDs,2015
+EDward Gaming,Korol,WLDs,2015
+Royal Never Give Up,Looper,MSI,2016
+Royal Never Give Up,Mlxg,MSI,2016
+Royal Never Give Up,Xiaohu,MSI,2016
+Royal Never Give Up,Wuxx,MSI,2016
+Royal Never Give Up,Mata,MSI,2016
+Counter Logic Gaming,Darshan,MSI,2016
+Counter Logic Gaming,Xmithie,MSI,2016
+Counter Logic Gaming,huhi,MSI,2016
+Counter Logic Gaming,Stixxay,MSI,2016
+Counter Logic Gaming,aphromoo,MSI,2016
+G2 Esports,Kikis,MSI,2016
+G2 Esports,Trick,MSI,2016
+G2 Esports,Perkz,MSI,2016
+G2 Esports,Emperor,MSI,2016
+G2 Esports,Hybrid,MSI,2016
+Flash Wolves,MMD,MSI,2016
+Flash Wolves,Karsa,MSI,2016
+Flash Wolves,Maple,MSI,2016
+Flash Wolves,NL,MSI,2016
+Flash Wolves,SwordArt,MSI,2016
+SK Telecom T1,Duke,MSI,2016
+SK Telecom T1,Blank,MSI,2016
+SK Telecom T1,Faker,MSI,2016
+SK Telecom T1,Bang,MSI,2016
+SK Telecom T1,Wolf,MSI,2016
+SuperMassive Esports,Thaldrin,MSI,2016
+SuperMassive Esports,Stomaged,MSI,2016
+SuperMassive Esports,Naru,MSI,2016
+SuperMassive Esports,Achuu,MSI,2016
+SuperMassive Esports,Dumbledoge,MSI,2016
+SuperMassive Esports,fabFabulous,MSI,2016
+G2 Esports,Expect,WLDs,2016
+G2 Esports,Trick,WLDs,2016
+G2 Esports,Perkz,WLDs,2016
+G2 Esports,Zven,WLDs,2016
+G2 Esports,Mithy,WLDs,2016
+Counter Logic Gaming,Darshan,WLDs,2016
+Counter Logic Gaming,Xmithie,WLDs,2016
+Counter Logic Gaming,huhi,WLDs,2016
+Counter Logic Gaming,Stixxay,WLDs,2016
+Counter Logic Gaming,aphromoo,WLDs,2016
+ROX Tigers,Smeb,WLDs,2016
+ROX Tigers,Peanut,WLDs,2016
+ROX Tigers,Kuro,WLDs,2016
+ROX Tigers,PraY,WLDs,2016
+ROX Tigers,GorillA,WLDs,2016
+Albus NoX Luna,Smurf,WLDs,2016
+Albus NoX Luna,PvPStejos,WLDs,2016
+Albus NoX Luna,Kira,WLDs,2016
+Albus NoX Luna,Onesh0tiq,WLDs,2016
+Albus NoX Luna,Likkrit,WLDs,2016
+H2k-Gaming,Odoamne,WLDs,2016
+H2k-Gaming,Jankos,WLDs,2016
+H2k-Gaming,Ryu,WLDs,2016
+H2k-Gaming,FORG1VEN,WLDs,2016
+H2k-Gaming,Vander,WLDs,2016
+ahq eSports Club,Ziv,WLDs,2016
+ahq eSports Club,Mountain,WLDs,2016
+ahq eSports Club,Westdoor,WLDs,2016
+ahq eSports Club,An,WLDs,2016
+ahq eSports Club,Albis,WLDs,2016
+INTZ,Yang,WLDs,2016
+INTZ,Revolta,WLDs,2016
+INTZ,tockers,WLDs,2016
+INTZ,micaO,WLDs,2016
+INTZ,Jockster,WLDs,2016
+EDward Gaming,Mouse,WLDs,2016
+EDward Gaming,Clearlove,WLDs,2016
+EDward Gaming,PawN,WLDs,2016
+EDward Gaming,Deft,WLDs,2016
+EDward Gaming,Meiko,WLDs,2016
+Samsung Galaxy,CuVee,WLDs,2016
+Samsung Galaxy,Ambition,WLDs,2016
+Samsung Galaxy,Crown,WLDs,2016
+Samsung Galaxy,Ruler,WLDs,2016
+Samsung Galaxy,Wraith,WLDs,2016
+Splyce,Wunder,WLDs,2016
+Splyce,Kold,WLDs,2016
+Splyce,Sencux,WLDs,2016
+Splyce,Kobbe,WLDs,2016
+Splyce,Mikyx,WLDs,2016
+TSM,Hauntzer,WLDs,2016
+TSM,Svenskeren,WLDs,2016
+TSM,Bjergsen,WLDs,2016
+TSM,Doublelift,WLDs,2016
+TSM,Biofrost,WLDs,2016
+Royal Never Give Up,Looper,WLDs,2016
+Royal Never Give Up,Mlxg,WLDs,2016
+Royal Never Give Up,Xiaohu,WLDs,2016
+Royal Never Give Up,Uzi,WLDs,2016
+Royal Never Give Up,Mata,WLDs,2016
+SK Telecom T1,Duke,WLDs,2016
+SK Telecom T1,Bengi,WLDs,2016
+SK Telecom T1,Faker,WLDs,2016
+SK Telecom T1,Bang,WLDs,2016
+SK Telecom T1,Wolf,WLDs,2016
+Cloud9,Impact,WLDs,2016
+Cloud9,Meteos,WLDs,2016
+Cloud9,Jensen,WLDs,2016
+Cloud9,Sneaky,WLDs,2016
+Cloud9,Smoothie,WLDs,2016
+Flash Wolves,MMD,WLDs,2016
+Flash Wolves,Karsa,WLDs,2016
+Flash Wolves,Maple,WLDs,2016
+Flash Wolves,NL,WLDs,2016
+Flash Wolves,SwordArt,WLDs,2016
+I May,AmazingJ,WLDs,2016
+I May,Avoidless,WLDs,2016
+I May,Athena,WLDs,2016
+I May,Jinjiao,WLDs,2016
+I May,Road,WLDs,2016
+ahq eSports Club,Chawy,WLDs,2016
+I May,BaeMe,WLDs,2016
+SK Telecom T1,Blank,WLDs,2016
+Samsung Galaxy,CoreJJ,WLDs,2016
+EDward Gaming,Scout,WLDs,2016
+EDward Gaming,Korol,WLDs,2016
+RED Canids,Robo,MSI,2017
+RED Canids,Nappon,MSI,2017
+RED Canids,tockers,MSI,2017
+RED Canids,brTT,MSI,2017
+RED Canids,Dioud,MSI,2017
+Dire Wolves,Chippys,MSI,2017
+Dire Wolves,Shernfire,MSI,2017
+Dire Wolves,Richard,MSI,2017
+Dire Wolves,k1ng,MSI,2017
+Dire Wolves,Destiny,MSI,2017
+SuperMassive Esports,fabFabulous,MSI,2017
+SuperMassive Esports,Stomaged,MSI,2017
+SuperMassive Esports,Naru,MSI,2017
+SuperMassive Esports,Zeitnot,MSI,2017
+SuperMassive Esports,Dumbledoge,MSI,2017
+Rampage,Evi,MSI,2017
+Rampage,Tussle,MSI,2017
+Rampage,Ramune,MSI,2017
+Rampage,Moyashi,MSI,2017
+Rampage,Dara,MSI,2017
+Virtus.pro,Doxy,MSI,2017
+Virtus.pro,Kreox,MSI,2017
+Virtus.pro,Paranoia,MSI,2017
+Virtus.pro,Blasting,MSI,2017
+Virtus.pro,SaNTaS,MSI,2017
+Lyon Gaming,Jirall,MSI,2017
+Lyon Gaming,Oddie,MSI,2017
+Lyon Gaming,Seiya,MSI,2017
+Lyon Gaming,WhiteLotus,MSI,2017
+Lyon Gaming,Genthix,MSI,2017
+GAM Esports,Stark,MSI,2017
+GAM Esports,Levi,MSI,2017
+GAM Esports,Optimus,MSI,2017
+GAM Esports,Slay,MSI,2017
+GAM Esports,Archie,MSI,2017
+Isurus,Pride,MSI,2017
+Isurus,QQMore,MSI,2017
+Isurus,Emp,MSI,2017
+Isurus,Kindless,MSI,2017
+Isurus,Newbie,MSI,2017
+RED Canids,YoDa,MSI,2017
+TSM,Hauntzer,MSI,2017
+TSM,Svenskeren,MSI,2017
+TSM,Bjergsen,MSI,2017
+TSM,WildTurtle,MSI,2017
+TSM,Biofrost,MSI,2017
+Flash Wolves,MMD,MSI,2017
+Flash Wolves,Karsa,MSI,2017
+Flash Wolves,Maple,MSI,2017
+Flash Wolves,Betty,MSI,2017
+Flash Wolves,SwordArt,MSI,2017
+G2 Esports,Expect,MSI,2017
+G2 Esports,Trick,MSI,2017
+G2 Esports,Perkz,MSI,2017
+G2 Esports,Zven,MSI,2017
+G2 Esports,Mithy,MSI,2017
+SK Telecom T1,Huni,MSI,2017
+SK Telecom T1,Peanut,MSI,2017
+SK Telecom T1,Faker,MSI,2017
+SK Telecom T1,Bang,MSI,2017
+SK Telecom T1,Wolf,MSI,2017
+Team WE,957,MSI,2017
+Team WE,Condi,MSI,2017
+Team WE,xiye,MSI,2017
+Team WE,Mystic,MSI,2017
+Team WE,Ben,MSI,2017
+Team WE,Zero,MSI,2017
+Team WE,957,WLDs,2017
+Team WE,Condi,WLDs,2017
+Team WE,xiye,WLDs,2017
+Team WE,Mystic,WLDs,2017
+Team WE,Ben,WLDs,2017
+Lyon Gaming,Jirall,WLDs,2017
+Lyon Gaming,Oddie,WLDs,2017
+Lyon Gaming,Seiya,WLDs,2017
+Lyon Gaming,WhiteLotus,WLDs,2017
+Lyon Gaming,Genthix,WLDs,2017
+Cloud9,Impact,WLDs,2017
+Cloud9,Contractz,WLDs,2017
+Cloud9,Jensen,WLDs,2017
+Cloud9,Sneaky,WLDs,2017
+Cloud9,Smoothie,WLDs,2017
+Team oNe eSports,VVvert,WLDs,2017
+Team oNe eSports,4LaN,WLDs,2017
+Team oNe eSports,Brucer,WLDs,2017
+Team oNe eSports,Absolut,WLDs,2017
+Team oNe eSports,RedBert,WLDs,2017
+Gambit Esports,PvPStejos,WLDs,2017
+Gambit Esports,Diamondprox,WLDs,2017
+Gambit Esports,Kira,WLDs,2017
+Gambit Esports,Blasting,WLDs,2017
+Gambit Esports,Edward,WLDs,2017
+Dire Wolves,Chippys,WLDs,2017
+Dire Wolves,Shernfire,WLDs,2017
+Dire Wolves,Richard,WLDs,2017
+Dire Wolves,k1ng,WLDs,2017
+Dire Wolves,Destiny,WLDs,2017
+Team oNe eSports,Marfz,WLDs,2017
+Team WE,Zero,WLDs,2017
+Young Generation,Ren,WLDs,2017
+Young Generation,Venus,WLDs,2017
+Young Generation,Naul,WLDs,2017
+Young Generation,Bigkoro,WLDs,2017
+Young Generation,Palette,WLDs,2017
+Kaos Latin Gamers,MANTARRAYA,WLDs,2017
+Kaos Latin Gamers,Tierwulf,WLDs,2017
+Kaos Latin Gamers,Plugo,WLDs,2017
+Kaos Latin Gamers,Fix,WLDs,2017
+Kaos Latin Gamers,Slow,WLDs,2017
+Rampage,Evi,WLDs,2017
+Rampage,Tussle,WLDs,2017
+Rampage,Ramune,WLDs,2017
+Rampage,Moyashi,WLDs,2017
+Rampage,Dara,WLDs,2017
+Hong Kong Attitude,Riris,WLDs,2017
+Hong Kong Attitude,GodKwai,WLDs,2017
+Hong Kong Attitude,Mission,WLDs,2017
+Hong Kong Attitude,Unified,WLDs,2017
+Hong Kong Attitude,Kaiwing,WLDs,2017
+Fnatic,sOAZ,WLDs,2017
+Fnatic,Broxah,WLDs,2017
+Fnatic,Caps,WLDs,2017
+Fnatic,Rekkles,WLDs,2017
+Fnatic,Jesiz,WLDs,2017
+Fenerbahçe Esports,Thaldrin,WLDs,2017
+Fenerbahçe Esports,Crash,WLDs,2017
+Fenerbahçe Esports,Frozen,WLDs,2017
+Fenerbahçe Esports,Padden,WLDs,2017
+Fenerbahçe Esports,Japone,WLDs,2017
+Young Generation,yT,WLDs,2017
+Hong Kong Attitude,Gemini,WLDs,2017
+Royal Never Give Up,Letme,WLDs,2017
+Royal Never Give Up,Mlxg,WLDs,2017
+Royal Never Give Up,Xiaohu,WLDs,2017
+Royal Never Give Up,Uzi,WLDs,2017
+Royal Never Give Up,Ming,WLDs,2017
+G2 Esports,Expect,WLDs,2017
+G2 Esports,Trick,WLDs,2017
+G2 Esports,Perkz,WLDs,2017
+G2 Esports,Zven,WLDs,2017
+G2 Esports,Mithy,WLDs,2017
+Samsung Galaxy,CuVee,WLDs,2017
+Samsung Galaxy,Ambition,WLDs,2017
+Samsung Galaxy,Crown,WLDs,2017
+Samsung Galaxy,Ruler,WLDs,2017
+Samsung Galaxy,CoreJJ,WLDs,2017
+Longzhu Gaming,Khan,WLDs,2017
+Longzhu Gaming,Cuzz,WLDs,2017
+Longzhu Gaming,Bdd,WLDs,2017
+Longzhu Gaming,PraY,WLDs,2017
+Longzhu Gaming,GorillA,WLDs,2017
+Immortals,Flame,WLDs,2017
+Immortals,Xmithie,WLDs,2017
+Immortals,Pobelter,WLDs,2017
+Immortals,Cody Sun,WLDs,2017
+Immortals,Olleh,WLDs,2017
+GAM Esports,Archie,WLDs,2017
+GAM Esports,Levi,WLDs,2017
+GAM Esports,Optimus,WLDs,2017
+GAM Esports,Noway,WLDs,2017
+GAM Esports,Nevan,WLDs,2017
+SK Telecom T1,Huni,WLDs,2017
+SK Telecom T1,Peanut,WLDs,2017
+SK Telecom T1,Faker,WLDs,2017
+SK Telecom T1,Bang,WLDs,2017
+SK Telecom T1,Wolf,WLDs,2017
+EDward Gaming,Mouse,WLDs,2017
+EDward Gaming,Clearlove,WLDs,2017
+EDward Gaming,Scout,WLDs,2017
+EDward Gaming,iBoy,WLDs,2017
+EDward Gaming,Meiko,WLDs,2017
+ahq eSports Club,Ziv,WLDs,2017
+ahq eSports Club,Mountain,WLDs,2017
+ahq eSports Club,Westdoor,WLDs,2017
+ahq eSports Club,An,WLDs,2017
+ahq eSports Club,Albis,WLDs,2017
+Flash Wolves,MMD,WLDs,2017
+Flash Wolves,Karsa,WLDs,2017
+Flash Wolves,Maple,WLDs,2017
+Flash Wolves,Betty,WLDs,2017
+Flash Wolves,SwordArt,WLDs,2017
+TSM,Hauntzer,WLDs,2017
+TSM,Svenskeren,WLDs,2017
+TSM,Bjergsen,WLDs,2017
+TSM,Doublelift,WLDs,2017
+TSM,Biofrost,WLDs,2017
+Misfits Gaming,Alphari,WLDs,2017
+Misfits Gaming,Maxlore,WLDs,2017
+Misfits Gaming,PowerOfEvil,WLDs,2017
+Misfits Gaming,Hans Sama,WLDs,2017
+Misfits Gaming,IgNar,WLDs,2017
+ahq eSports Club,Chawy,WLDs,2017
+Samsung Galaxy,Haru,WLDs,2017
+GAM Esports,Sya,WLDs,2017
+Longzhu Gaming,Rascal,WLDs,2017
+SK Telecom T1,Blank,WLDs,2017
+Gambit Esports,PvPStejos,MSI,2018
+Gambit Esports,Diamondprox,MSI,2018
+Gambit Esports,Kira,MSI,2018
+Gambit Esports,Lodik,MSI,2018
+Gambit Esports,Edward,MSI,2018
+Kaos Latin Gamers,Nate,MSI,2018
+Kaos Latin Gamers,Tierwulf,MSI,2018
+Kaos Latin Gamers,Plugo,MSI,2018
+Kaos Latin Gamers,Fix,MSI,2018
+Kaos Latin Gamers,Slow,MSI,2018
+Rainbow7,Jirall,MSI,2018
+Rainbow7,Oddie,MSI,2018
+Rainbow7,Seiya,MSI,2018
+Rainbow7,WhiteLotus,MSI,2018
+Rainbow7,Genthix,MSI,2018
+Ascension Gaming,Rockky,MSI,2018
+Ascension Gaming,InTreso,MSI,2018
+Ascension Gaming,G4,MSI,2018
+Ascension Gaming,Lloyd,MSI,2018
+Ascension Gaming,Rich,MSI,2018
+SuperMassive Esports,fabFabulous,MSI,2018
+SuperMassive Esports,Stomaged,MSI,2018
+SuperMassive Esports,GBM,MSI,2018
+SuperMassive Esports,Zeitnot,MSI,2018
+SuperMassive Esports,SnowFlower,MSI,2018
+Dire Wolves,Chippys,MSI,2018
+Dire Wolves,Shernfire,MSI,2018
+Dire Wolves,Triple,MSI,2018
+Dire Wolves,k1ng,MSI,2018
+Dire Wolves,Cupcake,MSI,2018
+KaBuM! e-Sports,Zantins,MSI,2018
+KaBuM! e-Sports,Ranger,MSI,2018
+KaBuM! e-Sports,dyNquedo,MSI,2018
+KaBuM! e-Sports,TitaN,MSI,2018
+KaBuM! e-Sports,Riyev,MSI,2018
+PENTAGRAM,Paz,MSI,2018
+PENTAGRAM,Once,MSI,2018
+PENTAGRAM,Ramune,MSI,2018
+PENTAGRAM,Moyashi,MSI,2018
+PENTAGRAM,Gaeng,MSI,2018
+EVOS Esports,Stark,MSI,2018
+EVOS Esports,Yijin,MSI,2018
+EVOS Esports,Warzone,MSI,2018
+EVOS Esports,Slay,MSI,2018
+EVOS Esports,RonOP,MSI,2018
+Flash Wolves,Hanabi,MSI,2018
+Flash Wolves,MooJin,MSI,2018
+Flash Wolves,Maple,MSI,2018
+Flash Wolves,Betty,MSI,2018
+Flash Wolves,SwordArt,MSI,2018
+Fnatic,Bwipo,MSI,2018
+Fnatic,Broxah,MSI,2018
+Fnatic,Caps,MSI,2018
+Fnatic,Rekkles,MSI,2018
+Fnatic,Hylissang,MSI,2018
+Royal Never Give Up,Letme,MSI,2018
+Royal Never Give Up,Mlxg,MSI,2018
+Royal Never Give Up,Xiaohu,MSI,2018
+Royal Never Give Up,Uzi,MSI,2018
+Royal Never Give Up,Ming,MSI,2018
+Kingzone DragonX,Khan,MSI,2018
+Kingzone DragonX,Peanut,MSI,2018
+Kingzone DragonX,Bdd,MSI,2018
+Kingzone DragonX,PraY,MSI,2018
+Kingzone DragonX,GorillA,MSI,2018
+Team Liquid,Impact,MSI,2018
+Team Liquid,Xmithie,MSI,2018
+Team Liquid,Pobelter,MSI,2018
+Team Liquid,Doublelift,MSI,2018
+Team Liquid,Olleh,MSI,2018
+Team Liquid,Joey,MSI,2018
+Fnatic,sOAZ,MSI,2018
+Royal Never Give Up,Karsa,MSI,2018
+Kingzone DragonX,Cuzz,MSI,2018
+Cloud9,Licorice,WLDs,2018
+Cloud9,Blaber,WLDs,2018
+Cloud9,Jensen,WLDs,2018
+Cloud9,Sneaky,WLDs,2018
+Cloud9,Zeyzal,WLDs,2018
+KaBuM! e-Sports,Zantins,WLDs,2018
+KaBuM! e-Sports,Ranger,WLDs,2018
+KaBuM! e-Sports,dyNquedo,WLDs,2018
+KaBuM! e-Sports,TitaN,WLDs,2018
+KaBuM! e-Sports,Riyev,WLDs,2018
+Gambit Esports,PvPStejos,WLDs,2018
+Gambit Esports,Diamondprox,WLDs,2018
+Gambit Esports,Kira,WLDs,2018
+Gambit Esports,Lodik,WLDs,2018
+Gambit Esports,Edward,WLDs,2018
+G-Rex,PK,WLDs,2018
+G-Rex,Empt2y,WLDs,2018
+G-Rex,Candy,WLDs,2018
+G-Rex,Stitch,WLDs,2018
+G-Rex,Koala,WLDs,2018
+DetonatioN FocusMe,Evi,WLDs,2018
+DetonatioN FocusMe,Steal,WLDs,2018
+DetonatioN FocusMe,Ceros,WLDs,2018
+DetonatioN FocusMe,Yutapon,WLDs,2018
+DetonatioN FocusMe,viviD,WLDs,2018
+Kaos Latin Gamers,Nate,WLDs,2018
+Kaos Latin Gamers,Tierwulf,WLDs,2018
+Kaos Latin Gamers,Plugo,WLDs,2018
+Kaos Latin Gamers,Fix,WLDs,2018
+Kaos Latin Gamers,Slow,WLDs,2018
+EDward Gaming,Ray,WLDs,2018
+EDward Gaming,Clearlove,WLDs,2018
+EDward Gaming,Scout,WLDs,2018
+EDward Gaming,iBoy,WLDs,2018
+EDward Gaming,Meiko,WLDs,2018
+Infinity Esports,Relic,WLDs,2018
+Infinity Esports,SolidSnake,WLDs,2018
+Infinity Esports,Cotopaco,WLDs,2018
+Infinity Esports,Renn,WLDs,2018
+Infinity Esports,Arce,WLDs,2018
+G2 Esports,Wunder,WLDs,2018
+G2 Esports,Jankos,WLDs,2018
+G2 Esports,Perkz,WLDs,2018
+G2 Esports,Hjarnan,WLDs,2018
+G2 Esports,Wadid,WLDs,2018
+SuperMassive Esports,fabFabulous,WLDs,2018
+SuperMassive Esports,Stomaged,WLDs,2018
+SuperMassive Esports,GBM,WLDs,2018
+SuperMassive Esports,Zeitnot,WLDs,2018
+SuperMassive Esports,SnowFlower,WLDs,2018
+Dire Wolves,BioPanther,WLDs,2018
+Dire Wolves,Udysof,WLDs,2018
+Dire Wolves,Triple,WLDs,2018
+Dire Wolves,k1ng,WLDs,2018
+Dire Wolves,Cupcake,WLDs,2018
+Ascension Gaming,Rockky,WLDs,2018
+Ascension Gaming,Lloyd,WLDs,2018
+Ascension Gaming,G4,WLDs,2018
+Ascension Gaming,Niksar,WLDs,2018
+Ascension Gaming,Rich,WLDs,2018
+EDward Gaming,Haro,WLDs,2018
+Dire Wolves,Shernfire,WLDs,2018
+Cloud9,Svenskeren,WLDs,2018
+KT Rolster,Smeb,WLDs,2018
+KT Rolster,Score,WLDs,2018
+KT Rolster,ucal,WLDs,2018
+KT Rolster,Deft,WLDs,2018
+KT Rolster,Mata,WLDs,2018
+Team Liquid,Impact,WLDs,2018
+Team Liquid,Xmithie,WLDs,2018
+Team Liquid,Pobelter,WLDs,2018
+Team Liquid,Doublelift,WLDs,2018
+Team Liquid,Olleh,WLDs,2018
+MAD Team,Liang,WLDs,2018
+MAD Team,Kongyue,WLDs,2018
+MAD Team,Uniboy,WLDs,2018
+MAD Team,Breeze,WLDs,2018
+MAD Team,K,WLDs,2018
+Phong Vũ Buffalo,Zeros,WLDs,2018
+Phong Vũ Buffalo,Meliodas,WLDs,2018
+Phong Vũ Buffalo,Naul,WLDs,2018
+Phong Vũ Buffalo,Bigkoro,WLDs,2018
+Phong Vũ Buffalo,Palette,WLDs,2018
+Flash Wolves,Hanabi,WLDs,2018
+Flash Wolves,MooJin,WLDs,2018
+Flash Wolves,Maple,WLDs,2018
+Flash Wolves,Betty,WLDs,2018
+Flash Wolves,SwordArt,WLDs,2018
+Kwangdong Freecs,Kiin,WLDs,2018
+Kwangdong Freecs,Spirit,WLDs,2018
+Kwangdong Freecs,Kuro,WLDs,2018
+Kwangdong Freecs,Kramer,WLDs,2018
+Kwangdong Freecs,TusiN,WLDs,2018
+Royal Never Give Up,Letme,WLDs,2018
+Royal Never Give Up,Karsa,WLDs,2018
+Royal Never Give Up,Xiaohu,WLDs,2018
+Royal Never Give Up,Uzi,WLDs,2018
+Royal Never Give Up,Ming,WLDs,2018
+Gen.G,CuVee,WLDs,2018
+Gen.G,Haru,WLDs,2018
+Gen.G,Crown,WLDs,2018
+Gen.G,Ruler,WLDs,2018
+Gen.G,CoreJJ,WLDs,2018
+Team Vitality,Cabochard,WLDs,2018
+Team Vitality,Kikis,WLDs,2018
+Team Vitality,Jiizuke,WLDs,2018
+Team Vitality,Attila,WLDs,2018
+Team Vitality,Jactroll,WLDs,2018
+100 Thieves,Ssumday,WLDs,2018
+100 Thieves,AnDa,WLDs,2018
+100 Thieves,Ryu,WLDs,2018
+100 Thieves,Rikara,WLDs,2018
+100 Thieves,aphromoo,WLDs,2018
+Fnatic,sOAZ,WLDs,2018
+Fnatic,Broxah,WLDs,2018
+Fnatic,Caps,WLDs,2018
+Fnatic,Rekkles,WLDs,2018
+Fnatic,Hylissang,WLDs,2018
+Invictus Gaming,Duke,WLDs,2018
+Invictus Gaming,Ning,WLDs,2018
+Invictus Gaming,Rookie,WLDs,2018
+Invictus Gaming,JackeyLove,WLDs,2018
+Invictus Gaming,Baolan,WLDs,2018
+G-Rex,baybay,WLDs,2018
+Kwangdong Freecs,Mowgli,WLDs,2018
+Invictus Gaming,TheShy,WLDs,2018
+Fnatic,Bwipo,WLDs,2018
+Gen.G,Ambition,WLDs,2018
+Royal Never Give Up,Mlxg,WLDs,2018
+Phong Vũ Buffalo,XuHao,WLDs,2018
+MAD Team,Benny,WLDs,2018
+Phong Vũ Buffalo,Zeros,MSI,2019
+Phong Vũ Buffalo,Meliodas,MSI,2019
+Phong Vũ Buffalo,Naul,MSI,2019
+Phong Vũ Buffalo,Bigkoro,MSI,2019
+Phong Vũ Buffalo,Palette,MSI,2019
+Bombers,Mimic,MSI,2019
+Bombers,BalKhan,MSI,2019
+Bombers,ry0ma,MSI,2019
+Bombers,FBI,MSI,2019
+Bombers,Rogue,MSI,2019
+Fenerbahçe Esports,Ruin,MSI,2019
+Fenerbahçe Esports,Kirei,MSI,2019
+Fenerbahçe Esports,Bolulu,MSI,2019
+Fenerbahçe Esports,Ellam,MSI,2019
+Fenerbahçe Esports,Japone,MSI,2019
+Isurus,Buggax,MSI,2019
+Isurus,Oddie,MSI,2019
+Isurus,Seiya,MSI,2019
+Isurus,Warangelus,MSI,2019
+Isurus,Slow,MSI,2019
+Fenerbahçe Esports,Only35,MSI,2019
+MEGA,Rockky,MSI,2019
+MEGA,Jjun,MSI,2019
+MEGA,G4,MSI,2019
+MEGA,Lloyd,MSI,2019
+MEGA,Pop,MSI,2019
+DetonatioN FocusMe,Evi,MSI,2019
+DetonatioN FocusMe,Steal,MSI,2019
+DetonatioN FocusMe,Ceros,MSI,2019
+DetonatioN FocusMe,Yutapon,MSI,2019
+DetonatioN FocusMe,Gaeng,MSI,2019
+Vega Squadron,BOSS,MSI,2019
+Vega Squadron,AHaHaCiK,MSI,2019
+Vega Squadron,Nomanz,MSI,2019
+Vega Squadron,Gadget,MSI,2019
+Vega Squadron,SaNTaS,MSI,2019
+INTZ,Tay,MSI,2019
+INTZ,Shini,MSI,2019
+INTZ,Envy,MSI,2019
+INTZ,Mills,MSI,2019
+INTZ,RedBert,MSI,2019
+Team Liquid,Impact,MSI,2019
+Team Liquid,Xmithie,MSI,2019
+Team Liquid,Jensen,MSI,2019
+Team Liquid,Doublelift,MSI,2019
+Team Liquid,CoreJJ,MSI,2019
+Flash Wolves,Hanabi,MSI,2019
+Flash Wolves,Bugi,MSI,2019
+Flash Wolves,Rather,MSI,2019
+Flash Wolves,Betty,MSI,2019
+Flash Wolves,ShiauC,MSI,2019
+G2 Esports,Wunder,MSI,2019
+G2 Esports,Jankos,MSI,2019
+G2 Esports,Caps,MSI,2019
+G2 Esports,Perkz,MSI,2019
+G2 Esports,Mikyx,MSI,2019
+SK Telecom T1,Khan,MSI,2019
+SK Telecom T1,Clid,MSI,2019
+SK Telecom T1,Faker,MSI,2019
+SK Telecom T1,Teddy,MSI,2019
+SK Telecom T1,Mata,MSI,2019
+Phong Vũ Buffalo,XuHao,MSI,2019
+Invictus Gaming,TheShy,MSI,2019
+Invictus Gaming,Ning,MSI,2019
+Invictus Gaming,Rookie,MSI,2019
+Invictus Gaming,JackeyLove,MSI,2019
+Invictus Gaming,Baolan,MSI,2019
+Clutch Gaming,Huni,WLDs,2019
+Clutch Gaming,Lira,WLDs,2019
+Clutch Gaming,Damonte,WLDs,2019
+Clutch Gaming,Cody Sun,WLDs,2019
+Clutch Gaming,Vulcan,WLDs,2019
+Unicorns of Love.CIS,BOSS,WLDs,2019
+Unicorns of Love.CIS,AHaHaCiK,WLDs,2019
+Unicorns of Love.CIS,Nomanz,WLDs,2019
+Unicorns of Love.CIS,Innaxe,WLDs,2019
+Unicorns of Love.CIS,Edward,WLDs,2019
+DetonatioN FocusMe,Evi,WLDs,2019
+DetonatioN FocusMe,Steal,WLDs,2019
+DetonatioN FocusMe,Ceros,WLDs,2019
+DetonatioN FocusMe,Yutapon,WLDs,2019
+DetonatioN FocusMe,Gaeng,WLDs,2019
+Splyce,Vizicsacsi,WLDs,2019
+Splyce,Xerxe,WLDs,2019
+Splyce,Humanoid,WLDs,2019
+Splyce,Kobbe,WLDs,2019
+Splyce,Tore,WLDs,2019
+MAMMOTH,Fudge,WLDs,2019
+MAMMOTH,Babip,WLDs,2019
+MAMMOTH,Triple,WLDs,2019
+MAMMOTH,k1ng,WLDs,2019
+MAMMOTH,Destiny,WLDs,2019
+Isurus,Buggax,WLDs,2019
+Isurus,Oddie,WLDs,2019
+Isurus,Seiya,WLDs,2019
+Isurus,Warangelus,WLDs,2019
+Isurus,Slow,WLDs,2019
+Royal Youth,Armut,WLDs,2019
+Royal Youth,Closer,WLDs,2019
+Royal Youth,cyeol,WLDs,2019
+Royal Youth,Pilot,WLDs,2019
+Royal Youth,Tolerant,WLDs,2019
+DWG KIA,Nuguri,WLDs,2019
+DWG KIA,Canyon,WLDs,2019
+DWG KIA,ShowMaker,WLDs,2019
+DWG KIA,Nuclear,WLDs,2019
+DWG KIA,BeryL,WLDs,2019
+MEGA,Rockky,WLDs,2019
+MEGA,Lloyd,WLDs,2019
+MEGA,G4,WLDs,2019
+MEGA,DeuL,WLDs,2019
+MEGA,Pop,WLDs,2019
+Hong Kong Attitude,3z,WLDs,2019
+Hong Kong Attitude,Crash,WLDs,2019
+Hong Kong Attitude,Mission,WLDs,2019
+Hong Kong Attitude,MnM,WLDs,2019
+Hong Kong Attitude,Kaiwing,WLDs,2019
+Flamengo Esports,Robo,WLDs,2019
+Flamengo Esports,Shrimp,WLDs,2019
+Flamengo Esports,Goku,WLDs,2019
+Flamengo Esports,brTT,WLDs,2019
+Flamengo Esports,Luci,WLDs,2019
+Lowkey Esports.Vietnam,Hani,WLDs,2019
+Lowkey Esports.Vietnam,DNK,WLDs,2019
+Lowkey Esports.Vietnam,Artifact,WLDs,2019
+Lowkey Esports.Vietnam,Celebrity,WLDs,2019
+Lowkey Esports.Vietnam,Venus,WLDs,2019
+Hong Kong Attitude,Unified,WLDs,2019
+Fnatic,Bwipo,WLDs,2019
+Fnatic,Broxah,WLDs,2019
+Fnatic,Nemesis,WLDs,2019
+Fnatic,Rekkles,WLDs,2019
+Fnatic,Hylissang,WLDs,2019
+SK Telecom T1,Khan,WLDs,2019
+SK Telecom T1,Clid,WLDs,2019
+SK Telecom T1,Faker,WLDs,2019
+SK Telecom T1,Teddy,WLDs,2019
+SK Telecom T1,Effort,WLDs,2019
+Royal Never Give Up,Langx,WLDs,2019
+Royal Never Give Up,Karsa,WLDs,2019
+Royal Never Give Up,Xiaohu,WLDs,2019
+Royal Never Give Up,Uzi,WLDs,2019
+Royal Never Give Up,Ming,WLDs,2019
+Invictus Gaming,TheShy,WLDs,2019
+Invictus Gaming,Leyan,WLDs,2019
+Invictus Gaming,Rookie,WLDs,2019
+Invictus Gaming,JackeyLove,WLDs,2019
+Invictus Gaming,Baolan,WLDs,2019
+ahq eSports Club,Ziv,WLDs,2019
+ahq eSports Club,Alex,WLDs,2019
+ahq eSports Club,Rainbow,WLDs,2019
+ahq eSports Club,Wako,WLDs,2019
+ahq eSports Club,Ysera,WLDs,2019
+Team Liquid,Impact,WLDs,2019
+Team Liquid,Xmithie,WLDs,2019
+Team Liquid,Jensen,WLDs,2019
+Team Liquid,Doublelift,WLDs,2019
+Team Liquid,CoreJJ,WLDs,2019
+J Team,Rest,WLDs,2019
+J Team,Hana,WLDs,2019
+J Team,FoFo,WLDs,2019
+J Team,Lilv,WLDs,2019
+J Team,Koala,WLDs,2019
+FunPlus Phoenix,GimGoon,WLDs,2019
+FunPlus Phoenix,Tian,WLDs,2019
+FunPlus Phoenix,Doinb,WLDs,2019
+FunPlus Phoenix,Lwx,WLDs,2019
+FunPlus Phoenix,Crisp,WLDs,2019
+GAM Esports,Zeros,WLDs,2019
+GAM Esports,Levi,WLDs,2019
+GAM Esports,Kiaya,WLDs,2019
+GAM Esports,Zin,WLDs,2019
+GAM Esports,Hieu3,WLDs,2019
+Griffin,Sw0rd,WLDs,2019
+Griffin,Tarzan,WLDs,2019
+Griffin,Chovy,WLDs,2019
+Griffin,Viper,WLDs,2019
+Griffin,Lehends,WLDs,2019
+G2 Esports,Wunder,WLDs,2019
+G2 Esports,Jankos,WLDs,2019
+G2 Esports,Caps,WLDs,2019
+G2 Esports,Perkz,WLDs,2019
+G2 Esports,Mikyx,WLDs,2019
+Cloud9,Licorice,WLDs,2019
+Cloud9,Svenskeren,WLDs,2019
+Cloud9,Nisqy,WLDs,2019
+Cloud9,Sneaky,WLDs,2019
+Cloud9,Zeyzal,WLDs,2019
+GAM Esports,Slay,WLDs,2019
+Cloud9,Blaber,WLDs,2019
+Cloud9,Deftly,WLDs,2019
+Invictus Gaming,Ning,WLDs,2019
+ahq eSports Club,Apex,WLDs,2019
+SK Telecom T1,Mata,WLDs,2019
+MAD Lions,Orome,WLDs,2020
+MAD Lions,shad0w,WLDs,2020
+MAD Lions,Humanoid,WLDs,2020
+MAD Lions,Carzzy,WLDs,2020
+MAD Lions,Kaiser,WLDs,2020
+INTZ,Tay,WLDs,2020
+INTZ,Shini,WLDs,2020
+INTZ,Envy,WLDs,2020
+INTZ,micaO,WLDs,2020
+INTZ,RedBert,WLDs,2020
+PSG Talon,Hanabi,WLDs,2020
+PSG Talon,Kongyue,WLDs,2020
+PSG Talon,Uniboy,WLDs,2020
+PSG Talon,Dee,WLDs,2020
+PSG Talon,Kaiwing,WLDs,2020
+Rainbow7,Acce,WLDs,2020
+Rainbow7,Josedeodo,WLDs,2020
+Rainbow7,Aloned,WLDs,2020
+Rainbow7,Leza,WLDs,2020
+Rainbow7,Shadow,WLDs,2020
+Legacy Esports,Topoon,WLDs,2020
+Legacy Esports,Babip,WLDs,2020
+Legacy Esports,Tally,WLDs,2020
+Legacy Esports,Raes,WLDs,2020
+Legacy Esports,Isles,WLDs,2020
+LGD Gaming,Langx,WLDs,2020
+LGD Gaming,Peanut,WLDs,2020
+LGD Gaming,xiye,WLDs,2020
+LGD Gaming,Kramer,WLDs,2020
+LGD Gaming,Mark,WLDs,2020
+Team Liquid,Impact,WLDs,2020
+Team Liquid,Broxah,WLDs,2020
+Team Liquid,Jensen,WLDs,2020
+Team Liquid,Tactical,WLDs,2020
+Team Liquid,CoreJJ,WLDs,2020
+V3 Esports,Paz,WLDs,2020
+V3 Esports,Bugi,WLDs,2020
+V3 Esports,Acee,WLDs,2020
+V3 Esports,Archer,WLDs,2020
+V3 Esports,Raina,WLDs,2020
+SuperMassive Esports,Armut,WLDs,2020
+SuperMassive Esports,KaKAO,WLDs,2020
+SuperMassive Esports,Bolulu,WLDs,2020
+SuperMassive Esports,Zeitnot,WLDs,2020
+SuperMassive Esports,SnowFlower,WLDs,2020
+Unicorns of Love.CIS,BOSS,WLDs,2020
+Unicorns of Love.CIS,AHaHaCiK,WLDs,2020
+Unicorns of Love.CIS,Nomanz,WLDs,2020
+Unicorns of Love.CIS,Gadget,WLDs,2020
+Unicorns of Love.CIS,SaNTaS,WLDs,2020
+PSG Talon,Unified,WLDs,2020
+FlyQuest,Solo,WLDs,2020
+FlyQuest,Santorin,WLDs,2020
+FlyQuest,PowerOfEvil,WLDs,2020
+FlyQuest,WildTurtle,WLDs,2020
+FlyQuest,IgNar,WLDs,2020
+Top Esports,369,WLDs,2020
+Top Esports,Karsa,WLDs,2020
+Top Esports,knight,WLDs,2020
+Top Esports,JackeyLove,WLDs,2020
+Top Esports,yuyanjia,WLDs,2020
+DRX,Doran,WLDs,2020
+DRX,Pyosik,WLDs,2020
+DRX,Chovy,WLDs,2020
+DRX,Deft,WLDs,2020
+DRX,Keria,WLDs,2020
+Rogue,Finn,WLDs,2020
+Rogue,Inspired,WLDs,2020
+Rogue,Larssen,WLDs,2020
+Rogue,Hans Sama,WLDs,2020
+Rogue,Vander,WLDs,2020
+PSG Talon,River,WLDs,2020
+PSG Talon,Tank,WLDs,2020
+DWG KIA,Nuguri,WLDs,2020
+DWG KIA,Canyon,WLDs,2020
+DWG KIA,ShowMaker,WLDs,2020
+DWG KIA,Ghost,WLDs,2020
+DWG KIA,BeryL,WLDs,2020
+JD Gaming,Zoom,WLDs,2020
+JD Gaming,Kanavi,WLDs,2020
+JD Gaming,Yagao,WLDs,2020
+JD Gaming,LokeN,WLDs,2020
+JD Gaming,LvMao,WLDs,2020
+Gen.G,Rascal,WLDs,2020
+Gen.G,Clid,WLDs,2020
+Gen.G,Bdd,WLDs,2020
+Gen.G,Ruler,WLDs,2020
+Gen.G,Life,WLDs,2020
+TSM,BrokenBlade,WLDs,2020
+TSM,Spica,WLDs,2020
+TSM,Bjergsen,WLDs,2020
+TSM,Doublelift,WLDs,2020
+TSM,Biofrost,WLDs,2020
+Fnatic,Bwipo,WLDs,2020
+Fnatic,Selfmade,WLDs,2020
+Fnatic,Nemesis,WLDs,2020
+Fnatic,Rekkles,WLDs,2020
+Fnatic,Hylissang,WLDs,2020
+Machi Esports,PK,WLDs,2020
+Machi Esports,Gemini,WLDs,2020
+Machi Esports,Mission,WLDs,2020
+Machi Esports,Bruce,WLDs,2020
+Machi Esports,Koala,WLDs,2020
+G2 Esports,Wunder,WLDs,2020
+G2 Esports,Jankos,WLDs,2020
+G2 Esports,Caps,WLDs,2020
+G2 Esports,Perkz,WLDs,2020
+G2 Esports,Mikyx,WLDs,2020
+Suning,Bin,WLDs,2020
+Suning,SofM,WLDs,2020
+Suning,Angel,WLDs,2020
+Suning,huanfeng,WLDs,2020
+Suning,SwordArt,WLDs,2020
+DWG KIA,Khan,MSI,2021
+DWG KIA,Canyon,MSI,2021
+DWG KIA,ShowMaker,MSI,2021
+DWG KIA,Ghost,MSI,2021
+DWG KIA,BeryL,MSI,2021
+Cloud9,Fudge,MSI,2021
+Cloud9,Blaber,MSI,2021
+Cloud9,Perkz,MSI,2021
+Cloud9,Zven,MSI,2021
+Cloud9,Vulcan,MSI,2021
+Infinity Esports,Buggax,MSI,2021
+Infinity Esports,SolidSnake,MSI,2021
+Infinity Esports,cody,MSI,2021
+Infinity Esports,WhiteLotus,MSI,2021
+Infinity Esports,Ackerman,MSI,2021
+DetonatioN FocusMe,Evi,MSI,2021
+DetonatioN FocusMe,Steal,MSI,2021
+DetonatioN FocusMe,Aria,MSI,2021
+DetonatioN FocusMe,Yutapon,MSI,2021
+DetonatioN FocusMe,Kazu,MSI,2021
+Royal Never Give Up,Xiaohu,MSI,2021
+Royal Never Give Up,Wei,MSI,2021
+Royal Never Give Up,Cryin,MSI,2021
+Royal Never Give Up,GALA,MSI,2021
+Royal Never Give Up,Ming,MSI,2021
+Pentanet.GG,BioPanther,MSI,2021
+Pentanet.GG,Pabu,MSI,2021
+Pentanet.GG,Chazz,MSI,2021
+Pentanet.GG,Praedyth,MSI,2021
+Pentanet.GG,Decoy,MSI,2021
+Unicorns of Love.CIS,BOSS,MSI,2021
+Unicorns of Love.CIS,AHaHaCiK,MSI,2021
+Unicorns of Love.CIS,Nomanz,MSI,2021
+Unicorns of Love.CIS,Lodik,MSI,2021
+Unicorns of Love.CIS,SaNTaS,MSI,2021
+İstanbul Wildcats,StarScreen,MSI,2021
+İstanbul Wildcats,Ferret,MSI,2021
+İstanbul Wildcats,Serin,MSI,2021
+İstanbul Wildcats,HolyPhoenix,MSI,2021
+İstanbul Wildcats,Farfetch,MSI,2021
+paiN Gaming,Robo,MSI,2021
+paiN Gaming,CarioK,MSI,2021
+paiN Gaming,tinowns,MSI,2021
+paiN Gaming,brTT,MSI,2021
+paiN Gaming,Luci,MSI,2021
+MAD Lions,Armut,MSI,2021
+MAD Lions,Elyoya,MSI,2021
+MAD Lions,Humanoid,MSI,2021
+MAD Lions,Carzzy,MSI,2021
+MAD Lions,Kaiser,MSI,2021
+PSG Talon,Hanabi,MSI,2021
+PSG Talon,River,MSI,2021
+PSG Talon,Maple,MSI,2021
+PSG Talon,Doggo,MSI,2021
+PSG Talon,Kaiwing,MSI,2021
+Royal Never Give Up,Xiaobai,MSI,2021
+Hanwha Life Esports,Morgan,WLDs,2021
+Hanwha Life Esports,Willer,WLDs,2021
+Hanwha Life Esports,Chovy,WLDs,2021
+Hanwha Life Esports,Deft,WLDs,2021
+Hanwha Life Esports,Vsta,WLDs,2021
+LNG Esports,Ale,WLDs,2021
+LNG Esports,Tarzan,WLDs,2021
+LNG Esports,icon,WLDs,2021
+LNG Esports,Light,WLDs,2021
+LNG Esports,Iwandy,WLDs,2021
+Infinity Esports,Buggax,WLDs,2021
+Infinity Esports,SolidSnake,WLDs,2021
+Infinity Esports,cody,WLDs,2021
+Infinity Esports,WhiteLotus,WLDs,2021
+Infinity Esports,Ackerman,WLDs,2021
+RED Canids,GUIGO,WLDs,2021
+RED Canids,Aegis,WLDs,2021
+RED Canids,Grevthar,WLDs,2021
+RED Canids,TitaN,WLDs,2021
+RED Canids,Jojo,WLDs,2021
+PEACE,Vizicsacsi,WLDs,2021
+PEACE,Babip,WLDs,2021
+PEACE,Tally,WLDs,2021
+PEACE,Violet,WLDs,2021
+PEACE,Aladoric,WLDs,2021
+Unicorns of Love.CIS,BOSS,WLDs,2021
+Unicorns of Love.CIS,AHaHaCiK,WLDs,2021
+Unicorns of Love.CIS,Nomanz,WLDs,2021
+Unicorns of Love.CIS,MDB,WLDs,2021
+Unicorns of Love.CIS,SaNTaS,WLDs,2021
+DetonatioN FocusMe,Evi,WLDs,2021
+DetonatioN FocusMe,Steal,WLDs,2021
+DetonatioN FocusMe,Aria,WLDs,2021
+DetonatioN FocusMe,Yutapon,WLDs,2021
+DetonatioN FocusMe,Gaeng,WLDs,2021
+Galatasaray Esports,Crazy,WLDs,2021
+Galatasaray Esports,Mojito,WLDs,2021
+Galatasaray Esports,Bolulu,WLDs,2021
+Galatasaray Esports,Alive,WLDs,2021
+Galatasaray Esports,Zergsting,WLDs,2021
+Beyond Gaming,PK,WLDs,2021
+Beyond Gaming,Husha,WLDs,2021
+Beyond Gaming,1116,WLDs,2021
+Beyond Gaming,Doggo,WLDs,2021
+Beyond Gaming,Kino,WLDs,2021
+Cloud9,Fudge,WLDs,2021
+Cloud9,Blaber,WLDs,2021
+Cloud9,Perkz,WLDs,2021
+Cloud9,Zven,WLDs,2021
+Cloud9,Vulcan,WLDs,2021
+Beyond Gaming,Liang,WLDs,2021
+RED Canids,Avenger,WLDs,2021
+DWG KIA,Khan,WLDs,2021
+DWG KIA,Canyon,WLDs,2021
+DWG KIA,ShowMaker,WLDs,2021
+DWG KIA,Ghost,WLDs,2021
+DWG KIA,BeryL,WLDs,2021
+FunPlus Phoenix,Nuguri,WLDs,2021
+FunPlus Phoenix,Tian,WLDs,2021
+FunPlus Phoenix,Doinb,WLDs,2021
+FunPlus Phoenix,Lwx,WLDs,2021
+FunPlus Phoenix,Crisp,WLDs,2021
+Royal Never Give Up,Xiaohu,WLDs,2021
+Royal Never Give Up,Wei,WLDs,2021
+Royal Never Give Up,Cryin,WLDs,2021
+Royal Never Give Up,GALA,WLDs,2021
+Royal Never Give Up,Ming,WLDs,2021
+PSG Talon,Hanabi,WLDs,2021
+PSG Talon,River,WLDs,2021
+PSG Talon,Maple,WLDs,2021
+PSG Talon,Unified,WLDs,2021
+PSG Talon,Kaiwing,WLDs,2021
+Fnatic,Adam,WLDs,2021
+Fnatic,Bwipo,WLDs,2021
+Fnatic,Nisqy,WLDs,2021
+Fnatic,BEAN,WLDs,2021
+Fnatic,Hylissang,WLDs,2021
+Gen.G,Rascal,WLDs,2021
+Gen.G,Clid,WLDs,2021
+Gen.G,Bdd,WLDs,2021
+Gen.G,Ruler,WLDs,2021
+Gen.G,Life,WLDs,2021
+T1,Canna,WLDs,2021
+T1,Oner,WLDs,2021
+T1,Faker,WLDs,2021
+T1,Gumayusi,WLDs,2021
+T1,Keria,WLDs,2021
+EDward Gaming,Flandre,WLDs,2021
+EDward Gaming,Jiejie,WLDs,2021
+EDward Gaming,Scout,WLDs,2021
+EDward Gaming,Viper,WLDs,2021
+EDward Gaming,Meiko,WLDs,2021
+100 Thieves,Ssumday,WLDs,2021
+100 Thieves,Closer,WLDs,2021
+100 Thieves,Abbedagge,WLDs,2021
+100 Thieves,FBI,WLDs,2021
+100 Thieves,huhi,WLDs,2021
+Team Liquid,Alphari,WLDs,2021
+Team Liquid,Santorin,WLDs,2021
+Team Liquid,Jensen,WLDs,2021
+Team Liquid,Tactical,WLDs,2021
+Team Liquid,CoreJJ,WLDs,2021
+MAD Lions,Armut,WLDs,2021
+MAD Lions,Elyoya,WLDs,2021
+MAD Lions,Humanoid,WLDs,2021
+MAD Lions,Carzzy,WLDs,2021
+MAD Lions,Kaiser,WLDs,2021
+Rogue,Odoamne,WLDs,2021
+Rogue,Inspired,WLDs,2021
+Rogue,Larssen,WLDs,2021
+Rogue,Hans Sama,WLDs,2021
+Rogue,Trymbi,WLDs,2021
+Gen.G,Burdol,WLDs,2021
+T1,Zeus,MSI,2022
+T1,Oner,MSI,2022
+T1,Faker,MSI,2022
+T1,Gumayusi,MSI,2022
+T1,Keria,MSI,2022
+Saigon Buffalo,Hasmed,MSI,2022
+Saigon Buffalo,BeanJ,MSI,2022
+Saigon Buffalo,Froggy,MSI,2022
+Saigon Buffalo,Shogun,MSI,2022
+Saigon Buffalo,Taki,MSI,2022
+Team Aze,Lonely,MSI,2022
+Team Aze,Dimitry,MSI,2022
+Team Aze,Aloned,MSI,2022
+Team Aze,5kid,MSI,2022
+Team Aze,Straight,MSI,2022
+DetonatioN FocusMe,Evi,MSI,2022
+DetonatioN FocusMe,Steal,MSI,2022
+DetonatioN FocusMe,Yaharong,MSI,2022
+DetonatioN FocusMe,Yutapon,MSI,2022
+DetonatioN FocusMe,Harp,MSI,2022
+ORDER,BioPanther,MSI,2022
+ORDER,Kevy,MSI,2022
+ORDER,Kisee,MSI,2022
+ORDER,Puma,MSI,2022
+ORDER,Corporal,MSI,2022
+G2 Esports,BrokenBlade,MSI,2022
+G2 Esports,Jankos,MSI,2022
+G2 Esports,Caps,MSI,2022
+G2 Esports,Flakked,MSI,2022
+G2 Esports,Targamas,MSI,2022
+Evil Geniuses,Impact,MSI,2022
+Evil Geniuses,Inspired,MSI,2022
+Evil Geniuses,jojopyun,MSI,2022
+Evil Geniuses,Danny,MSI,2022
+Evil Geniuses,Vulcan,MSI,2022
+İstanbul Wildcats,StarScreen,MSI,2022
+İstanbul Wildcats,Ferret,MSI,2022
+İstanbul Wildcats,Serin,MSI,2022
+İstanbul Wildcats,HolyPhoenix,MSI,2022
+İstanbul Wildcats,Farfetch,MSI,2022
+Royal Never Give Up,Bin,MSI,2022
+Royal Never Give Up,Wei,MSI,2022
+Royal Never Give Up,Xiaohu,MSI,2022
+Royal Never Give Up,GALA,MSI,2022
+Royal Never Give Up,Ming,MSI,2022
+RED Canids,GUIGO,MSI,2022
+RED Canids,Aegis,MSI,2022
+RED Canids,Grevthar,MSI,2022
+RED Canids,TitaN,MSI,2022
+RED Canids,Jojo,MSI,2022
+PSG Talon,Hanabi,MSI,2022
+PSG Talon,Juhan,MSI,2022
+PSG Talon,Bay,MSI,2022
+PSG Talon,Unified,MSI,2022
+PSG Talon,Kaiwing,MSI,2022
+PSG Talon,Azhi,MSI,2022
+DWG KIA,Nuguri,WLDs,2022
+DWG KIA,Canyon,WLDs,2022
+DWG KIA,ShowMaker,WLDs,2022
+DWG KIA,deokdam,WLDs,2022
+DWG KIA,Kellin,WLDs,2022
+Liiv SANDBOX,Dove,WLDs,2022
+Liiv SANDBOX,Croco,WLDs,2022
+Liiv SANDBOX,Clozer,WLDs,2022
+Liiv SANDBOX,Prince,WLDs,2022
+Liiv SANDBOX,Kael,WLDs,2022
+DWG KIA,Burdol,WLDs,2022
+KT Rolster,Rascal,WLDs,2022
+KT Rolster,Cuzz,WLDs,2022
+KT Rolster,VicLa,WLDs,2022
+KT Rolster,Aiming,WLDs,2022
+KT Rolster,Life,WLDs,2022
+DRX,Kingen,WLDs,2022
+DRX,Pyosik,WLDs,2022
+DRX,Zeka,WLDs,2022
+DRX,Deft,WLDs,2022
+DRX,BeryL,WLDs,2022
+Royal Never Give Up,Breathe,WLDs,2022
+Royal Never Give Up,Wei,WLDs,2022
+Royal Never Give Up,Xiaohu,WLDs,2022
+Royal Never Give Up,GALA,WLDs,2022
+Royal Never Give Up,Ming,WLDs,2022
+EDward Gaming,Flandre,WLDs,2022
+EDward Gaming,JunJia,WLDs,2022
+EDward Gaming,Scout,WLDs,2022
+EDward Gaming,Viper,WLDs,2022
+EDward Gaming,Meiko,WLDs,2022
+EDward Gaming,Jiejie,WLDs,2022
+DRX,Juhan,WLDs,2022
+Victory Five,Rich,WLDs,2022
+Victory Five,Karsa,WLDs,2022
+Victory Five,Rookie,WLDs,2022
+Victory Five,Photic,WLDs,2022
+Victory Five,ppgod,WLDs,2022
+LNG Esports,Ale,WLDs,2022
+LNG Esports,Tarzan,WLDs,2022
+LNG Esports,Doinb,WLDs,2022
+LNG Esports,Light,WLDs,2022
+LNG Esports,LvMao,WLDs,2022
+Isurus,ADD,WLDs,2022
+Isurus,Grell,WLDs,2022
+Isurus,Seiya,WLDs,2022
+Isurus,Gavotto,WLDs,2022
+Isurus,Jelly,WLDs,2022
+MAD Lions,Armut,WLDs,2022
+MAD Lions,Elyoya,WLDs,2022
+MAD Lions,Nisqy,WLDs,2022
+MAD Lions,UNF0RGIVEN,WLDs,2022
+MAD Lions,Kaiser,WLDs,2022
+Fnatic,Wunder,WLDs,2022
+Fnatic,Razork,WLDs,2022
+Fnatic,Humanoid,WLDs,2022
+Fnatic,Upset,WLDs,2022
+Fnatic,Rhuckz,WLDs,2022
+Evil Geniuses,Impact,WLDs,2022
+Evil Geniuses,Inspired,WLDs,2022
+Evil Geniuses,jojopyun,WLDs,2022
+Evil Geniuses,Kaori,WLDs,2022
+Evil Geniuses,Vulcan,WLDs,2022
+LOUD,Robo,WLDs,2022
+LOUD,Croc,WLDs,2022
+LOUD,tinowns,WLDs,2022
+LOUD,Brance,WLDs,2022
+LOUD,Ceos,WLDs,2022
+Beyond Gaming,LIKAI,WLDs,2022
+Beyond Gaming,Husha,WLDs,2022
+Beyond Gaming,Minji,WLDs,2022
+Beyond Gaming,Wako,WLDs,2022
+Beyond Gaming,Kino,WLDs,2022
+İstanbul Wildcats,StarScreen,WLDs,2022
+İstanbul Wildcats,Ferret,WLDs,2022
+İstanbul Wildcats,Serin,WLDs,2022
+İstanbul Wildcats,HolyPhoenix,WLDs,2022
+İstanbul Wildcats,Farfetch,WLDs,2022
+Chiefs Esports Club,Topoon,WLDs,2022
+Chiefs Esports Club,Mir,WLDs,2022
+Chiefs Esports Club,Tally,WLDs,2022
+Chiefs Esports Club,Raes,WLDs,2022
+Chiefs Esports Club,Aladoric,WLDs,2022
+DetonatioN FocusMe,Evi,WLDs,2022
+DetonatioN FocusMe,Steal,WLDs,2022
+DetonatioN FocusMe,Yaharong,WLDs,2022
+DetonatioN FocusMe,Yutapon,WLDs,2022
+DetonatioN FocusMe,Harp,WLDs,2022
+Saigon Buffalo,Hasmed,WLDs,2022
+Saigon Buffalo,BeanJ,WLDs,2022
+Saigon Buffalo,Froggy,WLDs,2022
+Saigon Buffalo,Shogun,WLDs,2022
+Saigon Buffalo,Taki,WLDs,2022
+Fnatic,Hylissang,WLDs,2022
+Beyond Gaming,Liang,WLDs,2022
+Cloud9,Fudge,WLDs,2022
+Cloud9,Blaber,WLDs,2022
+Cloud9,Jensen,WLDs,2022
+Cloud9,Berserker,WLDs,2022
+Cloud9,Zven,WLDs,2022
+G2 Esports,BrokenBlade,WLDs,2022
+G2 Esports,Jankos,WLDs,2022
+G2 Esports,Caps,WLDs,2022
+G2 Esports,Flakked,WLDs,2022
+G2 Esports,Targamas,WLDs,2022
+CTBC Flying Oyster,Rest,WLDs,2022
+CTBC Flying Oyster,Gemini,WLDs,2022
+CTBC Flying Oyster,Mission,WLDs,2022
+CTBC Flying Oyster,Shunn,WLDs,2022
+CTBC Flying Oyster,Koala,WLDs,2022
+100 Thieves,Ssumday,WLDs,2022
+100 Thieves,Closer,WLDs,2022
+100 Thieves,Abbedagge,WLDs,2022
+100 Thieves,FBI,WLDs,2022
+100 Thieves,huhi,WLDs,2022
+JD Gaming,369,WLDs,2022
+JD Gaming,Kanavi,WLDs,2022
+JD Gaming,Yagao,WLDs,2022
+JD Gaming,Hope,WLDs,2022
+JD Gaming,Missing,WLDs,2022
+T1,Zeus,WLDs,2022
+T1,Oner,WLDs,2022
+T1,Faker,WLDs,2022
+T1,Gumayusi,WLDs,2022
+T1,Keria,WLDs,2022
+Gen.G,Doran,WLDs,2022
+Gen.G,Peanut,WLDs,2022
+Gen.G,Chovy,WLDs,2022
+Gen.G,Ruler,WLDs,2022
+Gen.G,Lehends,WLDs,2022
+Rogue,Odoamne,WLDs,2022
+Rogue,Malrang,WLDs,2022
+Rogue,Larssen,WLDs,2022
+Rogue,Comp,WLDs,2022
+Rogue,Trymbi,WLDs,2022
+Top Esports,Wayward,WLDs,2022
+Top Esports,Tian,WLDs,2022
+Top Esports,knight,WLDs,2022
+Top Esports,JackeyLove,WLDs,2022
+Top Esports,Mark,WLDs,2022
+GAM Esports,Kiaya,WLDs,2022
+GAM Esports,Levi,WLDs,2022
+GAM Esports,Kati,WLDs,2022
+GAM Esports,Sty1e,WLDs,2022
+GAM Esports,Bie,WLDs,2022
+CTBC Flying Oyster,Atlen,WLDs,2022
+PSG Talon,Azhi,MSI,2023
+PSG Talon,JunJia,MSI,2023
+PSG Talon,Uniboy,MSI,2023
+PSG Talon,Wako,MSI,2023
+PSG Talon,Woody,MSI,2023
+DetonatioN FocusMe,tol2,MSI,2023
+DetonatioN FocusMe,Steal,MSI,2023
+DetonatioN FocusMe,Aria,MSI,2023
+DetonatioN FocusMe,Yutapon,MSI,2023
+DetonatioN FocusMe,Harp,MSI,2023
+G2 Esports,BrokenBlade,MSI,2023
+G2 Esports,Yike,MSI,2023
+G2 Esports,Caps,MSI,2023
+G2 Esports,Hans Sama,MSI,2023
+G2 Esports,Mikyx,MSI,2023
+LOUD,Robo,MSI,2023
+LOUD,Croc,MSI,2023
+LOUD,tinowns,MSI,2023
+LOUD,Route,MSI,2023
+LOUD,Ceos,MSI,2023
+Bilibili Gaming,Bin,MSI,2023
+Bilibili Gaming,XUN,MSI,2023
+Bilibili Gaming,Yagao,MSI,2023
+Bilibili Gaming,Elk,MSI,2023
+Bilibili Gaming,ON,MSI,2023
+Movistar R7,Bong,MSI,2023
+Movistar R7,Oddie,MSI,2023
+Movistar R7,Mireu,MSI,2023
+Movistar R7,Ceo,MSI,2023
+Movistar R7,Lyonz,MSI,2023
+Golden Guardians,Licorice,MSI,2023
+Golden Guardians,River,MSI,2023
+Golden Guardians,Gori,MSI,2023
+Golden Guardians,Stixxay,MSI,2023
+Golden Guardians,huhi,MSI,2023
+GAM Esports,Kiaya,MSI,2023
+GAM Esports,Levi,MSI,2023
+GAM Esports,Kati,MSI,2023
+GAM Esports,Sty1e,MSI,2023
+GAM Esports,Zin,MSI,2023
+Gen.G,Doran,MSI,2023
+Gen.G,Peanut,MSI,2023
+Gen.G,Chovy,MSI,2023
+Gen.G,Peyz,MSI,2023
+Gen.G,Delight,MSI,2023
+MAD Lions,Chasy,MSI,2023
+MAD Lions,Elyoya,MSI,2023
+MAD Lions,Nisqy,MSI,2023
+MAD Lions,Carzzy,MSI,2023
+MAD Lions,Hylissang,MSI,2023
+T1,Zeus,MSI,2023
+T1,Oner,MSI,2023
+T1,Faker,MSI,2023
+T1,Gumayusi,MSI,2023
+T1,Keria,MSI,2023
+Cloud9,Fudge,MSI,2023
+Cloud9,Blaber,MSI,2023
+Cloud9,EMENES,MSI,2023
+Cloud9,Berserker,MSI,2023
+Cloud9,Zven,MSI,2023
+JD Gaming,369,MSI,2023
+JD Gaming,Kanavi,MSI,2023
+JD Gaming,knight,MSI,2023
+JD Gaming,Ruler,MSI,2023
+JD Gaming,MISSING,MSI,2023
+LNG Esports,Zika,WLDs,2023
+LNG Esports,Tarzan,WLDs,2023
+LNG Esports,Scout,WLDs,2023
+LNG Esports,GALA,WLDs,2023
+LNG Esports,Hang,WLDs,2023
+EDward Gaming,Ale,WLDs,2023
+EDward Gaming,JieJie,WLDs,2023
+EDward Gaming,FOFO,WLDs,2023
+EDward Gaming,Uzi,WLDs,2023
+EDward Gaming,Meiko,WLDs,2023
+Top Esports,Wayward,WLDs,2023
+Top Esports,Tian,WLDs,2023
+Top Esports,Rookie,WLDs,2023
+Top Esports,JackeyLove,WLDs,2023
+Top Esports,Mark,WLDs,2023
+Weibo Gaming,TheShy,WLDs,2023
+Weibo Gaming,Weiwei,WLDs,2023
+Weibo Gaming,Xiaohu,WLDs,2023
+Weibo Gaming,Light,WLDs,2023
+Weibo Gaming,Crisp,WLDs,2023
+KT Rolster,Kiin,WLDs,2023
+KT Rolster,Cuzz,WLDs,2023
+KT Rolster,Bdd,WLDs,2023
+KT Rolster,Aiming,WLDs,2023
+KT Rolster,Lehends,WLDs,2023
+Hanwha Life Esports,Kingen,WLDs,2023
+Hanwha Life Esports,Grizzly,WLDs,2023
+Hanwha Life Esports,Zeka,WLDs,2023
+Hanwha Life Esports,Viper,WLDs,2023
+Hanwha Life Esports,Life,WLDs,2023
+Dplus KIA,Canna,WLDs,2023
+Dplus KIA,Canyon,WLDs,2023
+Dplus KIA,ShowMaker,WLDs,2023
+Dplus KIA,Deft,WLDs,2023
+Dplus KIA,Kellin,WLDs,2023
+DRX,Rascal,WLDs,2023
+DRX,Croco,WLDs,2023
+DRX,FATE,WLDs,2023
+DRX,Paduck,WLDs,2023
+DRX,BeryL,WLDs,2023
+Golden Guardians,Licorice,WLDs,2023
+Golden Guardians,River,WLDs,2023
+Golden Guardians,Gori,WLDs,2023
+Golden Guardians,Stixxay,WLDs,2023
+Golden Guardians,huhi,WLDs,2023
+Team BDS,Adam,WLDs,2023
+Team BDS,Sheo,WLDs,2023
+Team BDS,nuc,WLDs,2023
+Team BDS,Crownie,WLDs,2023
+Team BDS,Labrov,WLDs,2023
+PSG Talon,Azhi,WLDs,2023
+PSG Talon,JunJia,WLDs,2023
+PSG Talon,Maple,WLDs,2023
+PSG Talon,Wako,WLDs,2023
+PSG Talon,Woody,WLDs,2023
+Movistar R7,Bong,WLDs,2023
+Movistar R7,Oddie,WLDs,2023
+Movistar R7,Mireu,WLDs,2023
+Movistar R7,Ceo,WLDs,2023
+Movistar R7,Lyonz,WLDs,2023
+LOUD,Robo,WLDs,2023
+LOUD,Croc,WLDs,2023
+LOUD,tinowns,WLDs,2023
+LOUD,Route,WLDs,2023
+LOUD,Ceos,WLDs,2023
+GAM Esports,Kiaya,WLDs,2023
+GAM Esports,Levi,WLDs,2023
+GAM Esports,Kati,WLDs,2023
+GAM Esports,Slayder,WLDs,2023
+GAM Esports,Palette,WLDs,2023
+DetonatioN FocusMe,apaMEN,WLDs,2023
+DetonatioN FocusMe,Steal,WLDs,2023
+DetonatioN FocusMe,Aria,WLDs,2023
+DetonatioN FocusMe,Yutapon,WLDs,2023
+DetonatioN FocusMe,Harp,WLDs,2023
+CTBC Flying Oyster,Rest,WLDs,2023
+CTBC Flying Oyster,Gemini,WLDs,2023
+CTBC Flying Oyster,JimieN,WLDs,2023
+CTBC Flying Oyster,Shunn,WLDs,2023
+CTBC Flying Oyster,ShiauC,WLDs,2023
+Team Whales,Sparda,WLDs,2023
+Team Whales,BeanJ,WLDs,2023
+Team Whales,Glory,WLDs,2023
+Team Whales,Artemis,WLDs,2023
+Team Whales,Bie,WLDs,2023
+T1,Zeus,WLDs,2023
+T1,Oner,WLDs,2023
+T1,Faker,WLDs,2023
+T1,Gumayusi,WLDs,2023
+T1,Keria,WLDs,2023
+Team Liquid,Summit,WLDs,2023
+Team Liquid,Pyosik,WLDs,2023
+Team Liquid,APA,WLDs,2023
+Team Liquid,Yeon,WLDs,2023
+Team Liquid,CoreJJ,WLDs,2023
+Cloud9,Fudge,WLDs,2023
+Cloud9,Blaber,WLDs,2023
+Cloud9,EMENES,WLDs,2023
+Cloud9,Berserker,WLDs,2023
+Cloud9,Zven,WLDs,2023
+MAD Lions,Chasy,WLDs,2023
+MAD Lions,Elyoya,WLDs,2023
+MAD Lions,Nisqy,WLDs,2023
+MAD Lions,Carzzy,WLDs,2023
+MAD Lions,Hylissang,WLDs,2023
+Gen.G,Doran,WLDs,2023
+Gen.G,Peanut,WLDs,2023
+Gen.G,Chovy,WLDs,2023
+Gen.G,Peyz,WLDs,2023
+Gen.G,Delight,WLDs,2023
+JD Gaming,369,WLDs,2023
+JD Gaming,Kanavi,WLDs,2023
+JD Gaming,knight,WLDs,2023
+JD Gaming,Ruler,WLDs,2023
+JD Gaming,MISSING,WLDs,2023
+G2 Esports,BrokenBlade,WLDs,2023
+G2 Esports,Yike,WLDs,2023
+G2 Esports,Caps,WLDs,2023
+G2 Esports,Hans Sama,WLDs,2023
+G2 Esports,Mikyx,WLDs,2023
+NRG,Dhokla,WLDs,2023
+NRG,Contractz,WLDs,2023
+NRG,Palafox,WLDs,2023
+NRG,FBI,WLDs,2023
+NRG,IgNar,WLDs,2023
+Fnatic,Oscarinin,WLDs,2023
+Fnatic,Razork,WLDs,2023
+Fnatic,Humanoid,WLDs,2023
+Fnatic,Noah,WLDs,2023
+Fnatic,Trymbi,WLDs,2023
+Bilibili Gaming,Bin,WLDs,2023
+Bilibili Gaming,XUN,WLDs,2023
+Bilibili Gaming,Yagao,WLDs,2023
+Bilibili Gaming,Elk,WLDs,2023
+Bilibili Gaming,ON,WLDs,2023
