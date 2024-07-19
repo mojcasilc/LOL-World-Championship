@@ -1,10 +1,8 @@
 % rebase('osnova.html', naslov=tekmovanje.tip)
-
+<br>
 <div class="level">
-    <div class="level-left">
-        <div class="level-item">
-            <h1 class="title">Tekmovanje: {{tekmovanje.tip}} ({{tekmovanje.leto}})</h1>
-        </div>
+    <div class="level-item">
+        <h1 class="title is-1">Tekmovanje: {{tekmovanje.tip}} ({{tekmovanje.leto}})</h1>
     </div>
 </div>
 
@@ -12,13 +10,13 @@
     <div class="column">
         % if tekme:
         <div class="content">
-            <ol>
+            <ul style="list-style-type: none;">
             % for tekma, ekipe in tekme.items():
             <li>
                 <div style="font-size: 1.5em;">
                     {{tekma.datum}} ({{tekma.cas}})
                 </div>
-                <ul>
+                <ul style="list-style-type: none;">
                     % for ekipa in ekipe:
                     <li>
                         <div class="content is-normal">
@@ -31,7 +29,7 @@
                 </ul>
             </li>    
             % end
-            </ol>
+            </ul>
         </div>
         % end
     </div>
