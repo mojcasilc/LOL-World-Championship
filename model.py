@@ -1,9 +1,8 @@
 import os
 import baza
 import sqlite3
-from sqlite3 import IntegrityError
 
-# os.remove('lol.db')
+os.remove('lol.db')
 conn = sqlite3.connect('lol.db')
 baza.ustvari_bazo_ce_ne_obstaja(conn)
 conn.execute('PRAGMA foreign_keys = ON')
@@ -23,8 +22,8 @@ class Igralec:
 
     def __str__(self):
         """
-        Znakovna predstavitev filma.
-        Vrne naslov filma.
+        Znakovna predstavitev igralca.
+        Vrne ime igralca.
         """
         return self.ime
     
@@ -41,27 +40,8 @@ class Igralec:
             cur.execute(sql, [id])
             vrstica = cur.fetchone()
             if vrstica is None:
-                raise ValueError(f"Film z ID-jem {id} ne obstaja!")
+                raise ValueError(f"Igralec z ID-jem {id} ne obstaja!")
             return Igralec(*vrstica)
-        finally:
-            cur.close()
-
-    @staticmethod
-    def seznam(seznam_idjev):
-        if not seznam_idjev:
-            return []
-        elif len(seznam_idjev) == 1:
-            id, = seznam_idjev
-            return [Igralec.z_id(id)]
-        sql = f"""
-          SELECT id, ime FROM igralec
-           WHERE id IN ({', '.join(['?'] * len(seznam_idjev))})
-        """
-        cur = conn.cursor()
-        try:
-            cur.execute(sql, seznam_idjev)
-            slovar = {id: Igralec(id, ime) for id, ime in cur}
-            return [slovar[id] for id in seznam_idjev]
         finally:
             cur.close()
     
@@ -122,7 +102,7 @@ class Ekipa:
     @staticmethod
     def z_id(id):
         """
-        Vrne igralca z navedenim ID-jem.
+        Vrne ekipo z navedenim ID-jem.
         """
         sql = """
           SELECT id, ime FROM ekipa WHERE id = ?
@@ -134,25 +114,6 @@ class Ekipa:
             if vrstica is None:
                 raise ValueError(f"Ekipa z ID-jem {id} ne obstaja!")
             return Ekipa(*vrstica)
-        finally:
-            cur.close()
-
-    @staticmethod
-    def seznam(seznam_idjev):
-        if not seznam_idjev:
-            return []
-        elif len(seznam_idjev) == 1:
-            id, = seznam_idjev
-            return [Ekipa.z_id(id)]
-        sql = f"""
-          SELECT id, ime FROM ekipa
-           WHERE id IN ({', '.join(['?'] * len(seznam_idjev))})
-        """
-        cur = conn.cursor()
-        try:
-            cur.execute(sql, seznam_idjev)
-            slovar = {id: Ekipa(id, ime) for id, ime in cur}
-            return [slovar[id] for id in seznam_idjev]
         finally:
             cur.close()
     
@@ -209,7 +170,7 @@ class Ekipa:
     
     def zmage(self):
         """
-        Vrne tekmovanja na akterih je ekipa zmagala
+        Vrne tekmovanja na katerih je ekipa zmagala
         """
         sql = """
             WITH zmagovalci AS (
@@ -238,11 +199,11 @@ class Ekipa:
 
 class Tekmovanje:
     """
-    Razred za ekipo.
+    Razred za tekmovanje.
     """
     def __init__(self, id=None, tip=None, leto=None):
         """
-        Konstruktor ekipe.
+        Konstruktor tekmovanja.
         """
         self.id = id
         self.tip = tip
@@ -250,8 +211,8 @@ class Tekmovanje:
 
     def __str__(self):
         """
-        Znakovna predstavitev ekipe.
-        Vrne ime ekipe.
+        Znakovna predstavitev tekmovanja.
+        Vrne tekmovanje in leto.
         """
         return self.tip + " " + self.leto
     
@@ -268,7 +229,7 @@ class Tekmovanje:
             cur.execute(sql, [id])
             vrstica = cur.fetchone()
             if vrstica is None:
-                raise ValueError(f"Ekipa z ID-jem {id} ne obstaja!")
+                raise ValueError(f"Tekmovanje z ID-jem {id} ne obstaja!")
             return Tekmovanje(*vrstica)
         finally:
             cur.close()
@@ -326,7 +287,7 @@ class Tekmovanje:
     
     def druga_ekipa(self):
         """
-        Vrne zmagovalno ekipo
+        Vrne drugo ekipo
         """
         sql = """
             SELECT e.id, e.ime
@@ -347,7 +308,7 @@ class Tekmovanje:
 
     def tretja_ekipa(self):
         """
-        Vrne zmagovalno ekipo
+        Vrne tretjo in četrto ekipo
         """
         sql = """
             SELECT e.id, e.ime, MAX(a.st_igre)
@@ -385,15 +346,13 @@ class Tekmovanje:
         finally:
             cur.close()
 
-    
-
 class Tekma:
     """
-    Razred za ekipo.
+    Razred za tekmo.
     """
     def __init__(self, id=None, tekmovanje=None, datum=None, cas=None, st_igre=None):
         """
-        Konstruktor ekipe.
+        Konstruktor tekme.
         """
         self.id = id
         self.tekmovanje = tekmovanje
@@ -403,7 +362,7 @@ class Tekma:
 
     def __str__(self):
         """
-        Znakovna predstavitev ekipe.
-        Vrne ime ekipe.
+        Znakovna predstavitev tekme.
+        Vrne stevilo tekme, datum in čas ko se je igrala.
         """
         return self.st_igre + " " + self.datum + " " + self.cas

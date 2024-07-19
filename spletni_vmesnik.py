@@ -32,7 +32,6 @@ def igralci_tekmovanja(id):
     tekmovanja = oseba.poisci_tekmovanja()
     return dict(oseba=oseba, tekmovanja=tekmovanja)
 
-
 @bottle.get("/tekmovanje/<id:int>/")
 @bottle.view('tekmovanje_podatki.html')
 def podatki_tekmovanja(id):

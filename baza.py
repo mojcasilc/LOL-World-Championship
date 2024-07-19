@@ -1,8 +1,6 @@
 import csv
-import sqlite3
 
 PARAM_FMT = ":{}" # za SQLite
-
 
 class Tabela:
     """

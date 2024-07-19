@@ -1,6 +1,5 @@
 from model import Igralec, Ekipa
 
-
 ISKAL_IGRALCE = 'Iskal igralce'
 ISKAL_EKIPO = 'Iskal ekipo'
 SEL_DOMOV = 'Šel domov'
@@ -37,7 +36,6 @@ def poisci_igralca():
         else:
             print('Našel sem več igralcev, kateri od teh te zanima?')
             return vnesi_izbiro(igralci)
-
      
 def izpisi_tekmovanja(igralec):
     """
@@ -47,7 +45,6 @@ def izpisi_tekmovanja(igralec):
     print(igralec.ime)
     for tekmovanje in igralec.poisci_tekmovanja():
         print(f'- {tekmovanje.tip} {tekmovanje.leto}')
-
 
 def poisci_ekipo():
     """
@@ -72,10 +69,8 @@ def izpisi_tekmovanja_ekipe(ekipa):
     v katerih je sodelovala
     """
     print(ekipa.ime)
-    for _, tip, leto in ekipa.poisci_tekmovanja():
-        print(f'- {tip} {leto}')
-
-
+    for tekmovanje in ekipa.poisci_tekmovanja():
+        print(f'- {tekmovanje.tip} {tekmovanje.leto}')
 
 def glavni_meni():
     print('Pozdravljen v bazi prvenstev Leage if legends!')
@@ -100,7 +95,6 @@ def glavni_meni():
         elif izbira == SEL_DOMOV:
             print('Adijo!')
             return
-
 
 if __name__ == '__main__':
     glavni_meni()
