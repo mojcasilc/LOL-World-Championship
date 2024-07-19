@@ -2,7 +2,7 @@ import os
 import baza
 import sqlite3
 
-os.remove('lol.db')
+#os.remove('lol.db')
 conn = sqlite3.connect('lol.db')
 baza.ustvari_bazo_ce_ne_obstaja(conn)
 conn.execute('PRAGMA foreign_keys = ON')
