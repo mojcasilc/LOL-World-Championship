@@ -22,7 +22,7 @@ cilji:
 3. Spletni vmesnik za prikazovanje podatkov
 
 ## ER-diagram baze
-![image](https://github.com/user-attachments/assets/8fefeb43-6984-4063-a6cc-d73a4856d084)
+![image](https://github.com/mojcasilc/LOL-World-Championship/blob/main/ER-diagram.jpg)
 
 Vsaka ekipa je sestavljena iz petih igralcev, ki se lahko med tekmovanji zamenjajo, prav tako lahko igralci zamenjajo ekipe. Vsaka ekipa ima edinstveno ime, vsak igralec pa svoje univerzalno uporabniško ime. Tekmovanje je sestavljeno iz več tekem, kjer se na vsaki tekmi pomerita dve ekipi. Vsaka tekma je igrana na točno enem tekmovanju. Posamezna tekma je sestavljena iz 3 do 5 iger, pri čemer zmaga ekipa, ki prva doseže 3 zmage v igrah. Prisotnost vseh ekip na tekmovanjih ni zagotovljena, saj je število mest omejeno. Igralci znotraj ekipe ostajajo enaki na vseh tekmah v okviru istega tekmovanja. Tabela `pripada` povezuje igralce z ekipami za vsako tekmovanje. Tabela `nastopa` povezuje ekipe z igrami, na katerih so igrale, ter nam pove tudi zmagovalca in poraženca. Tabela `igra` vsebuje podatke o datumu, času, številu igre ter o tekmovanju, na katerem je bila igrana. Tabela `tekmovanje` vsebuje podatke o tipu (MSI, WORLDS) in letu.
 
