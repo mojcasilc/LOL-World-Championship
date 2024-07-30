@@ -39,7 +39,7 @@ def poisci_igralca():
      
 def izpisi_tekmovanja(igralec):
     """
-    Izpiši ime igralca ter vse tekme,
+    Izpiši ime igralca ter vsa tekmovanja,
     v katerih je igral
     """
     print(igralec.ime)
@@ -65,7 +65,7 @@ def poisci_ekipo():
 
 def izpisi_tekmovanja_ekipe(ekipa):
     """
-    Izpiše ime ekipe ter vse tekme,
+    Izpiše ime ekipe ter vsa tekmovanja,
     v katerih je sodelovala
     """
     print(ekipa.ime)

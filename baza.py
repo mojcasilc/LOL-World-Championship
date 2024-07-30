@@ -195,15 +195,15 @@ class Igralec(Tabela):
             id, = r
             return id
 
-class Tekma(Tabela):
+class Igra(Tabela):
     """
-    Tabela za tekme.
+    Tabela za igre.
     """
-    ime = "tekma"
+    ime = "igra"
 
     def __init__(self, conn):
         """
-        Konstruktor tabele filmov.
+        Konstruktor tabele iger.
 
         Argumenti:
         - conn: povezava na bazo
@@ -216,7 +216,7 @@ class Tekma(Tabela):
         Ustvari tabelo iger.
         """
         self.conn.execute("""
-            CREATE TABLE tekma (
+            CREATE TABLE igra (
                 id                INTEGER PRIMARY KEY AUTOINCREMENT,
                 tekmovanje        INTEGER REFERENCES tekmovanje(id),
                 datum             DATE,
@@ -237,7 +237,7 @@ class Tekma(Tabela):
         """
         assert all(key in podatki for key in ["tekmovanje", "datum", "cas", "st_igre"])
         cur = self.conn.execute("""
-            SELECT id FROM tekma
+            SELECT id FROM igra
             WHERE tekmovanje = :tekmovanje AND datum = :datum AND cas = :cas AND st_igre = :st_igre;
         """, podatki)
         r = cur.fetchone()
@@ -249,12 +249,12 @@ class Tekma(Tabela):
         
 class Nastopa(Tabela):
     """
-    Tabela za relacijo pripadnosti ekipe tekmi.
+    Tabela za relacijo pripadnosti ekipe igri.
     """
     ime = "nastopa"
-    podatki = "podatki/tekma.csv"
+    podatki = "podatki/igra.csv"
 
-    def __init__(self, conn, tekmovanje, ekipa, tekma):
+    def __init__(self, conn, tekmovanje, ekipa, igra):
         """
         Konstruktor tabele pripadnosti ekipi in igralcem.
 
@@ -266,7 +266,7 @@ class Nastopa(Tabela):
         super().__init__(conn)
         self.tekmovanje = tekmovanje
         self.ekipa = ekipa
-        self.tekma = tekma
+        self.igra = igra
 
     def ustvari(self):
         """
@@ -274,10 +274,10 @@ class Nastopa(Tabela):
         """
         self.conn.execute("""
             CREATE TABLE nastopa (
-                tekma             INTEGER REFERENCES tekma(id),
+                igra             INTEGER REFERENCES igra(id),
                 ekipa             INTEGER REFERENCES ekipa(id),
                 zmaga             INTEGER,
-                PRIMARY KEY(tekma, ekipa)
+                PRIMARY KEY(igra, ekipa)
             );
         """)
     
@@ -300,11 +300,11 @@ class Nastopa(Tabela):
             podatki["ekipa"] = self.ekipa.dodaj_vrstico(ime=podatki["ime_ekipe"])
             del podatki["ime_ekipe"]
 
-        # dobimo id tekme
+        # dobimo id igre
         if podatki.get("tekmovanje", None) is not None and podatki.get("datum", None) is not None and \
             podatki.get("cas", None) is not None and podatki.get("st_igre", None) is not None:
 
-            podatki["tekma"] = self.tekma.dodaj_vrstico(tekmovanje=podatki["tekmovanje"],datum=podatki["datum"],\
+            podatki["igra"] = self.igra.dodaj_vrstico(tekmovanje=podatki["tekmovanje"],datum=podatki["datum"],\
                                                         cas=podatki["cas"],st_igre=podatki["st_igre"])
             del podatki["tekmovanje"]
             del podatki["datum"]
@@ -418,10 +418,10 @@ def pripravi_tabele(conn):
     ekipa = Ekipa(conn)
     tekmovanje = Tekmovanje(conn)
     igralec = Igralec(conn)
-    tekma = Tekma(conn)
-    nastopa = Nastopa(conn, tekmovanje, ekipa, tekma)
+    igra = Igra(conn)
+    nastopa = Nastopa(conn, tekmovanje, ekipa, igra)
     pripada = Pripada(conn, ekipa, igralec, tekmovanje)
-    return [ekipa, tekmovanje, igralec, tekma, nastopa, pripada]
+    return [ekipa, tekmovanje, igralec, igra, nastopa, pripada]
 
 
 def ustvari_bazo_ce_ne_obstaja(conn):

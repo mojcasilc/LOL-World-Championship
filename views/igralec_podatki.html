@@ -1,19 +1,36 @@
 % rebase('osnova.html', naslov=oseba.ime)
 <br>
 <h1 class="title is-1">Igralec: {{oseba.ime}}</h1>
-<p><b>Tekmovanja, ki se jih je udeležil:</b></p>
+<p><b>Tekmovanja, ki se jih je udeležil/-a in ekipa za katero je igral:</b></p>
 <br>
 
-<div>
-    % if tekmovanja:
-        <ul>
-        % for tekmovanje in tekmovanja:
-            <li>
-                <a href="/tekmovanje/{{tekmovanje.id}}/">
-                    {{tekmovanje.tip}} ({{tekmovanje.leto}})
-                </a>
-            </li>    
+<section class="centered-form">
+    <div>
+        % if tekmovanja_ekipe:
+        <table class="table is-info">
+            <thead>
+            <tr>
+                <th style="text-align: center;">Tekmovanje</th>
+                <th style="text-align: center;">Ekipa</th>
+            </tr>
+            </thead>
+            <tbody>
+                % for tekmovanje, ekipa in tekmovanja_ekipe:
+                <tr>
+                <td>
+                    <a href="/tekmovanje/{{tekmovanje.id}}/">
+                        {{tekmovanje.tip}} ({{tekmovanje.leto}})
+                    </a>
+                </td>
+                <td>
+                    <a href="/ekipa/{{ekipa.id}}/">
+                        {{ekipa.ime}}
+                    </a>
+                </td>
+                </tr>
+                % end
+            </tbody>
+        </table>
         % end
-        </ul>
-    % end
-</div>
+    </div>
+</section>

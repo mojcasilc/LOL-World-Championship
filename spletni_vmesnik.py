@@ -29,8 +29,8 @@ def igralci_tekmovanja(id):
         oseba = Igralec.z_id(id)
     except ValueError:
         bottle.abort(404, f'Oseba z ID-jem {id} ne obstaja!')
-    tekmovanja = oseba.poisci_tekmovanja()
-    return dict(oseba=oseba, tekmovanja=tekmovanja)
+    tekmovanja_ekipe = oseba.poisci_tekmovanja()
+    return dict(oseba=oseba, tekmovanja_ekipe=tekmovanja_ekipe)
 
 @bottle.get("/tekmovanje/<id:int>/")
 @bottle.view('tekmovanje_podatki.html')
@@ -38,12 +38,12 @@ def podatki_tekmovanja(id):
     try:
         tekmovanje = Tekmovanje.z_id(id)
     except ValueError:
-        bottle.abort(404, f'Film z ID-jem {id} ne obstaja!')
-    tekme = tekmovanje.tekme() # slovar
+        bottle.abort(404, f'Tekmovanje z ID-jem {id} ne obstaja!')
+    igre = tekmovanje.igre() # slovar
     prvi, = tekmovanje.prva_ekipa()
     drugi, = tekmovanje.druga_ekipa()
     tretji1, tretji2 = tekmovanje.tretja_ekipa()
-    return dict(tekmovanje=tekmovanje, tekme=tekme, prvi=prvi, drugi=drugi, tretji1=tretji1, tretji2=tretji2)
+    return dict(tekmovanje=tekmovanje, igre=igre, prvi=prvi, drugi=drugi, tretji1=tretji1, tretji2=tretji2)
 
 @bottle.get("/ekipa/<id:int>/")
 @bottle.view('ekipa_podatki.html')
@@ -51,11 +51,12 @@ def podatki_tekmovanja(id):
     try:
         ekipa = Ekipa.z_id(id)
     except ValueError:
-        bottle.abort(404, f'Film z ID-jem {id} ne obstaja!')
+        bottle.abort(404, f'Ekipa z ID-jem {id} ne obstaja!')
+    st_tekmovanj, = ekipa.st_tekmovanj()
     tekmovanja = ekipa.poisci_tekmovanja()
     tek_igralci = {tekmovanje: ekipa.igralci(tekmovanje.id) for tekmovanje in tekmovanja}
     zmage = ekipa.zmage()
-    return dict(ekipa=ekipa, tek_igralci=tek_igralci, zmage=zmage)
+    return dict(ekipa=ekipa, st_tekmovanj=st_tekmovanj, tek_igralci=tek_igralci, zmage=zmage)
 
 @bottle.get('/ekipa/isci/')
 @bottle.view('isci_ekipe.html')

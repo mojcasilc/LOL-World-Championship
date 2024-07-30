@@ -8,13 +8,13 @@
 
 <div class="columns">
     <div class="column">
-        % if tekme:
+        % if igre:
         <div class="content">
             <ul style="list-style-type: none;">
-            % for i, (tekma, ekipe) in enumerate(tekme.items(),1):
+            % for i, (tekma, ekipe) in enumerate(igre.items(),1):
             <li>
                 <div style="font-size: 1.5em;">
-                        {{i}}. {{tekma.datum}} ({{tekma.cas}})
+                        {{i}}. {{tekma.datum}} <span style="font-size: 0.6em;">({{tekma.cas}})</span>
                 </div>
                 <ul style="list-style-type: none;">
                     % for ekipa in ekipe:

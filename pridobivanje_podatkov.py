@@ -25,9 +25,9 @@ new_column_names = {
 seznam1 = seznam1.rename(columns=new_column_names)
 
 pripada = seznam1[['ime_ekipe', 'ime_igralca', 'tip', 'leto']].drop_duplicates()
-tekma = seznam1[['tip', 'leto', 'datum', 'cas', 'st_igre', 'ime_ekipe', 'zmaga']].drop_duplicates()
+igra = seznam1[['tip', 'leto', 'datum', 'cas', 'st_igre', 'ime_ekipe', 'zmaga']].drop_duplicates()
 
-tekma.to_csv('podatki/tekma.csv', index=False)
+igra.to_csv('podatki/igra.csv', index=False)
 pripada.to_csv('podatki/pripada.csv', index=False)
 
 

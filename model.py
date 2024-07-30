@@ -7,7 +7,7 @@ conn = sqlite3.connect('lol.db')
 baza.ustvari_bazo_ce_ne_obstaja(conn)
 conn.execute('PRAGMA foreign_keys = ON')
 
-ekipa, tekmovanje, igralec, tekma, nastopa, pripada = baza.pripravi_tabele(conn)
+ekipa, tekmovanje, igralec, igra, nastopa, pripada = baza.pripravi_tabele(conn)
 
 class Igralec:
     '''
@@ -50,17 +50,18 @@ class Igralec:
         Vrne tekmovanja igralca po letih ko je igral.
         """
         sql = """
-            SELECT t.id, t.tip, t.leto
+            SELECT t.id, t.tip, t.leto, e.id, e.ime
             FROM igralec i
             JOIN pripada p ON i.id = p.igralec
             JOIN tekmovanje t ON p.tekmovanje = t.id
+            JOIN ekipa e ON e.id = p.ekipa
             WHERE i.id = ?
             ORDER BY t.leto DESC, t.tip
         """
         cur = conn.cursor()
         try:
             cur.execute(sql, [self.id])
-            return [(Tekmovanje(*podatki)) for podatki in cur]
+            return [(Tekmovanje(*podatki), Ekipa(id, ime)) for *podatki, id, ime in cur]
         finally:
             cur.close()
 
@@ -177,10 +178,10 @@ class Ekipa:
             SELECT t.id AS id, t.tip AS tip, t.leto AS leto, MAX(a.st_igre), n.zmaga, e.id AS id_ekipe
             FROM ekipa e
             JOIN nastopa n ON e.id = n.ekipa
-            JOIN tekma a ON n.tekma = a.id
+            JOIN igra a ON n.igra = a.id
             JOIN tekmovanje t ON t.id = a.tekmovanje
             WHERE n.zmaga = 1 AND a.datum IN (
-                SELECT MAX(a.datum) FROM tekma a
+                SELECT MAX(a.datum) FROM igra a
                 JOIN tekmovanje t ON t.id = a.tekmovanje
                 GROUP BY t.id
                 )
@@ -194,6 +195,23 @@ class Ekipa:
         try:
             cur.execute(sql, [self.id])
             return [Tekmovanje(*podatki) for podatki in cur]
+        finally:
+            cur.close()
+    
+    def st_tekmovanj(self):
+        """
+        Vrne tekmovanja na katerih je ekipa zmagala
+        """
+        sql = """
+            SELECT COUNT(DISTINCT tekmovanje)
+            FROM ekipa e
+            JOIN pripada p ON e.id = p.ekipa
+            WHERE e.id = ?
+        """
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, [self.id])
+            return cur.fetchone()
         finally:
             cur.close()
 
@@ -234,22 +252,22 @@ class Tekmovanje:
         finally:
             cur.close()
         
-    def tekme(self):
+    def igre(self):
         """
-        Vrne tekme,ki so se odvijale na tekmovanju
+        Vrne igre,ki so se odvijale na tekmovanju
         """
         sql = """
             WITH ekipa1 AS (
             SELECT a.id, a.tekmovanje, a.datum, a.cas, a.st_igre, e.* FROM tekmovanje t
-            JOIN tekma a ON t.id = a.tekmovanje
-            JOIN nastopa n ON a.id = n.tekma
+            JOIN igra a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.igra
             JOIN ekipa e ON e.id = n.ekipa
             WHERE t.id = ? AND st_igre = 1 AND zmaga = 1),
 
                 ekipa2 AS (
             SELECT a.id, a.tekmovanje, a.datum, a.cas, a.st_igre, e.*  FROM tekmovanje t
-            JOIN tekma a ON t.id = a.tekmovanje
-            JOIN nastopa n ON a.id = n.tekma
+            JOIN igra a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.igra
             JOIN ekipa e ON e.id = n.ekipa
             WHERE t.id = ? AND st_igre = 1 AND zmaga = 0)
 
@@ -260,7 +278,7 @@ class Tekmovanje:
         cur = conn.cursor()
         try:
             cur.execute(sql, [self.id,self.id])
-            return {Tekma(*podatki): [Ekipa(id=id1, ime=ime1),Ekipa(id=id2, ime=ime2)] for *podatki, id1, ime1, id2, ime2 in cur}
+            return {Igra(*podatki): [Ekipa(id=id1, ime=ime1),Ekipa(id=id2, ime=ime2)] for *podatki, id1, ime1, id2, ime2 in cur}
         finally:
             cur.close()
     
@@ -271,8 +289,8 @@ class Tekmovanje:
         sql = """
             SELECT e.id, e.ime
             FROM tekmovanje t
-            JOIN tekma a ON t.id = a.tekmovanje
-            JOIN nastopa n ON a.id = n.tekma
+            JOIN igra a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.igra
             JOIN ekipa e ON n.ekipa = e.id
             WHERE t.id = ? AND n.zmaga = 1
             ORDER BY a.datum DESC, a.cas DESC
@@ -292,8 +310,8 @@ class Tekmovanje:
         sql = """
             SELECT e.id, e.ime
             FROM tekmovanje t
-            JOIN tekma a ON t.id = a.tekmovanje
-            JOIN nastopa n ON a.id = n.tekma
+            JOIN igra a ON t.id = a.tekmovanje
+            JOIN nastopa n ON a.id = n.igra
             JOIN ekipa e ON n.ekipa = e.id
             WHERE t.id = ? AND n.zmaga = 0
             ORDER BY a.datum DESC, a.cas DESC
@@ -314,10 +332,10 @@ class Tekmovanje:
             SELECT e.id, e.ime, MAX(a.st_igre)
             FROM ekipa e
             JOIN nastopa n ON e.id = n.ekipa
-            JOIN tekma a ON n.tekma = a.id
+            JOIN igra a ON n.igra = a.id
             JOIN tekmovanje t ON t.id = a.tekmovanje
             WHERE t.id = ? AND n.zmaga=0 AND a.datum IN (
-                SELECT DISTINCT a.datum FROM tekma a
+                SELECT DISTINCT a.datum FROM igra a
                 JOIN tekmovanje t ON t.id = a.tekmovanje
                 WHERE t.id = ?
                 ORDER BY a.datum DESC
@@ -346,13 +364,13 @@ class Tekmovanje:
         finally:
             cur.close()
 
-class Tekma:
+class Igra:
     """
     Razred za tekmo.
     """
     def __init__(self, id=None, tekmovanje=None, datum=None, cas=None, st_igre=None):
         """
-        Konstruktor tekme.
+        Konstruktor igre.
         """
         self.id = id
         self.tekmovanje = tekmovanje
@@ -362,7 +380,7 @@ class Tekma:
 
     def __str__(self):
         """
-        Znakovna predstavitev tekme.
-        Vrne stevilo tekme, datum in čas ko se je igrala.
+        Znakovna predstavitev igre.
+        Vrne stevilo igre, datum in čas ko se je igrala.
         """
         return self.st_igre + " " + self.datum + " " + self.cas
