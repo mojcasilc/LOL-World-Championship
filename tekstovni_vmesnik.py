@@ -43,7 +43,7 @@ def izpisi_tekmovanja(igralec):
     v katerih je igral
     """
     print(igralec.ime)
-    for tekmovanje in igralec.poisci_tekmovanja():
+    for tekmovanje, _ in igralec.poisci_tekmovanja():
         print(f'- {tekmovanje.tip} {tekmovanje.leto}')
 
 def poisci_ekipo():
@@ -69,7 +69,7 @@ def izpisi_tekmovanja_ekipe(ekipa):
     v katerih je sodelovala
     """
     print(ekipa.ime)
-    for tekmovanje in ekipa.poisci_tekmovanja():
+    for tekmovanje, _ in ekipa.poisci_tekmovanja():
         print(f'- {tekmovanje.tip} {tekmovanje.leto}')
 
 def glavni_meni():
